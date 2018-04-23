@@ -34,36 +34,42 @@ The Design system is set up to allow easy development work on the Toolkit and HT
 
 First clone the Toolkit repository:
 
+
+```sh
 git clone git@github.com:coopdigital/coop-frontend-toolkit.git
+```
+
 Create a reference to the local NPM package from the Toolkit directory:
 
-``sh
+
+```sh
 cd coop-frontend-toolkit
 npm link
 ```
 
 From the Design system directory, link the NPM package to the local version:
 
-``sh
+```sh
 cd ../design-system
 npm link coop-frontend-toolkit
 ```
 
 Then clone the Components repository:
 
-``sh
+```sh
 git clone git@github.com:coopdigital/coop-components.git
-Create a reference to the local NPM package from the Components directory:
 ```
 
-``sh
+Create a reference to the local NPM package from the Components directory:
+
+```sh
 cd coop-components
 npm link
 ```
 
 From the Design system directory, link the NPM package to the local version:
 
-``sh
+```sh
 cd ../design-system
 npm link coop-components
 ```
