@@ -11,7 +11,7 @@ WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. T
 
 Requirements: NodeJS 4.4.7+
 
-First, check out repository (https://github.com/coopdigital/future-membership.git) on your machine, and navigate to the repository root in a terminal window.
+First, check out repository (https://github.com/coopdigital/design-system) on your machine, and navigate to the repository root in a terminal window.
 
 Install the Fractal CLI helper globally
 
