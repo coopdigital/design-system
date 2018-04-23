@@ -26,6 +26,50 @@ $ npm install
 $ npm install -g gulp-cli
 ```
 
+This will get the toolkit SCSS and the component HTML.
+
+## Linking the SCSS and HTML for working locally
+
+The Design system is set up to allow easy development work on the Toolkit and HTML components. In order to reflect changes made to your local versions directly in your local version of the Design system, you must first link the NPM dependency to your local versions.
+
+First clone the Toolkit repository:
+
+git clone git@github.com:coopdigital/coop-frontend-toolkit.git
+Create a reference to the local NPM package from the Toolkit directory:
+
+``sh
+cd coop-frontend-toolkit
+npm link
+```
+
+From the Design system directory, link the NPM package to the local version:
+
+``sh
+cd ../design-system
+npm link coop-frontend-toolkit
+```
+
+Then clone the Components repository:
+
+``sh
+git clone git@github.com:coopdigital/coop-components.git
+Create a reference to the local NPM package from the Components directory:
+```
+
+``sh
+cd coop-components
+npm link
+```
+
+From the Design system directory, link the NPM package to the local version:
+
+``sh
+cd ../design-system
+npm link coop-components
+```
+
+Any changes made to the local version of the Toolkit or Components will now automatically be reflected in the local version of the Design system.
+
 ## Start local server
 
 Start Fractal & Gulp locally.
