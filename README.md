@@ -89,4 +89,12 @@ Navigate to http://localhost:3000/
 
 ## Deploy
 
-The Design system deploys the /build folder to Heroku using https://github.com/paulmsmith/heroku-buildpack-static 
+The Design system deploys the /build folder to Heroku using https://github.com/paulmsmith/heroku-buildpack-static
+
+You have to commit the /build folder and run:
+
+```sh
+fractal build
+```
+
+Before pushing.
