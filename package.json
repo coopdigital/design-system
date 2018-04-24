@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
+    "@frctl/mandelbrot": "^1.2.0",
     "browser-sync": "^2.12.5",
-    "coop-components": "^1.0.1",
-    "coop-frontend-toolkit": "^2.1.2",
+    "coop-components": "github:coopdigital/coop-components",
+    "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#2.1.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "1.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.1.0",
     "gulp-sass": "^2.2.0",
-    "gulp-uglify": "^2.0.0"
+    "gulp-uglify": "^2.0.0",
+    "npm-safe-install": "^1.0.0"
   }
 }

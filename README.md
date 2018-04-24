@@ -9,7 +9,7 @@ WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. T
 
 [Fractal](https://fractal.build/) component library for future membership work
 
-Requirements: NodeJS 4.4.7+
+Requirements: NodeJS 4.4.7+ / npm 6.0.0
 
 First, check out repository (https://github.com/coopdigital/design-system) on your machine, and navigate to the repository root in a terminal window.
 
@@ -33,7 +33,6 @@ This will get the toolkit SCSS and the component HTML.
 The Design system is set up to allow easy development work on the Toolkit and HTML components. In order to reflect changes made to your local versions directly in your local version of the Design system, you must first link the NPM dependency to your local versions.
 
 First clone the Toolkit repository:
-
 
 ```sh
 git clone git@github.com:coopdigital/coop-frontend-toolkit.git
