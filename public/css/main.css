@@ -1956,7 +1956,7 @@ a {
   text-decoration: none; }
   a:hover {
     color: #00394e;
-    border-color: #00394e; }
+    border: 0; }
   a:active, a:focus {
     transition: none;
     outline: 4px solid #00A1CC; }
@@ -1967,7 +1967,7 @@ a {
   text-decoration: none; }
   .link-white:hover {
     color: #d9d9d9;
-    border-color: #d9d9d9; }
+    border: 0; }
   .link-white:active, .link-white:focus {
     transition: none;
     outline: 4px solid #00A1CC; }
@@ -1978,7 +1978,7 @@ a {
   text-decoration: none; }
   .link-black:hover {
     color: #020202;
-    border-color: #020202; }
+    border: 0; }
   .link-black:active, .link-black:focus {
     transition: none;
     outline: 4px solid #00A1CC; }
@@ -7633,7 +7633,7 @@ Helpers mixins - Co-op Front-end Toolkit
   background: #FFEC00; }
 
 .wrap {
-  margin-top: 32px;
+  margin-top: 16px;
   margin-bottom: 32px; }
 
 .demo-column-block {

@@ -86,3 +86,7 @@ $ ./start.sh
 ```
 
 Navigate to http://localhost:3000/
+
+## Deploy
+
+The Design system deploys the /build folder to Heroku using https://github.com/paulmsmith/heroku-buildpack-static 

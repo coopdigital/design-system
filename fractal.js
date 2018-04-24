@@ -13,7 +13,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'Design System');
+fractal.set('project.title', 'Design system');
 fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Matt Tyas');
 
