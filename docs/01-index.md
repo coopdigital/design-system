@@ -7,7 +7,7 @@ The design system is a place to start to collect our agreed design components qu
 It contains:
 
 - some of the documentation from the design manual that is deemed useful for implementing components
-- the components that are from the design manual or have been agreed by the design Component
+- the components that are from the design manual or have been agreed by the design COP
 - HTML snppets
 
 The design system website is a shell that contains:
