@@ -63,7 +63,7 @@ fractal.components.set('statuses', {
  */
 const mandelbrot = require('@frctl/mandelbrot');
 
-const CoopTheme = mandelbrot({
+const coopTheme = mandelbrot({
   "styles": [
       "default",
       "/css/coop-theme.css"
@@ -71,7 +71,7 @@ const CoopTheme = mandelbrot({
   panels: ["html", "notes", "context", "info" ]
 });
 
-fractal.web.theme(CoopTheme);
+// template overrides
+coopTheme.addLoadPath(__dirname + '/coop-theme');
 
-// specify a directory to hold the theme override templates
-// CoopTheme.addLoadPath(__dirname + '/coop-theme-overrides');
+fractal.web.theme(coopTheme);
