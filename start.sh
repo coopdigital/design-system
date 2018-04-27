@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
-
-echo "Running Fractal and Gulp"
+BLUE='\033[0;96m'
+NC='\033[0m'
+echo -e "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+echo -e "┃                     ${BLUE}Buidling Co-op design system${NC}                      ┃"
+echo -e "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 fractal start --watch --sync &
 gulp

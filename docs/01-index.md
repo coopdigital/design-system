@@ -8,7 +8,7 @@ It contains:
 
 - some of the documentation from the design manual that is deemed useful for implementing components
 - the components that are from the design manual or have been agreed by the design COP
-- HTML snppets
+- HTML snippets
 
 The design system website is a shell that contains:
 

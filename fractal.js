@@ -37,6 +37,26 @@ fractal.web.set('static.path', path.join(__dirname, 'public'));
  */
 fractal.web.set('builder.dest', __dirname + '/build');
 
+/*
+ * Set custom Coop statuses
+ */
+fractal.components.set('statuses', {
+  prototype: {
+      label: "Alpha",
+      description: "Do not implement.",
+      color: "#FF3333"
+  },
+  wip: {
+      label: "Beta",
+      description: "Work in progress. Implement with caution.",
+      color: "#FF9233"
+  },
+  ready: {
+      label: "Live",
+      description: "Ready to implement.",
+      color: "#29CC29"
+  }
+});
 
 /*
  * Set custom Coop theme
@@ -48,7 +68,10 @@ const CoopTheme = mandelbrot({
       "default",
       "/css/coop-theme.css"
   ],
-  panels: ["html", "context", "info", "notes" ]
+  panels: ["html", "notes", "context", "info" ]
 });
 
 fractal.web.theme(CoopTheme);
+
+// specify a directory to hold the theme override templates
+// CoopTheme.addLoadPath(__dirname + '/coop-theme-overrides');

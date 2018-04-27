@@ -7730,3 +7730,55 @@ Helpers mixins - Co-op Front-end Toolkit
   @media (min-width: 1300px) {
     .demo-column-block--offset span::before {
       content: '.large-offset-0'; } }
+
+.dm-colour {
+  position: relative;
+  margin-bottom: 16px; }
+  .dm-colour:before, .dm-colour:after {
+    content: " ";
+    display: table; }
+  .dm-colour:after {
+    clear: both; }
+  @media (min-width: 750px) {
+    .dm-colour {
+      margin-bottom: 32px; } }
+  .dm-colour h4 {
+    font-size: 18px;
+    padding: 8px 0 0 16px; }
+
+.dm-colour__swatch {
+  height: 132px;
+  width: 100%; }
+
+.dm-colour__swatch--wide {
+  padding: 10px 0 10px 0;
+  float: right;
+  width: 100%;
+  height: auto; }
+
+.dm-colour__definition {
+  width: 100%;
+  float: left;
+  padding: 0 0 0 16px;
+  margin-bottom: 0;
+  font-size: 16px; }
+  @media (min-width: 750px) {
+    .dm-colour__definition {
+      font-size: 18px; } }
+
+.dm-colour__definition_link-dark {
+  color: #282828;
+  border-color: #282828; }
+  .dm-colour__definition_link-dark:hover {
+    color: #282828;
+    border-color: #282828; }
+
+.dm-colour__definition_link-light {
+  color: #FFFFFF;
+  border-color: #FFFFFF; }
+  .dm-colour__definition_link-light:hover {
+    color: #FFFFFF;
+    border-color: #FFFFFF; }
+
+.dm-colour__definition--stack {
+  margin-top: -8px; }
