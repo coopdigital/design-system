@@ -1,0 +1,11 @@
+.Frame,
+.Pen {
+  overflow: scroll;
+  height: 100%;
+  width: auto;
+}
+
+.Frame-inner {
+  position: static;
+  min-height: 0px;
+}

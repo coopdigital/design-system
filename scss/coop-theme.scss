@@ -1,2 +1,13 @@
-@import 'coop-theme/overrides';   // Coop overrides to the default theme
-  
+@import 'node_modules/coop-frontend-toolkit/styles/grid';
+@import 'node_modules/coop-frontend-toolkit/styles/typography';
+@import 'node_modules/coop-frontend-toolkit/styles/fonts';
+@import 'node_modules/coop-frontend-toolkit/styles/tables';
+@import 'node_modules/coop-frontend-toolkit/styles/helpers/layout';
+@import 'node_modules/coop-frontend-toolkit/styles/components/navigation-inpage';
+
+@import 'coop-theme/base';
+@import 'coop-theme/header';
+@import 'coop-theme/navigation';
+@import 'coop-theme/sidebar';
+@import 'coop-theme/pen';
+@import 'coop-theme/status';

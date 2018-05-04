@@ -1,0 +1,30 @@
+.Frame-panel {
+  overflow: visible;
+}
+
+[dir="ltr"] .Frame-panel--sidebar {
+  border-right: 0;
+  background-color: $page;
+  @include spacing('padding', 'all', 'base');
+}
+
+.Tree-collectionLabel,
+.Tree-item {
+  font-size: 1.25rem;
+}
+
+[dir="ltr"] .Tree-collectionLabel span {
+  padding-left: 1.15rem;
+}
+
+[dir="ltr"] .Tree-depth-1 .Tree-entityLink {
+  padding-left: 1.45rem;
+}
+
+.Tree-collectionLabel span {
+
+  &:before {
+    top: 0.6rem;
+    background-size: 1rem;
+  }
+}

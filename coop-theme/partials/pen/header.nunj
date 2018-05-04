@@ -1,0 +1,18 @@
+<div class="Pen-panel Pen-header">
+    <div class="row">
+        <div class="columns large-8 small-12">
+            <h1>{{ entity.title }}</h1>
+            {% if entity.notes %}
+            {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
+            {% else %}
+            <p class="Browser-isEmptyNote">There are no notes for this component.</p>
+            {% endif %}
+        </div>
+        <div class="columns large-4 small-12">
+            <div class="ds-status">
+                <p>Status</p>
+                {{ status.tag(entity.status) }}
+            </div>
+        </div>
+    </div>
+</div>

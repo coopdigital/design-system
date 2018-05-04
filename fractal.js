@@ -54,7 +54,7 @@ fractal.components.set('statuses', {
   ready: {
       label: "Live",
       description: "Ready to implement.",
-      color: "#29CC29"
+      color: "#0F8482"
   }
 });
 

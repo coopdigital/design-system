@@ -1,0 +1,49 @@
+.primary-nav {
+  float: right;
+  clear: none;
+  margin-top: 7px;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    padding-left: 0;
+
+    .active {
+      a {
+        padding-right: 0;
+        padding-bottom: 30px;
+        border-bottom: 5px solid $white;
+
+        @include media(medium) {
+          padding-bottom: 53px;
+        }
+      }
+    }
+
+    li {
+      display: inline-block;
+      padding-right: 20px;
+      padding-bottom: $quarter-spacing-unit;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @include media(medium) {
+        padding-right: 30px;;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      &:hover {
+        color: $page;
+      }
+    }
+  }
+}
+
+.in-page-nav {
+  border-left: 5px solid lighten($purple-mid, 50%);
+}

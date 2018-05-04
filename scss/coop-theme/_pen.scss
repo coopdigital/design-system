@@ -1,0 +1,55 @@
+.Pen {
+  overflow: visible;
+  @include spacing('padding', 'top', 'quarter');
+  @include spacing('padding', 'right', 'half');
+  @include spacing('padding', 'bottom', 'half');
+  @include spacing('padding', 'left', 'half');
+}
+
+.Pen-title {
+  @include heading-h1;
+}
+
+.Pen-header {
+  display: block;
+  max-height: 100%;
+}
+
+.Pen-info {
+  border: 0;
+}
+
+.Preview {
+  // border: 4px solid $grey-light;
+  border: 0;
+}
+
+.Pen-preview {
+  margin: 0;
+}
+
+.Preview-wrapper,
+.Preview-resizer,
+.Preview-iframe {
+  position: static;
+}
+
+.Browser {
+  position: static;
+}
+
+.Browser-panel {
+  background: $page;
+
+  .Code {
+    background: $page;
+
+    pre {
+      background: $page;
+    }
+  }
+}
+
+.Browser-controls {
+  box-shadow: none;
+}

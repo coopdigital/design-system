@@ -2,9 +2,8 @@
 @import "coop-toolkit";
 
 // Demo styles
-.wrap {
-  margin-top: 16px;
-  margin-bottom: 32px;
+.ds-wrap {
+  margin: 0 $half-spacing-unit 0 0;
 }
 
 .demo-column-block {
