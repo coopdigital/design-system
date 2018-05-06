@@ -1,4 +1,19 @@
+.Frame,
 .Pen {
+  overflow: scroll;
+  height: 100%;
+  width: auto;
+}
+
+.Frame-inner {
+  position: static;
+  overflow: visible;
+  min-height: 0px;
+  margin-top: 12px;
+}
+
+.Pen,
+.Document {
   overflow: visible;
   @include spacing('padding', 'top', 'quarter');
   @include spacing('padding', 'right', 'half');
@@ -12,7 +27,8 @@
 
 .Pen-header {
   display: block;
-  max-height: 100%;
+  max-height: 9999px;
+  padding: 0;
 }
 
 .Pen-info {
@@ -22,10 +38,18 @@
 .Preview {
   // border: 4px solid $grey-light;
   border: 0;
+  background: $page;
 }
 
 .Pen-preview {
   margin: 0;
+  // height: 100%;
+  // max-height: 9999px;
+}
+
+.Preview-wrapper,
+.Preview-iframe {
+  min-height: 300px;
 }
 
 .Preview-wrapper,
@@ -34,19 +58,68 @@
   position: static;
 }
 
+.responsive-list {
+  list-style: none;
+  display: block;
+  margin: 0 0 $quarter-spacing-unit 0;
+
+  .responsive-list--item {
+    display: inline-block;
+    text-align: center;
+    .responsive-list--item-link {
+      display: block;
+      font-size: 0.9rem;
+      background: $grey-light;
+      padding: 10px 20px;
+      border-radius: 40px;
+      color: $text;
+      text-decoration: none;
+      border: 0;
+      &:hover {
+        background: darken($grey-light, 5%);
+      }
+    }
+
+  }
+
+}
+
+#breakpoint-viewer {
+  margin: 0 auto;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+  width: 100%;
+  border: 1px solid $grey-mid;
+  @include spacing('padding', 'top', 'quarter');
+  @include spacing('padding', 'right', 'quarter');
+  @include spacing('padding', 'bottom', 'quarter');
+  @include spacing('padding', 'left', 'quarter');
+  &.xsmall-width {
+    width: 320px;
+  }
+  &.small-width {
+    width: 480px;
+  }
+  &.medium-width {
+    width: 750px;
+  }
+  &.large-width {
+    width: 990px;
+  }
+  &.xlarge-width {
+    width: 1300px;
+  }
+}
+
 .Browser {
   position: static;
 }
 
-.Browser-panel {
+.Code {
   background: $page;
 
-  .Code {
+  pre {
     background: $page;
-
-    pre {
-      background: $page;
-    }
   }
 }
 

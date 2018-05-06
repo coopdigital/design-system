@@ -3,11 +3,9 @@
         <img src="/images/logos/coop-logo-white.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coop-whiteX2.png'">
         <span class="visuallyhidden">{{ frctl.get('project.title') | default('Component Library') }}</span>
     </a>
+    {% if frctl.docs.size %}
     <nav class="primary-nav">
-        <ul>
-            <li><a href="/principles.html">Principles</a></li>
-            <li class="active"><a href="/guidance.html">Guidance</a></li>
-            <li><a href="/rescources.html">Resources</a></li>
-        </ul>
+        {{ nav.tree(frctl.docs, doc, request) }}
     </nav>
+    {% endif %}
 </div>

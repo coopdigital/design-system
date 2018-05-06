@@ -1,8 +1,14 @@
 {% set compHandle = entity.component().handle %}
 {% for collection in entity.resources().items() %}
 {% if collection.size %}
-<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-{{ entity.id }}-panel-{{ collection.name }}">
-    <div class="FileBrowser">
+<div id="browser-{{ entity.id }}-panel-{{ collection.name }}">
+
+{% for resource in collection.items() %}
+    {{ resource.contents }}
+{% endfor %}
+
+
+    {# <div class="FileBrowser">
 
         <div class="FileBrowser-selectWrapper">
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
@@ -47,7 +53,7 @@
             </ul>
         </div>
         {% endfor %}
-    </div>
+    </div> #}
 </div>
 {% endif %}
 {% endfor %}

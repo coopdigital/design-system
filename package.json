@@ -4,6 +4,10 @@
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/nunjucks": "^1.0.3",
+    "@frctl/nunjucks-adapter": "^0.4.6",
+    "@frctl/nunjucks-engine": "^0.4.0",
+    "@frctl/nunjucks-helpers": "^0.3.0",
     "browser-sync": "^2.12.5",
     "coop-components": "github:coopdigital/coop-components",
     "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#2.1.2",
@@ -13,6 +17,8 @@
     "gulp-copy": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^2.0.0",
-    "npm-safe-install": "^1.0.0"
+    "helper-markdown": "^1.0.0",
+    "npm-safe-install": "^1.0.0",
+    "nunjucks-markdown-filter": "^0.1.0"
   }
 }

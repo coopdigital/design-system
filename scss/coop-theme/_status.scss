@@ -1,23 +1,29 @@
 [dir="ltr"] .Pen-header .Status {
-  display: block;
+  // display: block;
   -webkit-margin-start: 0;
   margin-inline-start: 0;
   -webkit-padding-start: 0;
   padding-inline-start:  0;
+  display: inline;
 
 }
 
 .ds-status {
   p {
+    font-size: 1.5rem;
     margin-bottom: 0;
+    font-family: $bold;
   }
 }
 
 .Status-label {
   border-radius: 0;
-  font-size: 1rem;
-  padding: 1rem 2rem;
-
+  font-size: 1.5rem;
+  font-family: $bold;
+  display: inline;
+  padding: 0;
+  text-transform: capitalize;
+  letter-spacing: 0;
 }
 
 .Status-dot {

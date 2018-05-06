@@ -1,21 +1,47 @@
-<h2 class="Pen-panel-title">Example</h2>
-<div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-{{ entity.id }}">
-    <div class="Preview-wrapper" data-role="resizer">
-        <div class="Preview-resizer">
-            {% if renderError -%}
-                {{ renderError }}
-            {% else %}
-            <iframe
-                class="Preview-iframe"
-                data-role="window"
-                src="{{ previewUrl }}"
-                sandbox="allow-same-origin allow-scripts allow-forms"
-                {% if entity.display %} style="{% for property, value in entity.display %}{{ property }}: {{ value }} !important; {% endfor %}"{% endif %}
-                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
-            </iframe>
-            {%- endif %}
+<div class="row">
+    <div class="column all-12">
+        <h2 class="Pen-panel-title" id="example">Example</h2>
+        <div class="Pen-panel Pen-preview Preview" id="preview-{{ entity.id }}">
+            <div class="Preview-wrapper">
+                {% if renderError -%}
+                    {{ renderError }}
+                {% else %}
+                <iframe
+                    id="breakpoint-viewer"
+                    class="Preview-iframe"
+                    data-role="window"
+                    src="{{ previewUrl }}"
+                    sandbox="allow-same-origin allow-scripts allow-forms"
+                    {% if entity.display %} style="{% for property, value in entity.display %}{{ property }}: {{ value }} !important; {% endfor %}"{% endif %}
+                    marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+                </iframe>
+                {%- endif %}
+            </div>
         </div>
-        <div class="Preview-handle" data-role="resize-handle"></div>
-        <div class="Preview-overlay"></div>
+    </div>
+</div>
+<div class="row">
+    <div class="column large-8 small-12">
+        <h3>See this example at:</h3>
+        <ul class="responsive-list">
+            <li class="responsive-list--item">
+                <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link">Xsmall (320px)</a>
+            </li>
+            <li class="responsive-list--item">
+                <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link">Small (480px)</a>
+            </li>
+            <li class="responsive-list--item">
+                <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link">Medium (750px)</a>
+            </li>
+            <li class="responsive-list--item">
+                <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link">Large (990px)</a>
+            </li>
+            <li class="responsive-list--item">
+                <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link">XLarge  (1300px)</a>
+            </li>
+        </ul>
+    </div>
+    <div class="column large-4 small-12">
+        {% include 'partials/browser/panel-info.nunj' %}
     </div>
 </div>

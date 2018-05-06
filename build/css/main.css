@@ -7632,9 +7632,8 @@ Helpers mixins - Co-op Front-end Toolkit
 .added-to-page-bg {
   background: #FFEC00; }
 
-.wrap {
-  margin-top: 16px;
-  margin-bottom: 32px; }
+.ds-wrap {
+  margin: 0 32px 0 0; }
 
 .demo-column-block {
   display: block;

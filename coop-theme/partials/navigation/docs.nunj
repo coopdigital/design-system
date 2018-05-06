@@ -1,5 +1,1 @@
-{% if frctl.docs.size %}
-<div class="Navigation-group">
-{{ nav.tree(frctl.docs, doc, request) }}
-</div>
-{% endif %}
+

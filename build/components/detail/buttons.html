@@ -20,32 +20,29 @@
 
 </head>
 <body>
-
-
+    
 
 <div class="Frame" id="frame">
 
     <div class="Frame-header">
-        <div class="Header">
-    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
-</svg>
-
-        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-</svg>
-
-    </button>
-    <a href="../../index.html" class="Header-title" data-pjax>Design system</a>
+        <div class="Header header-main">
+    <a href="../../index.html" class="Header-title" data-pjax>
+        <img src="/images/logos/coop-logo-white.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coop-whiteX2.png'">
+        <span class="visuallyhidden">Design system</span>
+    </a>
+    <nav class="primary-nav">
+        <ul>
+            <li><a href="/principles.html">Principles</a></li>
+            <li class="active"><a href="/guidance.html">Guidance</a></li>
+            <li><a href="/rescources.html">Resources</a></li>
+        </ul>
+    </nav>
 </div>
 
     </div>
 
     <div class="Frame-body" data-role="body">
-
+        
         <div class="Frame-panel Frame-panel--main" data-role="main">
             <div class="Frame-inner" id="pjax-container">
             
@@ -59,101 +56,12 @@
     
 
     <div class="Pen-panel Pen-header">
-    <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/buttons.html" title="Component preview">
-            Buttons
-            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
-
-        </a>
-    </h1>
-    
-
-<div class="Status Status--tag">
-
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Live</label>
-
-</div>
-
-
-</div>
-
-
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-edb33a621190f2dc22528888f99dedf9">
-    <div class="Preview-wrapper" data-role="resizer">
-        <div class="Preview-resizer">
-            
-             <iframe
-                class="Preview-iframe"
-                data-role="window"
-                src="../preview/buttons.html"
-                sandbox="allow-same-origin allow-scripts allow-forms"
-                 style=""
-                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
-            </iframe>
-        </div>
-        <div class="Preview-handle" data-role="resize-handle"></div>
-        <div class="Preview-overlay"></div>
-    </div>
-</div>
-
-
-    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
-
-    <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-edb33a621190f2dc22528888f99dedf9">
-
-    
-
-<div class="Browser-controls">
-    <ul class="Browser-tabs">
-        
-        
-        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-edb33a621190f2dc22528888f99dedf9-panel-html">HTML</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-edb33a621190f2dc22528888f99dedf9-panel-notes">Notes</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-edb33a621190f2dc22528888f99dedf9-panel-context">Context</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-edb33a621190f2dc22528888f99dedf9-panel-info">Info</a>
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-    
-    
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-edb33a621190f2dc22528888f99dedf9-panel-html">
-    <code class="Code Code--lang-html">
-        
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--primary"</span>&gt;</span>Primary button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
-        
-    </code>
-</div>
-
-    
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-edb33a621190f2dc22528888f99dedf9-panel-notes">
-    <div class="Prose Prose--condensed">
-        
-        <p>Buttons must use:</p>
+    <div class="row">
+        <div class="columns large-8 small-12">
+            <h1>Buttons</h1>
+            <div class="Prose Prose--condensed">
+                
+                <p>Buttons must use:</p>
 <ul>
 <li>Avenir Next Medium at 20px (1em)</li>
 <li>a 7px border radius</li>
@@ -162,65 +70,93 @@
 </ul>
 <p>Button width should be defined by the content on the button. Buttons should also be ranged left with the left edge aligning with other content.</p>
 
-        
+                
+            </div>
+        </div>
+        <div class="columns large-4 small-12">
+            <div class="ds-status">
+                <p>Status</p>
+                
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #0F8482; border-color: #0F8482;">Live</label>
+
+</div>
+
+
+            </div>
+        </div>
     </div>
 </div>
 
-    
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-edb33a621190f2dc22528888f99dedf9-panel-context">
-    <code class="Code Code--lang-json">
+
+    <nav>
+        <ul id="in-page-nav" class="list-bare in-page-nav">
+            <li><a href="#design">Design</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#supporting-information">Supporting information</a></li>
+            <li><a href="#variations">Variations</a></li>
+            <li><a href="#suggest-a-change">Suggest a change</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="Pen-panel-title" id="example">Example</h2>
+<div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-edb33a621190f2dc22528888f99dedf9">
+    <div class="Preview-wrapper" data-role="resizer">
+
         
-            
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-            
+        <iframe
+            id="breakpoint-viewer"
+            class="Preview-iframe"
+            data-role="window"
+            src="../preview/buttons.html"
+            sandbox="allow-same-origin allow-scripts allow-forms"
+             style=""
+            marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+        </iframe>
+
+
+        <ul class="responsive-list">
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link">Xsmall &lt;320px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link">Small &lt;480px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link">Medium &lt;750px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link">Large &lt;990px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link">XLarge  &lt;1300px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('d')" class="responsive-list--item-link">Your Screen</a>
+          </li>
+        </ul>
+    </div>
+</div>
+
+
+    <h2 id="design">Design</h2>
+
+    <h2 id="code">Code</h2>
+    
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--primary"</span>&gt;</span>Primary button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
         
     </code>
-</div>
 
-    
-    <div class="Browser-panel" data-role="tab-panel" id="browser-edb33a621190f2dc22528888f99dedf9-panel-info">
-    <ul class="Meta">
-        <li class="Meta-item">
-            <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@buttons</span>
-        </li>
-        
-        
-        
-        
-        
-        <li class="Meta-item">
-            <strong class="Meta-key">Preview:</strong>
-            <span class="Meta-value">
-                <ul>
-                    <li><a data-no-pjax href="../preview/buttons.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
-</a></li>
-                    <li><a data-no-pjax href="../render/buttons.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
-</a></li>
-                </ul>
-            </span>
-        </li>
-        <li class="Meta-item">
-            <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">node_modules/coop-components/components/buttons/buttons.hbs</span>
-        </li>
-        
-        
-    </ul>
-</div>
+    <h2 id="supporting-information">Supporting information</h2>
 
-    
+    <h2 id="variations">Variations</h2>
 
-</div>
-
-</div>
-
+    <h2 id="suggest-a-change">Suggest a change</h2>
 
     
 
@@ -230,8 +166,8 @@
             </div>
         </div>
 
-        <div class="Frame-handle" data-role="frame-resize-handle"></div>
         
+
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             <nav class="Navigation">
 
@@ -255,7 +191,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -290,7 +226,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -314,7 +250,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -338,7 +274,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -362,7 +298,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -386,7 +322,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -410,7 +346,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -450,7 +386,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -474,7 +410,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -498,7 +434,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -522,7 +458,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -546,7 +482,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -575,7 +511,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -599,7 +535,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -623,7 +559,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -658,7 +594,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -682,7 +618,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -706,7 +642,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -730,7 +666,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -754,7 +690,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -778,7 +714,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -818,7 +754,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -903,9 +839,11 @@
 </div>
 
 
-
-
+    
 <script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+<script src="/js/theme.js?cachebust=1.2.0"></script>
 
 
 

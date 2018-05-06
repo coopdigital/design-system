@@ -8,9 +8,28 @@
   @include spacing('padding', 'all', 'base');
 }
 
-.Tree-collectionLabel,
+.Tree-collectionLabel {
+  font-size: 1rem;
+}
+
 .Tree-item {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+}
+
+.Tree-title {
+  display: none;
+}
+
+.Tree-collectionLabel {
+  text-transform: uppercase;
+}
+
+[dir="ltr"] .Tree-depth-2 .Tree-collectionLabel {
+  padding-left: 1.8rem;
+}
+
+.Tree-collectionItems {
+  margin-left: 6px;
 }
 
 [dir="ltr"] .Tree-collectionLabel span {
@@ -18,13 +37,25 @@
 }
 
 [dir="ltr"] .Tree-depth-1 .Tree-entityLink {
-  padding-left: 1.45rem;
+  padding-left: .75rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-left: 5px solid $page;
+  border-bottom: 0;
+  margin-bottom: 10px;
+}
+
+[dir="ltr"] .Tree-depth-1 .is-current .Tree-entityLink {
+  background: transparent;
+  border-left: 5px solid lighten($purple-mid, 50%);
+  margin-left: 1rem;
+  color: $text;
 }
 
 .Tree-collectionLabel span {
 
   &:before {
-    top: 0.6rem;
+    top: 0.45rem;
     background-size: 1rem;
   }
 }

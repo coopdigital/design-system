@@ -10,6 +10,15 @@ const path = require('path');
  */
 const fractal = module.exports = require('@frctl/fractal').create();
 
+const markdown = require('helper-markdown');
+
+
+// fractal.engine('handlebars', '@frctl/handlebars-adapter', {
+//     helpers: {
+//         markdown: markdown()
+//     }
+// });
+
 /*
  * Give your project a title.
  */
@@ -68,7 +77,7 @@ const coopTheme = mandelbrot({
       "default",
       "/css/coop-theme.css"
   ],
-  panels: ["html", "notes", "context", "info" ]
+  panels: ["html", "notes", "context", "info", "resources", "view" ]
 });
 
 // template overrides

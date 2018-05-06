@@ -20,32 +20,29 @@
 
 </head>
 <body>
-
-
+    
 
 <div class="Frame" id="frame">
 
     <div class="Frame-header">
-        <div class="Header">
-    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
-</svg>
-
-        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
-</svg>
-
-    </button>
-    <a href="../../index.html" class="Header-title" data-pjax>Design system</a>
+        <div class="Header header-main">
+    <a href="../../index.html" class="Header-title" data-pjax>
+        <img src="/images/logos/coop-logo-white.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coop-whiteX2.png'">
+        <span class="visuallyhidden">Design system</span>
+    </a>
+    <nav class="primary-nav">
+        <ul>
+            <li><a href="/principles.html">Principles</a></li>
+            <li class="active"><a href="/guidance.html">Guidance</a></li>
+            <li><a href="/rescources.html">Resources</a></li>
+        </ul>
+    </nav>
 </div>
 
     </div>
 
     <div class="Frame-body" data-role="body">
-
+        
         <div class="Frame-panel Frame-panel--main" data-role="main">
             <div class="Frame-inner" id="pjax-container">
             
@@ -59,88 +56,114 @@
     
 
     <div class="Pen-panel Pen-header">
-    <h1 class="Pen-title">
-        <a class="Pen-previewLink" href="../preview/grid--collapse.html" title="Component preview">
-            Grid: Collapse
-            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
+    <div class="row">
+        <div class="columns large-8 small-12">
+            <h1>Grid: Collapse</h1>
+            <div class="Prose Prose--condensed">
+                
+                <p>The default Grid provides classes spanning 12 columns, and provides breakpoints at the following screen sizes:</p>
+<ul>
+<li><strong>All</strong> (<code>.all-{column-span}</code>) - 0px and up</li>
+<li><strong>Extra small</strong> (<code>.xsmall-{column-span}</code>) - 320px and up</li>
+<li><strong>Small</strong> (<code>.small-{column-span}</code>) - 480px and up</li>
+<li><strong>Medium</strong> (<code>.medium-{column-span}</code>) - 750px and up</li>
+<li><strong>Large</strong> (<code>.large-{column-span}</code>) - 960px and up</li>
+<li><strong>Extra large</strong> (<code>.xlarge-{column-span}</code>) - 1300px and up</li>
+</ul>
+<p>These settings can be overriden by specifying your own list of screen sizes you want columns available for. To keep the size of the resulting production stylesheet down, it is recommended to tailor the settings to your requirements, to make sure only the necessary classes are generated. For instance, if your service uses a 4 column grid, and only requires breakpoints at the medium screen size, you should alter the settings like so:</p>
+<code><pre><span class="hljs-variable">$grid-screen-sizes</span>: (<span class="hljs-string">"medium"</span>);
+<span class="hljs-variable">$grid-total-columns</span>: <span class="hljs-number">4</span>;</pre></code><p><strong>Note:</strong> the <code>.all-*</code> classes are always available, even if the $grid-screen-sizes list is empty.</p>
+<p>The centering can be undone for subsequent breakpoints:</p>
+<h2 id="grid-helpers">Grid helpers</h2>
+<p>The following helpers are included by default in the resulting CSS. If you do not make use of them, it is recommended to exclude them by setting them to false:</p>
+<code><pre><span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-center-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
+<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-pull-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
+<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-push-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
+<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-offset-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;</pre></code><p>These helpers can be applied to specific breakpoints only.</p>
+<h3 id="centering-classes">Centering classes</h3>
+<p>These allow centering of columns which do not fill the whole width of the viewport.</p>
+<h3 id="offsetting-classes">Offsetting classes</h3>
+<p>These classes allow adding an offset to the left of any column. They can be applied to specific breakpoints only.</p>
+<h3 id="push-pull-classes">Push/pull classes</h3>
+<p>These classes allow re-ordering of the columns by pushing and pulling them relative to their base position.</p>
+<h3 id="collapse-columns">Collapse columns</h3>
+<p>Collapsed columns have their padding removed. Columns can be collapsed individually, or whole rows can be collapsed at once by adding the class <code>.collapse</code> to the relevant column or row element.</p>
 
-        </a>
-    </h1>
-    
+                
+            </div>
+        </div>
+        <div class="columns large-4 small-12">
+            <div class="ds-status">
+                <p>Status</p>
+                
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Live</label>
+<label class="Status-label" style="background-color: #0F8482; border-color: #0F8482;">Live</label>
 
 </div>
 
 
-</div>
-
-
-    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-40e63e23cf7100d028e8f7af470db936">
-    <div class="Preview-wrapper" data-role="resizer">
-        <div class="Preview-resizer">
-            
-             <iframe
-                class="Preview-iframe"
-                data-role="window"
-                src="../preview/grid--collapse.html"
-                sandbox="allow-same-origin allow-scripts allow-forms"
-                 style=""
-                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
-            </iframe>
+            </div>
         </div>
-        <div class="Preview-handle" data-role="resize-handle"></div>
-        <div class="Preview-overlay"></div>
     </div>
 </div>
 
 
-    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+    <nav>
+        <ul id="in-page-nav" class="list-bare in-page-nav">
+            <li><a href="#design">Design</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#supporting-information">Supporting information</a></li>
+            <li><a href="#variations">Variations</a></li>
+            <li><a href="#suggest-a-change">Suggest a change</a></li>
+        </ul>
+    </nav>
 
-    <div class="Pen-panel Pen-info" data-role="info">
-    <div class="Browser" data-behaviour="browser" id="browser-40e63e23cf7100d028e8f7af470db936">
+    <h2 class="Pen-panel-title" id="example">Example</h2>
+<div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-40e63e23cf7100d028e8f7af470db936">
+    <div class="Preview-wrapper" data-role="resizer">
 
-    
+        
+        <iframe
+            id="breakpoint-viewer"
+            class="Preview-iframe"
+            data-role="window"
+            src="../preview/grid--collapse.html"
+            sandbox="allow-same-origin allow-scripts allow-forms"
+             style=""
+            marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+        </iframe>
 
-<div class="Browser-controls">
-    <ul class="Browser-tabs">
-        
-        
-        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
-            <a href="#browser-40e63e23cf7100d028e8f7af470db936-panel-html">HTML</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--notes" data-role="tab">
-            <a href="#browser-40e63e23cf7100d028e8f7af470db936-panel-notes">Notes</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--context" data-role="tab">
-            <a href="#browser-40e63e23cf7100d028e8f7af470db936-panel-context">Context</a>
-        </li>
-        
-        
-        
-        <li class="Browser-tab Browser-tab--info" data-role="tab">
-            <a href="#browser-40e63e23cf7100d028e8f7af470db936-panel-info">Info</a>
-        </li>
-        
-        
-    </ul>
+
+        <ul class="responsive-list">
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link">Xsmall &lt;320px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link">Small &lt;480px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link">Medium &lt;750px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link">Large &lt;990px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link">XLarge  &lt;1300px</a>
+          </li>
+          <li class="responsive-list--item">
+            <a href="#" onClick="responsiveInspector('d')" class="responsive-list--item-link">Your Screen</a>
+          </li>
+        </ul>
+    </div>
 </div>
 
 
+    <h2 id="design">Design</h2>
+
+    <h2 id="code">Code</h2>
     
-    
-<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-40e63e23cf7100d028e8f7af470db936-panel-html">
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
@@ -169,126 +192,12 @@
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
-</div>
 
-    
-    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-40e63e23cf7100d028e8f7af470db936-panel-notes">
-    <div class="Prose Prose--condensed">
-        
-        <p>The default Grid provides classes spanning 12 columns, and provides breakpoints at the following screen sizes:</p>
-<ul>
-<li><strong>All</strong> (<code>.all-{column-span}</code>) - 0px and up</li>
-<li><strong>Extra small</strong> (<code>.xsmall-{column-span}</code>) - 320px and up</li>
-<li><strong>Small</strong> (<code>.small-{column-span}</code>) - 480px and up</li>
-<li><strong>Medium</strong> (<code>.medium-{column-span}</code>) - 750px and up</li>
-<li><strong>Large</strong> (<code>.large-{column-span}</code>) - 960px and up</li>
-<li><strong>Extra large</strong> (<code>.xlarge-{column-span}</code>) - 1300px and up</li>
-</ul>
-<p>These settings can be overriden by specifying your own list of screen sizes you want columns available for. To keep the size of the resulting production stylesheet down, it is recommended to tailor the settings to your requirements, to make sure only the necessary classes are generated. For instance, if your service uses a 4 column grid, and only requires breakpoints at the medium screen size, you should alter the settings like so:</p>
-<code><pre><span class="hljs-variable">$grid-screen-sizes</span>: (<span class="hljs-string">"medium"</span>);
-<span class="hljs-variable">$grid-total-columns</span>: <span class="hljs-number">4</span>;</pre></code><p><strong>Note:</strong> the <code>.all-*</code> classes are always available, even if the $grid-screen-sizes list is empty.</p>
-<p>The centering can be undone for subsequent breakpoints:</p>
-<h2 id="grid-helpers">Grid helpers</h2>
-<p>The following helpers are included by default in the resulting CSS. If you do not make use of them, it is recommended to exclude them by setting them to false:</p>
-<code><pre><span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-center-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
-<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-pull-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
-<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-push-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;
-<span class="hljs-variable">$grid</span>-<span class="hljs-keyword">include</span>-offset-<span class="hljs-symbol">classes:</span> <span class="hljs-keyword">false</span>;</pre></code><p>These helpers can be applied to specific breakpoints only.</p>
-<h3 id="centering-classes">Centering classes</h3>
-<p>These allow centering of columns which do not fill the whole width of the viewport.</p>
-<h3 id="offsetting-classes">Offsetting classes</h3>
-<p>These classes allow adding an offset to the left of any column. They can be applied to specific breakpoints only.</p>
-<h3 id="push-pull-classes">Push/pull classes</h3>
-<p>These classes allow re-ordering of the columns by pushing and pulling them relative to their base position.</p>
-<h3 id="collapse-columns">Collapse columns</h3>
-<p>Collapsed columns have their padding removed. Columns can be collapsed individually, or whole rows can be collapsed at once by adding the class <code>.collapse</code> to the relevant column or row element.</p>
+    <h2 id="supporting-information">Supporting information</h2>
 
-        
-    </div>
-</div>
+    <h2 id="variations">Variations</h2>
 
-    
-    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-40e63e23cf7100d028e8f7af470db936-panel-context">
-    <code class="Code Code--lang-json">
-        
-            
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-            
-        
-    </code>
-</div>
-
-    
-    <div class="Browser-panel" data-role="tab-panel" id="browser-40e63e23cf7100d028e8f7af470db936-panel-info">
-    <ul class="Meta">
-        <li class="Meta-item">
-            <strong class="Meta-key">Handle:</strong>
-            <span class="Meta-value">@grid--collapse</span>
-        </li>
-        
-        
-        
-        
-        
-        <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
-            <span class="Meta-value Meta-value--linkList">
-            
-                <a href="grid--default.html">
-                    <span>Default</span>
-                </a>, 
-            
-                <a href="grid--centered.html">
-                    <span>Centered</span>
-                </a>, 
-            
-                <a href="">
-                    <span>Collapse</span>
-                </a>, 
-            
-                <a href="grid--offset.html">
-                    <span>Offset</span>
-                </a>, 
-            
-                <a href="grid--push-pull.html">
-                    <span>Push Pull</span>
-                </a>
-            
-            </span>
-        </li>
-        
-        <li class="Meta-item">
-            <strong class="Meta-key">Preview:</strong>
-            <span class="Meta-value">
-                <ul>
-                    <li><a data-no-pjax href="../preview/grid--collapse.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
-</a></li>
-                    <li><a data-no-pjax href="../render/grid--collapse.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none"/>
-    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
-</svg>
-</a></li>
-                </ul>
-            </span>
-        </li>
-        <li class="Meta-item">
-            <strong class="Meta-key">Filesystem Path:</strong>
-            <span class="Meta-value">node_modules/coop-components/components/grid/grid--collapse.hbs</span>
-        </li>
-        
-        
-    </ul>
-</div>
-
-    
-
-</div>
-
-</div>
-
+    <h2 id="suggest-a-change">Suggest a change</h2>
 
     
 
@@ -298,8 +207,8 @@
             </div>
         </div>
 
-        <div class="Frame-handle" data-role="frame-resize-handle"></div>
         
+
         <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
             <nav class="Navigation">
 
@@ -323,7 +232,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -358,7 +267,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -382,7 +291,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -406,7 +315,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -430,7 +339,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -454,7 +363,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -478,7 +387,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -518,7 +427,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -542,7 +451,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -566,7 +475,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -590,7 +499,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -614,7 +523,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -643,7 +552,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -667,7 +576,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -691,7 +600,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -726,7 +635,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -750,7 +659,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -774,7 +683,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -798,7 +707,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -822,7 +731,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -846,7 +755,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -886,7 +795,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Live"></span>
+<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
 
 
 </div>
@@ -971,9 +880,11 @@
 </div>
 
 
-
-
+    
 <script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+<script src="/js/theme.js?cachebust=1.2.0"></script>
 
 
 
