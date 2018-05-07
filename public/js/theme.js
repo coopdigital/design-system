@@ -14,5 +14,10 @@ function responsiveInspector(size) {
     $('#breakpoint-viewer').toggleClass('large-width');
   } else if (size === 'xl') {
     $('#breakpoint-viewer').toggleClass('xlarge-width');
-  } 
+  }
+  return false;
 }
+
+$("#breakpoint-viewer").each(function(){
+    $(this).attr('style').split('!important').join('');
+});

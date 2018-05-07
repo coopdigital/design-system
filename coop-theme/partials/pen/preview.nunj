@@ -12,7 +12,7 @@
                     data-role="window"
                     src="{{ previewUrl }}"
                     sandbox="allow-same-origin allow-scripts allow-forms"
-                    {% if entity.display %} style="{% for property, value in entity.display %}{{ property }}: {{ value }} !important; {% endfor %}"{% endif %}
+                    {% if entity.display %} style="{% for property, value in entity.display %}{{ property }}: {{ value }} ; {% endfor %}"{% endif %}
                     marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
                 </iframe>
                 {%- endif %}
@@ -22,7 +22,7 @@
 </div>
 <div class="row">
     <div class="column large-8 small-12">
-        <h3>See this example at:</h3>
+        <h3>See this at:</h3>
         <ul class="responsive-list">
             <li class="responsive-list--item">
                 <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link">Xsmall (320px)</a>

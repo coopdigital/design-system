@@ -5,6 +5,10 @@
   width: auto;
 }
 
+.ds-section {
+  @include spacing('margin', 'bottom', 'base');
+}
+
 .Frame-inner {
   position: static;
   overflow: visible;
@@ -49,13 +53,22 @@
 
 .Preview-wrapper,
 .Preview-iframe {
-  min-height: 300px;
+  // min-height: 300px;
 }
 
 .Preview-wrapper,
 .Preview-resizer,
 .Preview-iframe {
   position: static;
+}
+
+.Code pre {
+  padding: 0 0 $base-spacing-unit 0;
+  white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .responsive-list {
@@ -86,28 +99,39 @@
 
 #breakpoint-viewer {
   margin: 0 auto;
-  -webkit-transition: width 0.5s;
-  transition: width 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   width: 100%;
   border: 1px solid $grey-mid;
   @include spacing('padding', 'top', 'quarter');
   @include spacing('padding', 'right', 'quarter');
   @include spacing('padding', 'bottom', 'quarter');
   @include spacing('padding', 'left', 'quarter');
+  // Overrides the fractal stuff
   &.xsmall-width {
-    width: 320px;
+    max-width: 320px !important;
+    min-width: 320px !important;
+    width: 320px !important;
   }
   &.small-width {
-    width: 480px;
+    max-width: 480px !important;
+    min-width: 480px !important;
+    width: 480px !important;
   }
   &.medium-width {
-    width: 750px;
+    max-width: 750px !important;
+    min-width: 750px !important;
+    width: 750px !important;
   }
   &.large-width {
-    width: 990px;
+    max-width: 990px !important;
+    min-width: 990px !important;
+    width: 990px !important;
   }
   &.xlarge-width {
-    width: 1300px;
+    max-width: 1300px !important;
+    min-width: 1300px !important;
+    width: 1300px !important;
   }
 }
 

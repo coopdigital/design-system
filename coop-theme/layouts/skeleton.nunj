@@ -13,6 +13,7 @@
 </head>
 <body>
     {% block page %}{% endblock %}
+    {# {% include 'partials/footer.nunj' %} #}
     {% include 'partials/foot.nunj' %}
 </body>
 </html>

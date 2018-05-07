@@ -2,9 +2,9 @@
 @import "coop-toolkit";
 
 // Demo styles
-.ds-wrap {
-  margin: 0 $half-spacing-unit 0 0;
-}
+// .ds-wrap {
+//   margin: 0 $half-spacing-unit 0 0;
+// }
 
 .demo-column-block {
   display: block;
@@ -202,6 +202,8 @@
 }
 
 .dm-colour__definition_link-dark {
+  width: 200px;
+  display: inline;
   color: $text;
   border-color: $text;
   &:hover {
@@ -211,6 +213,7 @@
 }
 
 .dm-colour__definition_link-light {
+  display: inline;
   color: $white;
   border-color: $white;
   &:hover {

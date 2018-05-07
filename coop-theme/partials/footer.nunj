@@ -1,0 +1,9 @@
+<footer class="footer-main">
+    <nav class="secondary-nav">
+        <ul class="list-bare">
+            <li><a href="/supported-devices.html">Supported devices</a></li>
+            <li><a href="/archive.html">Archived versions</a></li>
+            <li><a href="/updates.html">Updates</a></li>
+        </ul>
+    </nav>
+</footer>

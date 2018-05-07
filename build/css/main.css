@@ -7632,9 +7632,6 @@ Helpers mixins - Co-op Front-end Toolkit
 .added-to-page-bg {
   background: #FFEC00; }
 
-.ds-wrap {
-  margin: 0 32px 0 0; }
-
 .demo-column-block {
   display: block;
   height: 100px;
@@ -7766,6 +7763,8 @@ Helpers mixins - Co-op Front-end Toolkit
       font-size: 18px; } }
 
 .dm-colour__definition_link-dark {
+  width: 200px;
+  display: inline;
   color: #282828;
   border-color: #282828; }
   .dm-colour__definition_link-dark:hover {
@@ -7773,6 +7772,7 @@ Helpers mixins - Co-op Front-end Toolkit
     border-color: #282828; }
 
 .dm-colour__definition_link-light {
+  display: inline;
   color: #FFFFFF;
   border-color: #FFFFFF; }
   .dm-colour__definition_link-light:hover {

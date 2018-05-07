@@ -14,11 +14,10 @@ function responsiveInspector(size) {
     $('#breakpoint-viewer').toggleClass('large-width');
   } else if (size === 'xl') {
     $('#breakpoint-viewer').toggleClass('xlarge-width');
-  } else if (size === 'd') {
-    $('#breakpoint-viewer').removeClass('xsmall-width');
-    $('#breakpoint-viewer').removeClass('small-width');
-    $('#breakpoint-viewer').removeClass('medium-width');
-    $('#breakpoint-viewer').removeClass('large-width');
-    $('#breakpoint-viewer').removeClass('xlarge-width');
   }
+  return false;
 }
+
+$("#breakpoint-viewer").each(function(){
+    $(this).attr('style').split('!important').join('');
+});
