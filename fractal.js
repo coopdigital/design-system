@@ -85,7 +85,7 @@ const coopTheme = mandelbrot({
 });
 
 // Add a page to display components in context
-coopTheme.addRoute('/components/preview/page', {
+coopTheme.addRoute('/components/preview/page', {  
     handle: 'Preview',
     view: (path.resolve(__dirname + '/node_modules/coop-components/components/examples/page.hbs'))
 });
