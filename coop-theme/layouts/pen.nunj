@@ -40,14 +40,9 @@
         - Work out how to parse resources .md
         - split into design and supporting .md files
     -->
-    <div class="row">
-        <div class="column medium-7 small-12">
-            {% include 'partials/browser/panel-resources.nunj' %}
-        </div>
-    </div>
+    {% include 'partials/browser/panel-resources.nunj' %}
 
-    <h2 id="suggest-a-change">Suggest a change</h2>
-
+    {% include 'partials/browser/panel-suggestion.nunj' %}
 
     {% endblock %}
 

@@ -10,15 +10,6 @@ const path = require('path');
  */
 const fractal = module.exports = require('@frctl/fractal').create();
 
-const markdown = require('helper-markdown');
-
-
-// fractal.engine('handlebars', '@frctl/handlebars-adapter', {
-//     helpers: {
-//         markdown: markdown()
-//     }
-// });
-
 /*
  * Give your project a title.
  */
@@ -67,6 +58,19 @@ fractal.components.set('statuses', {
   }
 });
 
+
+// fractal.components.load().then(() => {
+//     fractal.components.render('context/index.hbs', {
+//         appTitle: 'Example',
+//         buttonData: {
+//             text: 'Log in ->'
+//         }
+//     }).then(html => {
+//         console.log(html)
+//     });
+// });
+
+
 /*
  * Set custom Coop theme
  */
@@ -79,6 +83,13 @@ const coopTheme = mandelbrot({
   ],
   panels: ["html", "notes", "context", "info", "resources", "view" ]
 });
+
+// Add a page to display components in context
+// coopTheme.addRoute('/context', {
+//     handle: 'Preview',
+//     view: (path.resolve(__dirname + '/node_modules/coop-components/components/examples/page.hbs'))
+// });
+
 
 // template overrides
 coopTheme.addLoadPath(__dirname + '/coop-theme');

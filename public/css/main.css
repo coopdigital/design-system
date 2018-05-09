@@ -3135,7 +3135,7 @@ Colour
   .btn-pill:hover {
     border: 1px solid #C4C4C4; }
   .btn-primary.btn-pill {
-    border: 1px solid #118156; }
+    border: 1px solid #0F8482; }
   .btn-primary-dark.btn-pill {
     border: 1px solid #374C63; }
   .btn-secondary.btn-pill {
@@ -7393,13 +7393,13 @@ Helpers mixins - Co-op Front-end Toolkit
   background: #551A8B; }
 
 .button-green {
-  color: #118156; }
+  color: #0F8482; }
 
 .button-green-bg {
-  background: #118156; }
+  background: #0F8482; }
 
 .button-green-hover-bg {
-  background: #209767; }
+  background: #2B9E9C; }
 
 .button-primary-dark {
   color: #374C63; }
