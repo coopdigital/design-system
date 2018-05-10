@@ -60,10 +60,10 @@ fractal.components.set('statuses', {
 
 
 // fractal.components.load().then(() => {
-//     fractal.components.render('context/index.hbs', {
+//     fractal.components.render('components/examples/_page.hbs', {
 //         appTitle: 'Example',
 //         buttonData: {
-//             text: 'Log in ->'
+//             text: 'Log in'
 //         }
 //     }).then(html => {
 //         console.log(html)
@@ -87,7 +87,7 @@ const coopTheme = mandelbrot({
 // Add a page to display components in context
 // coopTheme.addRoute('/components/preview/page', {
 //     handle: 'Preview',
-//     view: (path.resolve(__dirname + '/node_modules/coop-components/components/examples/page.nunj'))
+//     view: (path.resolve(__dirname + '/node_modules/coop-components/components/examples/page.hbs'))
 // });
 
 
