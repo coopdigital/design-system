@@ -1,6 +1,6 @@
 ---
-handle: About
-label: 'About'
+handle: Home
+label: 'Home'
 title: Design system (WIP)
 hidden: true
 ---

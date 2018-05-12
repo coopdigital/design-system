@@ -1,0 +1,7 @@
+{% extends "layouts/landing.nunj"%}
+
+{% block landingContent %}
+
+<p>Landing</p>
+
+{% endblock %}

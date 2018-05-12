@@ -1,4 +1,4 @@
-<div class="Header header-main">
+<header class="Header header-main">
     <a href="{{ path('/') }}" class="Header-title" data-pjax>
         <img src="/images/logos/coop-logo-white.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coop-whiteX2.png'">
         <span class="visuallyhidden">{{ frctl.get('project.title') | default('Component Library') }}</span>
@@ -8,4 +8,4 @@
         {{ nav.tree(frctl.docs, doc, request) }}
     </nav>
     {% endif %}
-</div>
+</header>

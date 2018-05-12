@@ -1,0 +1,15 @@
+{% extends "layouts/staticskeleton.nunj" %}
+{% import "macros/navigation.nunj" as nav %}
+
+{% block staticpage %}
+<div class="Frame" id="frame">
+    <header class="Frame-header">
+        {% include 'partials/header.nunj' %}
+    </header>
+    <main>
+      <section class="ds-hero" data-role="body">
+          {% block staticcontent %}{% endblock %}
+      </section>
+    </main>
+</div>
+{% endblock %}

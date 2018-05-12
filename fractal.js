@@ -58,19 +58,6 @@ fractal.components.set('statuses', {
   }
 });
 
-
-// fractal.components.load().then(() => {
-//     fractal.components.render('components/examples/_page.hbs', {
-//         appTitle: 'Example',
-//         buttonData: {
-//             text: 'Log in'
-//         }
-//     }).then(html => {
-//         console.log(html)
-//     });
-// });
-
-
 /*
  * Set custom Coop theme
  */
@@ -81,17 +68,21 @@ const coopTheme = mandelbrot({
       "default",
       "/css/coop-theme.css"
   ],
-  panels: ["html", "notes", "context", "info", "resources", "view" ]
+  panels: ["html", "notes", "context", "info", "resources" ]
+
 });
-
-// Add a page to display components in context
-// coopTheme.addRoute('/components/preview/page', {
-//     handle: 'Preview',
-//     view: (path.resolve(__dirname + '/node_modules/coop-components/components/examples/page.hbs'))
-// });
-
 
 // template overrides
 coopTheme.addLoadPath(__dirname + '/coop-theme');
+
+coopTheme.addRoute('/home', {
+    handle: 'landing',
+    view: (__dirname + '/coop-theme/pages/landing.nunj')
+});
+
+coopTheme.addRoute('/', {
+    handle: 'overview',
+    view: (__dirname + '/coop-theme/pages/landing.nunj')
+});
 
 fractal.web.theme(coopTheme);
