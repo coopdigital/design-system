@@ -21,7 +21,11 @@
 }
 
 .Tree-collectionLabel {
+  margin-bottom: 0;
   text-transform: uppercase;
+  &:hover {
+    background: transparent;
+  }
 }
 
 [dir="ltr"] .Tree-depth-2 .Tree-collectionLabel {
@@ -33,29 +37,61 @@
 }
 
 [dir="ltr"] .Tree-collectionLabel span {
-  padding-left: 1.15rem;
+  padding-left: 1.75rem;
 }
 
 [dir="ltr"] .Tree-depth-1 .Tree-entityLink {
-  padding-left: .75rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-  border-left: 5px solid $page;
-  border-bottom: 0;
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 1.45rem;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  // border-left: 5px solid $page;
+  border-bottom: .05em solid $coop-link-blue;
+  background: transparent;
+  line-height: 1.5;
+  &:hover {
+    border-bottom: .05em solid $page;
+  }
 }
 
 [dir="ltr"] .Tree-depth-1 .is-current .Tree-entityLink {
   background: transparent;
   border-left: 5px solid lighten($purple-mid, 50%);
-  margin-left: 1rem;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
   color: $text;
+  border-bottom: 0;
 }
 
 .Tree-collectionLabel span {
 
   &:before {
-    top: 0.45rem;
-    background-size: 1rem;
+    top: 0.2rem;
+    background-size: .75rem;
   }
+}
+
+[dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
+  transition: all .15s ease;
+  transform: rotate(0deg);
+  background-image: url('../images/icons/icon-navigation.svg');
+  background-color: lighten($light-grey, 5%);
+  padding: 5px;
+  border-radius: 100%;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.Tree-collectionLabel span::before {
+  transition: all .15s ease;
+  transform: rotate(45deg);
+  background-image: url('../images/icons/icon-navigation.svg');
+  background-color: lighten($light-grey, 5%);
+  padding: 5px;
+  border-radius: 100%;
+  width: 1.25rem;
+  height: 1.25rem;
 }

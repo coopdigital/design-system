@@ -1,7 +1,7 @@
 ---
 handle: Home
 label: 'Home'
-title: Design system (WIP)
+title: Design system roadmap
 hidden: true
 ---
 

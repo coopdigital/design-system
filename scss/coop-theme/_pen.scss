@@ -5,6 +5,12 @@
   width: auto;
 }
 
+.Frame {
+    overflow: hidden;
+    height: 100%;
+    width: auto;
+}
+
 .ds-section {
   @include spacing('margin', 'bottom', 'base');
 }

@@ -72,14 +72,10 @@ const coopTheme = mandelbrot({
 
 });
 
-// template overrides
+// Template overrides
 coopTheme.addLoadPath(__dirname + '/coop-theme');
 
-coopTheme.addRoute('/home', {
-    handle: 'landing',
-    view: (__dirname + '/coop-theme/pages/landing.nunj')
-});
-
+// Homepage override
 coopTheme.addRoute('/', {
     handle: 'overview',
     view: (__dirname + '/coop-theme/pages/landing.nunj')

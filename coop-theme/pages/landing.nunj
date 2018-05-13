@@ -2,6 +2,8 @@
 
 {% block landingContent %}
 
-<p>Landing</p>
+<h1>Design system</h1>
+<p class="intro-text">This is a work in progress.</p>
+<p><a href="{{ path('/docs/roadmap') }}">Read about why we're doing this</a>.</p>
 
 {% endblock %}

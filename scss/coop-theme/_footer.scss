@@ -16,7 +16,6 @@
           padding-right: 0;
           padding-top: $eighth-spacing-unit;
           border-top: 0;
-          font-family: $medium;
 
           @include media(medium) {
             padding-top: 65px;
@@ -27,7 +26,7 @@
       }
     }
     li {
-    
+
       @include media(medium) {
         display: inline-block;
         margin-right: $half-spacing-unit;
@@ -42,6 +41,7 @@
       color: $text;
       border: none;
       border-bottom: 0.05em solid $text;
+      font-size: 18px;
       &:hover {
         border-bottom: 0;
       }

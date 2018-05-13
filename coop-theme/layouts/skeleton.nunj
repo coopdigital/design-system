@@ -12,8 +12,10 @@
     {% include 'partials/head.nunj' %}
 </head>
 <body>
-    {% block page %}{% endblock %}
-    {# {% include 'partials/footer.nunj' %} #}
+    <div class="app-wrap">
+        {% block page %}{% endblock %}
+    </div>
+    {% include 'partials/footer.nunj' %}
     {% include 'partials/foot.nunj' %}
 </body>
 </html>

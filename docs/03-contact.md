@@ -1,6 +1,6 @@
 ---
 handle: Contact
-label: 'Contact the design team'
+label: 'Contact'
 title: Contact the design team
 ---
 

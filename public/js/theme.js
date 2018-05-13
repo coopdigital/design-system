@@ -1,3 +1,8 @@
+// $('.dm-page-nav').fixedsticky();
+
+$('.responsive-list--item-link').click(function(){
+    return false;
+});
 function responsiveInspector(size) {
   $('#breakpoint-viewer').removeClass('xsmall-width');
   $('#breakpoint-viewer').removeClass('small-width');
@@ -15,7 +20,6 @@ function responsiveInspector(size) {
   } else if (size === 'xl') {
     $('#breakpoint-viewer').toggleClass('xlarge-width');
   }
-  return false;
 }
 
 $("#breakpoint-viewer").each(function(){
