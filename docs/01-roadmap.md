@@ -2,6 +2,7 @@
 handle: Home
 label: 'Home'
 title: Design system roadmap
+hidden: true
 ---
 
 The design system is a place to start to collect our agreed design components quickly. It is an internal tool for designers and service teams. Externally we still refer to the Design manual as our source of design truth.

@@ -1,13 +1,13 @@
 .Frame,
 .Pen {
-  overflow: scroll;
+  overflow: hidden;
   height: 100%;
   width: auto;
 }
 
 .Frame {
     overflow: hidden;
-    height: 100%;
+    height: auto;
     width: auto;
 }
 
