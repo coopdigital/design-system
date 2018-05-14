@@ -1,3 +1,7 @@
 .ds-hero {
   @include spacing('padding', 'all', 'base');
+
+  ul {
+    list-style-type: disc;
+  }
 }
