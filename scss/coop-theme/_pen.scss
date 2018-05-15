@@ -25,10 +25,10 @@
 .Pen,
 .Document {
   overflow: visible;
-  @include spacing('padding', 'top', 'quarter');
-  @include spacing('padding', 'right', 'half');
+  padding-top: 40px;
+  @include spacing('padding', 'right', 'base');
   @include spacing('padding', 'bottom', 'half');
-  @include spacing('padding', 'left', 'half');
+  @include spacing('padding', 'left', 'base');
 }
 
 .Pen-title {

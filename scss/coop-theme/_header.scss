@@ -2,7 +2,10 @@
   justify-content: space-between;
   background-color: #AB288C;
   box-shadow: none;
-  @include spacing('padding', 'all', 'half');
+  padding: 16px 16px;
+  @include media(medium) {
+    padding: 32px 64px;
+  }
 }
 
 .header-main {

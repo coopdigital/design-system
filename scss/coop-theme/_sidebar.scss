@@ -9,7 +9,10 @@
 [dir="ltr"] .Frame-panel--sidebar {
   border-right: 0;
   background-color: $page;
-  @include spacing('padding', 'all', 'base');
+  padding: 16px;
+  @include media(medium) {
+    padding: 64px;
+  }
 }
 
 .Tree-collectionLabel {
