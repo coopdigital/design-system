@@ -3,7 +3,7 @@
 }
 
 .Frame-panel--sidebar {
-  width: 240px !important;
+  width: 320px !important;
 }
 
 [dir="ltr"] .Frame-panel--sidebar {
@@ -36,7 +36,12 @@
 }
 
 [dir="ltr"] .Tree-depth-2 .Tree-collectionLabel {
+  margin-top: 5px;
   padding-left: 1.8rem;
+}
+
+[dir="ltr"] .Tree-depth-3 .Tree-collectionLabel {
+  padding-left: 1.4rem;
 }
 
 .Tree-collectionItems {

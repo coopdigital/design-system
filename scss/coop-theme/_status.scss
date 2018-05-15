@@ -5,7 +5,9 @@
   -webkit-padding-start: 0;
   padding-inline-start:  0;
   display: inline;
-
+  vertical-align: text-bottom;
+  position: relative;
+  top: -5px;
 }
 
 .ds-status {
@@ -18,10 +20,11 @@
 
 .Status-label {
   border-radius: 0;
-  font-size: 1.5rem;
-  font-family: $bold;
+  font-size: 1rem;
+  font-family: $regular;
   display: inline;
-  padding: 0;
+  padding: 6px 20px;
+  margin-left: $quarter-spacing-unit;
   text-transform: capitalize;
   letter-spacing: 0;
 }

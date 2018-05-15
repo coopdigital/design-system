@@ -2,18 +2,13 @@
 <div class="Pen-panel Pen-header">
     <div class="row">
         <div class="column large-8 small-12">
-            <h1>{{ entity.title }}</h1>
-            <div class="Prose Prose--condensed">
+            <h1>{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
+            <div class="ds-pen-intro Prose Prose--condensed">
                 {% if entity.notes %}
                 {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
                 {% else %}
                 <p class="Browser-isEmptyNote">There are no notes for this item.</p>
                 {% endif %}
-            </div>
-        </div>
-        <div class="column large-4 small-12">
-            <div class="ds-status">
-                <p>Status: {{ status.tag(entity.status) }}</p> 
             </div>
         </div>
     </div>
