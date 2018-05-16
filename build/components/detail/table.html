@@ -93,108 +93,90 @@
 
     
 
-    
-<div class="Pen-panel Pen-header">
+    <header class="Pen-panel Pen-header ds-pen">
     <div class="row">
         <div class="column large-8 small-12">
-            <h1>Table</h1>
-            <div class="Prose Prose--condensed">
+            <h1 class="ds-pen__header">Table  
+
+<span class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #1AA579;">Live</label>
+
+</span>
+
+</h1>
+            <div class="ds-pen-intro Prose Prose--condensed">
                 
                 <p>We are currently working on these guidelines.</p>
 
                 
             </div>
         </div>
-        <div class="column large-4 small-12">
-            <div class="ds-status">
-                <p>Status: 
-
-<span class="Status Status--tag">
-
-<label class="Status-label" style="color: #0F8482;">Live</label>
-
-</span>
-
-</p> 
-            </div>
-        </div>
     </div>
-</div>
+</header>
 
 
+    <section class="ds-section ds-pen-example">
     <div class="row">
-    <div class="column large-8 small-12">
-        <nav>
-            <ul id="in-page-nav" class="list-bare in-page-nav">
-                <li><a href="#code">Code</a></li>
-                <li><a href="#design">Design</a></li>
-                <li><a href="#supporting-information">Supporting information</a></li>
-                <li><a href="#variations">Variations</a></li>
-                <li><a href="#suggest-a-change">Suggest a change</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
-
-
-    <div class="row">
-    <div class="column all-12">
-        <h2 class="Pen-panel-title" id="example">Example</h2>
-        <div class="Pen-panel Pen-preview Preview" id="preview-fda47c8d4ad8ba3cc3310870b24953d3">
-            <div class="Preview-wrapper">
-                
-                <iframe
-                    id="breakpoint-viewer"
-                    class="Preview-iframe"
-                    data-role="window"
-                    src="../preview/table.html"
-                    sandbox="allow-same-origin allow-scripts allow-forms"
-                     style=""
-                    marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
-                </iframe>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="column large-8 small-12">
-        <h3>See this at:</h3>
-        <ul class="responsive-list">
-            <li class="responsive-list--item">
-                <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link">Xsmall (320px)</a>
-            </li>
-            <li class="responsive-list--item">
-                <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link">Small (480px)</a>
-            </li>
-            <li class="responsive-list--item">
-                <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link">Medium (750px)</a>
-            </li>
-            <li class="responsive-list--item">
-                <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link">Large (990px)</a>
-            </li>
-            <li class="responsive-list--item">
-                <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link">XLarge  (1300px)</a>
-            </li>
-        </ul>
-    </div>
-    <div class="column large-4 small-12">
-        <div id="browser-fda47c8d4ad8ba3cc3310870b24953d3-panel-info">
-    <h3>Preview:</h3>
-    <ul>
-        
-        <li><a data-no-pjax href="../preview/table.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+        <div class="column all-12">
+            <header class="ds-pen-example__header">
+                <h2 class="Pen-panel-title pull-left">Example</h2>
+            </header>
+            <a data-no-pjax href="../preview/table.html" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
-</a></li>
-    </ul>
-</div>
-
-    </div>
-</div>
-
-
-    
+</a>
+            <div id="TabContainer">
+                <div class="accordion-wrapper">
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab1">Example</h3>
+                    <div class="tabs-container__panel" id="Tab1">
+                        <div class="Pen-panel Pen-preview Preview" id="preview-fda47c8d4ad8ba3cc3310870b24953d3">
+                            <div class="Preview-wrapper">
+                                
+                                <iframe
+                                    id="breakpoint-viewer"
+                                    class="Preview-iframe"
+                                    data-role="window"
+                                    src="../preview/table.html"
+                                    sandbox="allow-same-origin allow-scripts allow-forms"
+                                     style=""
+                                    marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div class="ds-pen-example__tools">
+                            <div class="row">
+                                <div class="column all-12">
+                                    <h3>See this at:</h3>
+                                    <ul class="responsive-list">
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link btn-pill">Xsmall (320px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link btn-pill">Small (480px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link btn-pill">Medium (750px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link btn-pill">Large (990px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link btn-pill">XLarge  (1300px)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab2">Design</h3>
+                    <div class="tabs-container__panel" id="Tab2">
+                        <p>Design info</p>
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
+                    <div class="tabs-container__panel" id="Tab3">
+                        
 <section>
     <h2 id="code">Code</h2>
     <code class="Code Code--lang-html">
@@ -224,6 +206,13 @@
         
     </code>
     
+</section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 
@@ -290,7 +279,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -330,7 +319,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -354,7 +343,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -378,7 +367,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -402,7 +391,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -426,7 +415,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -450,7 +439,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -490,7 +479,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -514,7 +503,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -538,7 +527,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -562,7 +551,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -586,7 +575,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -617,6 +606,30 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="fonts.html" data-pjax>
+                <span>Fonts</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="scale.html" data-pjax>
                 <span>Scale</span>
                 
@@ -626,7 +639,103 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="bullet-list.html" data-pjax>
+                <span>Bullet List</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="numbered-list.html" data-pjax>
+                <span>Numbered List</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="inline-list.html" data-pjax>
+                <span>Inline List</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="unstyled-list.html" data-pjax>
+                <span>Unstyled List</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -666,7 +775,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -690,7 +799,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -714,7 +823,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -738,7 +847,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -762,7 +871,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -786,7 +895,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -810,7 +919,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -850,7 +959,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -914,7 +1023,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -949,7 +1058,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -973,7 +1082,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -1018,7 +1127,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #0F8482;" title="Live"></span>
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
 
 
 </div>
@@ -1071,7 +1180,7 @@
 <script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
 <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
-<script src="https://cdn.rawgit.com/filamentgroup/fixed-sticky/master/fixedsticky.js" crossorigin="anonymous"></script>
+<script src="/js/includes/handlebars.js?cachebust=1.2.0"></script>
 <script src="/js/theme.js?cachebust=1.2.0"></script>
 
 
