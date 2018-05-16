@@ -1,23 +1,3 @@
-// Reponsive component viewer
-function responsiveInspector(size) {
-  $('#breakpoint-viewer').removeClass('xsmall-width');
-  $('#breakpoint-viewer').removeClass('small-width');
-  $('#breakpoint-viewer').removeClass('medium-width');
-  $('#breakpoint-viewer').removeClass('large-width');
-  $('#breakpoint-viewer').removeClass('xlarge-width');
-  if (size === 'xs') {
-    $('#breakpoint-viewer').toggleClass('xsmall-width');
-  } else if (size === 's') {
-    $('#breakpoint-viewer').toggleClass('small-width');
-  } else if (size === 'm') {
-    $('#breakpoint-viewer').toggleClass('medium-width');
-  } else if (size === 'l') {
-    $('#breakpoint-viewer').toggleClass('large-width');
-  } else if (size === 'xl') {
-    $('#breakpoint-viewer').toggleClass('xlarge-width');
-  }
-}
-
 /* Accessible tabs > accordian */
 /* replace this JS handlebars implementation */
 (function () {
@@ -365,7 +345,29 @@ function responsiveInspector(size) {
   });
 }).call(this);
 
-$(document).ready(function() {
+// Reponsive component viewer
+function responsiveInspector(size) {
+  $('#breakpoint-viewer').removeClass('xsmall-width');
+  $('#breakpoint-viewer').removeClass('small-width');
+  $('#breakpoint-viewer').removeClass('medium-width');
+  $('#breakpoint-viewer').removeClass('large-width');
+  $('#breakpoint-viewer').removeClass('xlarge-width');
+  if (size === 'xs') {
+    $('#breakpoint-viewer').toggleClass('xsmall-width');
+  } else if (size === 's') {
+    $('#breakpoint-viewer').toggleClass('small-width');
+  } else if (size === 'm') {
+    $('#breakpoint-viewer').toggleClass('medium-width');
+  } else if (size === 'l') {
+    $('#breakpoint-viewer').toggleClass('large-width');
+  } else if (size === 'xl') {
+    $('#breakpoint-viewer').toggleClass('xlarge-width');
+  }
+}
+
+$(document).ready(function(){
+
+  responsiveInspector();
 
   $('.responsive-list--item-link').click(function(){
     return false;

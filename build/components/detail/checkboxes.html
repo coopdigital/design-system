@@ -172,50 +172,13 @@
                     </div>
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab2">Design</h3>
                     <div class="tabs-container__panel" id="Tab2">
-                        <p>Design info</p>
-                    </div>
-                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
-                    <div class="tabs-container__panel" id="Tab3">
+                        <!--
+                        For now design and supporting info are held as HTML in the component folder as supporting.md
+                        Todo:
+                            - Work out how to parse resources .md
+                            - split into design and supporting .md files
+                        -->
                         
-<section>
-    <h2 id="code">Code</h2>
-    <code class="Code Code--lang-html">
-        
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Do you own:<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_a_business]"</span>&gt;</span>a business
-    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_agricultural_property]"</span>&gt;</span>agricultural property
-    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_foreign_property]"</span>&gt;</span>foreign property
-    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_trademarks_or_patents]"</span>&gt;</span>trademarks or patents
-    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></pre>
-        
-    </code>
-    
-</section>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <!--
-    For now design and supporting info are held as HTML in the component folder as supporting.md
-    Todo:
-        - Work out how to parse resources .md
-        - split into design and supporting .md files
-    -->
-    
 
 
 <div class="row">
@@ -250,6 +213,39 @@
 </div>
 
 
+
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
+                    <div class="tabs-container__panel" id="Tab3">
+                        
+<section>
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">fieldset</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">legend</span>&gt;</span>Do you own:<span class="hljs-tag">&lt;/<span class="hljs-name">legend</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_a_business]"</span>&gt;</span>a business
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_agricultural_property]"</span>&gt;</span>agricultural property
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_foreign_property]"</span>&gt;</span>foreign property
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"block-label"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"1"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"client[owns_trademarks_or_patents]"</span>&gt;</span>trademarks or patents
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">fieldset</span>&gt;</span></pre>
+        
+    </code>
+</section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <div class="row">
@@ -726,32 +722,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="inline-list.html" data-pjax>
-                <span>Inline List</span>
-                
-
-<span class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
-
-
-</div>
-
-</span>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="unstyled-list.html" data-pjax>
-                <span>Unstyled List</span>
+            <a class="Tree-entityLink" href="quotations.html" data-pjax>
+                <span>Quotations</span>
                 
 
 <span class="Status Status--unlabelled">
@@ -1144,6 +1116,54 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="page.html" data-pjax>
                 <span>Page</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-not-found.html" data-pjax>
+                <span>Page Not Found</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="internal-server-error.html" data-pjax>
+                <span>Internal Server Error</span>
                 
 
 <span class="Status Status--unlabelled">

@@ -139,7 +139,7 @@
                                     data-role="window"
                                     src="../preview/bullet-list.html"
                                     sandbox="allow-same-origin allow-scripts allow-forms"
-                                     style=""
+                                     style="min-height: 500px ; "
                                     marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
                                 </iframe>
                             </div>
@@ -171,13 +171,22 @@
                     </div>
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab2">Design</h3>
                     <div class="tabs-container__panel" id="Tab2">
-                        <p>Design info</p>
+                        <!--
+                        For now design and supporting info are held as HTML in the component folder as supporting.md
+                        Todo:
+                            - Work out how to parse resources .md
+                            - split into design and supporting .md files
+                        -->
+                        
+
+
+
+
                     </div>
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
                     <div class="tabs-container__panel" id="Tab3">
                         
 <section>
-    <h2 id="code">Code</h2>
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The meeting agenda will be:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -185,10 +194,24 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>an overview of the last month<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>a presentation<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>a special announcement<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>An unstyled list:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The meeting agenda will be:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-bare"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>an overview of the last month<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>a presentation<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>a special announcement<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>An inline list:<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-inline"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"page.html"</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"page.html"</span>&gt;</span>Another link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"page.html"</span>&gt;</span>A third link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></pre>
         
     </code>
-    
 </section>
 
                     </div>
@@ -197,18 +220,6 @@
         </div>
     </div>
 </section>
-
-
-    <!--
-    For now design and supporting info are held as HTML in the component folder as supporting.md
-    Todo:
-        - Work out how to parse resources .md
-        - split into design and supporting .md files
-    -->
-    
-
-
-
 
 
     <div class="row">
@@ -685,32 +696,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="inline-list.html" data-pjax>
-                <span>Inline List</span>
-                
-
-<span class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
-
-
-</div>
-
-</span>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="unstyled-list.html" data-pjax>
-                <span>Unstyled List</span>
+            <a class="Tree-entityLink" href="quotations.html" data-pjax>
+                <span>Quotations</span>
                 
 
 <span class="Status Status--unlabelled">
@@ -1103,6 +1090,54 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="page.html" data-pjax>
                 <span>Page</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="page-not-found.html" data-pjax>
+                <span>Page Not Found</span>
+                
+
+<span class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #1AA579;" title="Live"></span>
+
+
+</div>
+
+</span>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="internal-server-error.html" data-pjax>
+                <span>Internal Server Error</span>
                 
 
 <span class="Status Status--unlabelled">
