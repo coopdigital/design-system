@@ -30,14 +30,6 @@
 
     {% include "partials/pen/preview.nunj" %}
 
-    <!--
-    For now design and supporting info are held as HTML in the component folder as supporting.md
-    Todo:
-        - Work out how to parse resources .md
-        - split into design and supporting .md files
-    -->
-    {% include 'partials/browser/panel-resources.nunj' %}
-
     {% include 'partials/browser/panel-suggestion.nunj' %}
 
     {% endblock %}

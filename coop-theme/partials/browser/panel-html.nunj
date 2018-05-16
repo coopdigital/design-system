@@ -1,6 +1,5 @@
 {% import "macros/render.nunj" as render %}
 <section>
-    <h2 id="code">Code</h2>
     <code class="Code Code--lang-html">
         {% if not entity.isCollated or entity.isVariant or entity.variants().size == 1 %}
         <pre>{{ render.entity(entity.render(null, renderEnv, {preview: false, collate: false}) | async(true)) | trim }}</pre>
@@ -12,11 +11,4 @@
         {% endfor %}
         {% endif %}
     </code>
-    {# <code class="Code Code--lang-css">
-        <pre>
-            .logo {
-
-            }
-        </pre>
-    </code> #}
 </section>
