@@ -1,0 +1,51 @@
+
+.btn-pill {
+  padding: 12px 20px;
+  border-radius: 40px;
+  border: 0;
+  background: $grey-light;
+  color: $text;
+  transition: background .15s ease;
+  &:hover {
+    background: $button-primary-dark;
+    color: $page;
+  }
+}
+
+.btn-pill[aria-selected="true"] {
+  background: $button-primary-dark;
+  color: $page;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid $coop-link-blue;
+  color: $coop-link-blue;
+  border-radius: 6px;
+  &:hover {
+    background: transparent;
+    border: 2px solid $coop-link-hover-blue;
+    color: $coop-link-hover-blue;
+  }
+}
+
+// .ds-outline-btn--primary {
+//   border: 3px solid $button-green;
+//   color: $button-green;
+//
+//   &:hover {
+//     border: 3px solid $button-green-highlighted;
+//     color: $button-green-highlighted;
+//   }
+// }
+//
+// .ds-outline-btn--primary[aria-selected="true"] {
+//   border: 3px solid $button-green;
+//   background: $button-green;
+//   color: $page;
+//   &:hover {
+//     border: 3px solid $button-green;
+//     background: $button-green;
+//     color: $page;
+//   }
+// }

@@ -1,8 +1,7 @@
-
-<div class="Pen-panel Pen-header">
+<header class="Pen-panel Pen-header ds-pen">
     <div class="row">
         <div class="column large-8 small-12">
-            <h1>{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
+            <h1 class="ds-pen__header">{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
             <div class="ds-pen-intro Prose Prose--condensed">
                 {% if entity.notes %}
                 {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
@@ -12,4 +11,4 @@
             </div>
         </div>
     </div>
-</div>
+</header>

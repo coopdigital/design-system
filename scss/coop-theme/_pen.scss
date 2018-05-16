@@ -6,9 +6,13 @@
 }
 
 .Frame {
-    overflow: hidden;
-    height: auto;
-    width: auto;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+}
+
+.ds-pen__header {
+  margin-bottom: $quarter-spacing-unit;
 }
 
 .ds-pen-intro {
@@ -16,8 +20,19 @@
   p {
     font-size: em-calc(24px);
     font-family: $medium;
-
   }
+}
+
+.ds-pen-example__header {
+  padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
+  @include clearfix();
+}
+
+.ds-pen-example__tools {
+  border-top: 1px solid #f3f3f3;
+  @include spacing('margin', 'top', 'half');
+  @include spacing('margin', 'bottom', 'half');
+  @include spacing('padding', 'top', 'half');
 }
 
 .ds-section {
@@ -55,20 +70,12 @@
 }
 
 .Preview {
-  // border: 4px solid $grey-light;
   border: 0;
   background: $page;
 }
 
 .Pen-preview {
   margin: 0;
-  // height: 100%;
-  // max-height: 9999px;
-}
-
-.Preview-wrapper,
-.Preview-iframe {
-  // min-height: 300px;
 }
 
 .Preview-wrapper,
@@ -80,50 +87,34 @@
 .Code pre {
   padding: 0 0 $base-spacing-unit 0;
   white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 .responsive-list {
   list-style: none;
   display: block;
-  margin: 0 0 $quarter-spacing-unit 0;
+  margin: 0;
 
   .responsive-list--item {
     display: inline-block;
     text-align: center;
+
     .responsive-list--item-link {
-      display: block;
-      font-size: 0.9rem;
-      background: $grey-light;
-      padding: 5px 10px;
-      border-radius: 40px;
-      color: $text;
-      text-decoration: none;
-      border: 0;
-      &:hover {
-        background: darken($grey-light, 5%);
-      }
+      display: inline-block;
+      font-size: 1rem;
     }
-
   }
-
 }
 
 #breakpoint-viewer {
-  margin: 0 auto;
+  margin: 0 auto $quarter-spacing-unit auto;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 100%;
-  // border: 1px solid $grey-mid;
-  border-radius: 10px;
-  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
-  @include spacing('padding', 'top', 'quarter');
-  @include spacing('padding', 'right', 'quarter');
-  @include spacing('padding', 'bottom', 'quarter');
-  @include spacing('padding', 'left', 'quarter');
+
   // Overrides the fractal stuff
   &.xsmall-width {
     max-width: 320px !important;
@@ -170,6 +161,9 @@
 
 .ds-section {
   ul {
-    list-style: disc;
+    list-style-type: disc;
+  }
+  .list-bare {
+    list-style-type: none;
   }
 }

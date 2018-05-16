@@ -1,6 +1,6 @@
 <div id="browser-{{ entity.id }}-panel-info">
     <h3>Preview:</h3>
-    <ul>
+    <ul class="list-bare">
         {# <li><a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}"><span>In context of a page layout</span> {% include "icons/open-in-browser.svg" %}</a></li> #}
         <li><a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}"><span>Component only</span> {% include "icons/open-in-browser.svg" %}</a></li>
     </ul>

@@ -28,11 +28,7 @@
 
     {% include "partials/pen/header.nunj" %}
 
-    {% include "partials/pen/in-page-navigation.nunj" %}
-
     {% include "partials/pen/preview.nunj" %}
-
-    {% include 'partials/browser/panel-html.nunj' %}
 
     <!--
     For now design and supporting info are held as HTML in the component folder as supporting.md

@@ -1,5 +1,4 @@
 [dir="ltr"] .Pen-header .Status {
-  // display: block;
   -webkit-margin-start: 0;
   margin-inline-start: 0;
   -webkit-padding-start: 0;
@@ -27,6 +26,7 @@
   margin-left: $quarter-spacing-unit;
   text-transform: capitalize;
   letter-spacing: 0;
+  border-radius: 3px;
 }
 
 .Status-dot {
