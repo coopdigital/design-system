@@ -37,6 +37,10 @@
 
 .ds-section {
   @include spacing('margin', 'bottom', 'base');
+
+  ul {
+    margin-left: $half-spacing-unit;
+  }
 }
 
 .Frame-inner {
