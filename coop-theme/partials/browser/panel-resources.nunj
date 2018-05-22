@@ -2,7 +2,7 @@
 {% for collection in entity.resources().items() %}
 {% if collection.size %}
 <div class="row">
-    <div class="column medium-7 small-12">
+    <div class="column medium-10 small-12">
         <section class="ds-section">
             <div id="browser-{{ entity.id }}-panel-{{ collection.name }}">
 
