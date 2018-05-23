@@ -1,6 +1,6 @@
 <header class="Pen-panel Pen-header ds-pen">
     <div class="row">
-        <div class="column large-8 small-12">
+        <div class="column medium-10 small-12">
             <h1 class="ds-pen__header">{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
             <div class="ds-pen-intro Prose Prose--condensed">
                 {% if entity.notes %}

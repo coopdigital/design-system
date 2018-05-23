@@ -30,6 +30,8 @@
 
     {% include "partials/pen/preview.nunj" %}
 
+    {% include 'partials/browser/panel-userneed.nunj' %}
+
     {% include 'partials/browser/panel-suggestion.nunj' %}
 
     {% endblock %}

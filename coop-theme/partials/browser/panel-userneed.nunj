@@ -1,0 +1,17 @@
+{% set compHandle = entity.component().handle %}
+{% for collection in entity.resources().items() %}
+{% if collection.size %}
+{% for resource in collection.items() %}
+    {% if resource.name == 'userneed' %}
+    <section class="ds-section ds-section--keyline">
+        <div class="row">
+            <div class="column medium-8 small-12">
+                <h2 id="user-need">User need</h2>
+                {{ resource.contents }}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}

@@ -77,8 +77,8 @@ coopTheme.addLoadPath(__dirname + '/coop-theme');
 
 // Homepage override
 coopTheme.addRoute('/', {
-    handle: 'overview',
-    view: (__dirname + '/coop-theme/pages/landing.nunj')
+  handle: 'overview',
+  view: (__dirname + '/coop-theme/pages/landing.nunj')
 });
 
 fractal.web.theme(coopTheme);

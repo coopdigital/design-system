@@ -31,16 +31,20 @@
 .ds-pen-example__tools {
   border-top: 1px solid #f3f3f3;
   @include spacing('margin', 'top', 'half');
-  @include spacing('margin', 'bottom', 'half');
   @include spacing('padding', 'top', 'half');
 }
 
 .ds-section {
   @include spacing('margin', 'bottom', 'base');
+  @include spacing('padding', 'bottom', 'half');
 
   ul {
     margin-left: $half-spacing-unit;
   }
+}
+
+.ds-section--keyline {
+  border-bottom: 1px solid lighten($mid-grey, 10%);
 }
 
 .Frame-inner {
