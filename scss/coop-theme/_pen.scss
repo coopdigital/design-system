@@ -16,8 +16,9 @@
 }
 
 .ds-pen-intro {
-
-  p {
+  @include spacing('margin', 'bottom', 'base');
+  p,
+  ul {
     font-size: em-calc(24px);
     font-family: $medium;
   }
@@ -90,6 +91,10 @@
 .Preview-resizer,
 .Preview-iframe {
   position: static;
+}
+
+.Prose ul > li {
+  list-style-type: disc;
 }
 
 .Code pre {
