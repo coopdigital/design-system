@@ -2155,7 +2155,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -2170,7 +2171,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -2191,7 +2193,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -2841,7 +2844,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -2856,7 +2860,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -2877,7 +2882,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -3459,7 +3465,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -3474,7 +3481,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -3495,7 +3503,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -5410,7 +5419,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -5425,7 +5435,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -5446,7 +5457,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -5813,7 +5825,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -5828,7 +5841,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -5849,7 +5863,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -6062,25 +6077,31 @@ Colour
 .icon-post-office:before {
   content: "\e921"; }
 
-.message-info {
+.message-info,
+.message--info {
   border-color: #F8642C;
   color: #282828;
   background: white; }
-  .message-info:before {
+  .message-info:before,
+  .message--info:before {
     color: #F8642C; }
 
-.message-error {
+.message-error,
+.message--error {
   border-color: #D63118;
   color: #282828;
   background: white; }
-  .message-error:before {
+  .message-error:before,
+  .message--error:before {
     color: #D63118; }
 
-.message-success {
+.message-success,
+.message--success {
   border-color: #4F820D;
   color: #282828;
   background: #effcdf; }
-  .message-success:before {
+  .message-success:before,
+  .message--success:before {
     color: #4F820D; }
 
 /*===============================================
@@ -6285,7 +6306,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -6300,7 +6322,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -6321,7 +6344,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
@@ -6822,7 +6846,8 @@ Colour
 .icon-size-64:before {
   font-size: 64px; }
 
-.icon-information:before, .message:before, .message-info:before {
+.icon-information:before, .message:before, .message-info:before,
+.message--info:before {
   content: '\e600'; }
 
 .icon-search:before {
@@ -6837,7 +6862,8 @@ Colour
 .icon-filter:before {
   content: '\e604'; }
 
-.icon-alert:before, .form-error:before, .message-error:before {
+.icon-alert:before, .form-error:before, .message-error:before,
+.message--error:before {
   content: '\e605'; }
 
 .icon-error:before {
@@ -6858,7 +6884,8 @@ Colour
 .icon-down-arrow:before {
   content: '\e60b'; }
 
-.icon-tick:before, .message-success:before {
+.icon-tick:before, .message-success:before,
+.message--success:before {
   content: '\e60c'; }
 
 .icon-download:before {
