@@ -10,27 +10,32 @@
     </head>
     <body class="ds">
         <div class="ds-wrap">
-            <div class="message message-error">
+            <div class="message message--error">
     <h2>There's a problem</h2>
     <p>Check the form. You must:</p>
-    <ul class="list-bare">
+    <ul>
         <li>Enter your full name</li>
         <li>Enter an email address</li>
     </ul>
 </div>
 <fieldset>
     <div class="form-row form-group-error">
-       <div class="field_with_errors"><label for="client_name">Your full name</label></div>
+       <div class="field_with_errors">
+            <label for="client_name">Your full name</label>
+       </div>
        <p class="form-error">Enter your full name</p>
-       <div class="field_with_errors"><input class="name" type="text" value="" name="client[name]" id="client_name"></div>
+       <div class="field_with_errors">
+            <input class="name" type="text" value="" name="client[name]" id="client_name">
+       </div>
     </div>
     <div class="form-row form-group-error">
-        <div class="field_with_errors"><label for="client_email_address">
-         Your email address
-        <span class="hint">
-           We'll only use this to contact you about your will.
-        </span>
-        </label> <p class="form-error">Enter an email address</p></div>
+        <div class="field_with_errors">
+            <label for="client_email_address">
+                Your email address
+                <span class="hint">We'll only use this to contact you about your will.</span>
+            </label>
+            <p class="form-error">Enter an email address</p>
+        </div>
         <div class="field_with_errors">
             <input class="email" type="email" value="" name="client[email_address]" id="client_email_address">
         </div>
