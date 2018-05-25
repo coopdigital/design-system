@@ -9,7 +9,7 @@
         {% include 'partials/header.nunj' %}
     </div>
 
-    <div class="Frame-body" data-role="body">
+    <div class="Frame-body" data-role="body" id="main">
         {# <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
             {% include 'icons/close-nav.svg' %}
             {% include 'icons/open-nav.svg' %}

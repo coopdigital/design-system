@@ -4,7 +4,7 @@
         <span class="visuallyhidden">{{ frctl.get('project.title') | default('Component Library') }}</span>
     </a>
     {% if frctl.docs.size %}
-    <nav class="primary-nav">
+    <nav id="main-navigation" class="primary-nav">
         {{ nav.tree(frctl.docs, doc, request) }}
     </nav>
     {% endif %}

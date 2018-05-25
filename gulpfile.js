@@ -46,7 +46,7 @@ gulp.task('coop-theme-sass', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(['scss/**/*.scss'], ['sass', 'coop-theme-sass']);
+  gulp.watch(['scss/**/*.scss', 'node_modules/coop-frontend-toolkit/styles/**/*.scss'], ['sass', 'coop-theme-sass']);
 });
 
 gulp.task('default', ['sass', 'coop-theme-sass', 'copy', 'watch']);
