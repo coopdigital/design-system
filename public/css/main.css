@@ -1953,7 +1953,8 @@ Links mixins - Co-op Front-end Toolkit
 a {
   color: #00729A;
   border-bottom: 0.05em solid #00729A;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1em; }
   a:hover {
     color: #00394e;
     border: 0; }
@@ -1961,6 +1962,9 @@ a {
     transition: none;
     outline: 2px dotted #eec300;
     outline-offset: 3px; }
+  @media (min-width: 750px) {
+    a {
+      font-size: 1.25em; } }
 
 .link-white {
   color: #FFFFFF;
@@ -5921,8 +5925,8 @@ Helpers mixins - Co-op Front-end Toolkit
   margin-bottom: 16px;
   position: relative;
   padding: 16px 16px 16px 64px;
-  border: 1px solid #00A1CC;
-  background: #f0fcff;
+  border: 2px solid #F8642C;
+  background: #FFFFFF;
   color: #282828;
   font-size: 1em; }
   @media (min-width: 750px) {
@@ -5939,7 +5943,7 @@ Helpers mixins - Co-op Front-end Toolkit
     left: .6em;
     top: .75em;
     font-size: 1.6em !important;
-    color: #00A1CC; }
+    color: #F8642C; }
 
 /*===============================================
 Icons mixins - Co-op Front-end Toolkit
