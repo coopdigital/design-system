@@ -1953,8 +1953,7 @@ Links mixins - Co-op Front-end Toolkit
 a {
   color: #00729A;
   border-bottom: 0.05em solid #00729A;
-  text-decoration: none;
-  font-size: 1em; }
+  text-decoration: none; }
   a:hover {
     color: #00394e;
     border: 0; }
@@ -1962,9 +1961,6 @@ a {
     transition: none;
     outline: 2px dotted #eec300;
     outline-offset: 3px; }
-  @media (min-width: 750px) {
-    a {
-      font-size: 1.25em; } }
 
 .link-white {
   color: #FFFFFF;
