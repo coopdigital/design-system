@@ -1,7 +1,21 @@
-<header class="Pen-panel Pen-header ds-pen">
+<div class="Pen-panel Pen-header ds-pen">
     <div class="row">
-        <div class="column medium-10 small-12">
-            <h1 class="ds-pen__header">{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
+        <div class="column all-12">
+            <header class="ds-pen-header">
+                <h1 class="ds-pen-header__title">{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
+                {# {% if entity.tags == 'none' %}
+
+                {% else %}
+                <div class="ds-contributors">
+                    <p class="bold">Contributors</p>
+                    <ul class="ds-contributors-list">
+                    {% for author in entity.tags %}
+                        <li class="ds-contributors-list__item">{{ author }}</li>
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %} #}
+            </header>
             <div class="ds-pen-intro Prose Prose--condensed">
                 {% if entity.notes %}
                 {{ frctl.docs.renderString(entity.notes, renderEnv) | async }}
@@ -11,4 +25,4 @@
             </div>
         </div>
     </div>
-</header>
+</div>

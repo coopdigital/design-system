@@ -873,10 +873,10 @@ body {
   font-size: 1em; }
 
 body {
+  line-height: 1.7;
   position: relative;
   margin: 0;
   padding: 0;
-  line-height: 1.7;
   color: #282828;
   font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -3144,7 +3144,7 @@ Colour
   .btn-pill:hover {
     border: 1px solid #C4C4C4; }
   .btn-primary.btn-pill {
-    border: 1px solid #118156; }
+    border: 1px solid #0F8482; }
   .btn-primary-dark.btn-pill {
     border: 1px solid #374C63; }
   .btn-secondary.btn-pill {
@@ -4483,7 +4483,8 @@ Helpers mixins - Co-op Front-end Toolkit
   padding-top: 8px;
   padding-right: 8px;
   padding-bottom: 8px;
-  padding-left: 8px; }
+  padding-left: 8px;
+  background: #FFFFFF; }
   .header:before, .header:after {
     content: " ";
     display: table; }
@@ -6261,7 +6262,7 @@ Colour
 .message--info {
   border-color: #F8642C;
   color: #282828;
-  background: white; }
+  background: #FFFFFF; }
   .message-info:before,
   .message--info:before {
     color: #F8642C; }
@@ -6270,7 +6271,7 @@ Colour
 .message--error {
   border-color: #D63118;
   color: #282828;
-  background: white; }
+  background: #FFFFFF; }
   .message-error:before,
   .message--error:before {
     color: #D63118; }
@@ -6279,7 +6280,7 @@ Colour
 .message--success {
   border-color: #4F820D;
   color: #282828;
-  background: #effcdf; }
+  background: #FFFFFF; }
   .message-success:before,
   .message--success:before {
     color: #4F820D; }
@@ -7600,13 +7601,13 @@ Helpers mixins - Co-op Front-end Toolkit
   background: #551A8B; }
 
 .button-green {
-  color: #118156; }
+  color: #0F8482; }
 
 .button-green-bg {
-  background: #118156; }
+  background: #0F8482; }
 
 .button-green-hover-bg {
-  background: #209767; }
+  background: #2B9E9C; }
 
 .button-primary-dark {
   color: #374C63; }

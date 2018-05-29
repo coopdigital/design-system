@@ -11,8 +11,43 @@
   width: auto;
 }
 
-.ds-pen__header {
+.ds-pen-header {
+  @include clearfix();
+}
+
+.ds-pen-header__title {
+  float: left;
   margin-bottom: $quarter-spacing-unit;
+}
+
+.ds-contributors {
+  float: right;
+  margin-top: $quarter-spacing-unit;
+
+  p {
+    display: inline;
+    margin-right: 40px;
+  }
+}
+
+.ds-contributors-list {
+  display: inline;
+
+  .ds-contributors-list__item {
+    display: inline-block;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 2.4;
+    color: $page;
+    background: $blue-mid;
+    font-size: 1rem;
+    margin-left: -10px;
+  }
+  .ds-contributors-list__item:first-of-type {
+    display: none;
+  }
 }
 
 .ds-pen-intro {

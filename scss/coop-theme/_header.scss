@@ -12,10 +12,10 @@
   color: #fff;
   border-bottom: none;
   @include spacing('margin', 'bottom', 'quarter');
-  padding-top: 5px;
+  padding-top: 3px;
   padding-bottom: 0px;
   @include media(medium) {
-    padding-top: 5px;
+    padding-top: 3px;
     padding-bottom: 0px;
   }
  a {
