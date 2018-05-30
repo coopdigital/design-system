@@ -1,3 +1,32 @@
+body {
+  color: $text;
+  font-family: $regular;
+  letter-spacing: normal;
+}
+
+.Prose {
+  color: $text;
+  font-family: $regular;
+  letter-spacing: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text;
+  font-family: $bold;
+  letter-spacing: normal;
+}
+
+p {
+  color: $text;
+  font-family: $regular;
+  letter-spacing: normal;
+}
+
 a {
   transition: none;
 
