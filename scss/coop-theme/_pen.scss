@@ -151,12 +151,14 @@
   margin: 0;
 
   .responsive-list--item {
+    margin-bottom: 6px;
     display: inline-block;
     text-align: center;
 
     .responsive-list--item-link {
+      padding: 8px 14px;
       display: inline-block;
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
   }
 }
