@@ -4,7 +4,6 @@
             <header class="ds-pen-header">
                 <h1 class="ds-pen-header__title">{{ entity.title }}  {{ status.tag(entity.status) }}</h1>
                 {# {% if entity.tags == 'none' %}
-
                 {% else %}
                 <div class="ds-contributors">
                     <p class="bold">Contributors</p>

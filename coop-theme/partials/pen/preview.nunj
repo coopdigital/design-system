@@ -26,6 +26,17 @@
                                 {%- endif %}
                             </div>
                         </div>
+
+                        <div class="hiding-this-as-i-cant-change-core-theme-js">
+                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-{{ entity.id }}">
+                                <div class="Preview-wrapper" data-role="resizer">
+                                    <div class="Preview-resizer"></div>
+                                    <div class="Preview-handle" data-role="resize-handle"></div>
+                                    <div class="Preview-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="ds-pen-example__tools">
                             <div class="row">
                                 <div class="column all-12">
