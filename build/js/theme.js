@@ -367,6 +367,10 @@ function responsiveInspector(size) {
 
 $(document).ready(function(){
 
+  $(".fixedsticky").stick_in_parent({
+    offset_top: 64
+  });
+
   responsiveInspector();
 
   $('.responsive-list--item-link').click(function(){
