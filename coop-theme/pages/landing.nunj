@@ -7,7 +7,7 @@
             <h1>Pattern library</h1>
             <p class="intro-text margin-bh">These patterns are meant as a starting point when designing for Co&#8209;op. Experimenting is encouraged.</p>
             <div class="message message--info">
-              <p>We're updating our design guidance. You can find our old design manual in the <a href="https://coop-design-manual.herokuapp.com/archive.html">archive</a>.</p>
+                <p>We're updating our design guidance. You can find our old design manual in the <a href="https://coop-design-manual.herokuapp.com/archive.html">archive</a>.</p>
             </div>
         </div>
     </div>

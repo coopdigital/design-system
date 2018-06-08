@@ -6,7 +6,6 @@
             </svg>
             <span class="service-name">Design system</span>
         </a>
-        {% if frctl.docs.size %}
         <nav id="main-navigation" class="primary-nav">
           <ul class="Tree-items Tree-depth-1">
               <li class="Tree-item Tree-entity" data-role="item">
@@ -16,6 +15,5 @@
               </li>
           </ul>
         </nav>
-        {% endif %}
     </div>
 </header>

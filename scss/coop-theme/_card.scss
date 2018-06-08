@@ -28,7 +28,7 @@
   width: 100%;
   color: $body-copy;
   transition: all 0.15s ease;
-  padding: $quarter-spacing-unit 0;
+  padding: $quarter-spacing-unit 0; 
   @include spacing('margin', 'bottom', 'half');
   border-bottom: 3px solid lighten($grey-mid, 10%);
 
