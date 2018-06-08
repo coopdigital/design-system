@@ -8,6 +8,31 @@ body {
   color: $text;
   font-family: $regular;
   letter-spacing: normal;
+  max-width: 100%;
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $text;
+    letter-spacing: normal;
+    font: normal 1.5rem $bold;
+    font-feature-settings: normal;
+    opacity: 1;
+  }
+
+  p {
+    color: $text;
+    font-family: $regular;
+    letter-spacing: normal;
+  }
+}
+
+.wrap {
+  width: 100%;
 }
 
 h1,
@@ -29,10 +54,6 @@ p {
 
 a {
   transition: none;
-
-  &:focus{
-    // Going to test a new one
-  }
 }
 
 .hiding-this-as-i-cant-change-core-theme-js {

@@ -1,7 +1,7 @@
 .primary-nav {
   float: right;
   clear: none;
-  margin-top: 15px;
+  margin-top: 5px;
 
   ul {
     list-style: none;
@@ -49,7 +49,7 @@
 }
 
 .in-page-nav {
-  border-left: 5px solid lighten($purple-mid, 50%);
+  border-left: 5px solid $grey-light;
 }
 
 .primary-nav .Tree-title {
@@ -57,7 +57,7 @@
 }
 
 [dir="ltr"] .primary-nav .Tree-depth-1 .Tree-item {
-  padding: 0 0 25px 0;
+  padding: 0 0 0;
   border-left: 0;
   margin-bottom: 0;
   margin-left: 0;
@@ -74,6 +74,7 @@
   margin-left: 0;
   margin-top: 0;
   border-bottom: 0.05em solid $page;
+  color: $page;
   &:hover {
     background-color: transparent;
     border-bottom: 0;
@@ -83,7 +84,7 @@
 [dir="ltr"] .primary-nav .Tree-depth-1 .is-current {
   border-bottom: 5px solid $white;
   border-left: 0;
-  padding-bottom: 21px;
+  padding-bottom: 31px;
 }
 
 [dir="ltr"] .primary-nav .Tree-depth-1 .is-current .Tree-entityLink {

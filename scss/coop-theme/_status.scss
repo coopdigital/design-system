@@ -32,3 +32,23 @@
 .Status-dot {
   display: none;
 }
+
+.status {
+  font-size: em-calc(16px);
+  color: $page;
+  padding: 3px 5px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.status--alpha {
+  background: #FF3333;
+}
+
+.status--beta {
+  background: #FF9233;
+}
+
+.status--live {
+  background: #1AA579;
+}

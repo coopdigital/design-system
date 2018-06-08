@@ -178,7 +178,7 @@
 }
 
 .dm-colour__swatch {
-  height: 132px;
+  min-height: 132px;
   width: 100%;
 }
 
@@ -186,7 +186,7 @@
   padding: 10px 0 10px 0;
   float: right;
   width: 100%;
-  height: auto;
+  min-height: 160px;
 }
 
 .dm-colour__definition {

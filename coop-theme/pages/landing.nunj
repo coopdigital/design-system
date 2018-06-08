@@ -1,28 +1,165 @@
 {% extends "layouts/landing.nunj"%}
 
 {% block landingContent %}
-<div class="row">
-    <div class="column medium-7 small-12">
-        <h1>Design system</h1>
-        <p>The design system is a place to start to collect our agreed design components quickly. It is an internal tool for designers and service teams. Externally we still refer to the Design manual as our source of design truth.</p>
-        <p>It contains:</p>
-        <ul>
-            <li>some of the documentation from the design manual that is deemed useful for implementing components</li>
-            <li>the components that are from the design manual or have been agreed by the design COP</li>
-            <li>HTML snippets</li>
-        </ul>
-        <p>The design system website is a shell that contains:</p>
-        <ul>
-            <li>SCSS: <a href="https://github.com/coopdigital/coop-frontend-toolkit">Co-op front-end toolkit</a></li>
-            <li>HTML (as HBS): <a href="https://github.com/coopdigital/coop-components">Co-op components</a></li>
-        </ul>
-        <h2>Why do we have this and the Design manual?</h2>
-        <p>We want to get moving collecting our agreed components and documentation together. Fractal lets us do this quickly. We are looking at what the future looks like. Rest assured it - is not 2 websites.</p>
-        <p>Below are some diagrams that begin to explain our thinking and progress so far on our design infrastructure and the process we put behind getting new components in. <a href="https://realtimeboard.com/app/board/o9J_kz7vh4I=/">See these diagrams on Realtime board</a></p>
-        <h2>Infrastructure (WIP)</h2>
-        <img src="/images/screenshots/design-system-infrastructure.png" alt="design system infrasctructure" />
-        <h2>Component process (WIP)</h2>
-        <img src="/images/screenshots/design-system-process.png" alt="design system component process" />
+<div class="wrap">
+    <div class="row">
+        <div class="column medium-7 small-12">
+            <h1>Pattern library</h1>
+            <p class="intro-text margin-bh">These patterns are meant as a starting point when designing for Co&#8209;op. Experimenting is encouraged.</p>
+            <div class="message message--info">
+              <p>We're updating our design guidance. You can find our old design manual in the <a href="https://coop-design-manual.herokuapp.com/archive.html">archive</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/logo{% else %}/components/detail/logo.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Brand</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/palette{% else %}/components/detail/palette.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Colours</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/links{% else %}/components/detail/links.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Links</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/buttons{% else %}/components/detail/buttons.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Buttons</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/fonts{% else %}/components/detail/fonts.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Font</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/scale{% else %}/components/detail/scale.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Scale</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/bullet-list{% else %}/components/detail/bullet-list.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Bullet list</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/numbered-list{% else %}/components/detail/numbered-list.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Numbered list</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/quotations{% else %}/components/detail/quotations.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Quotation</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/input{% else %}/components/detail/input.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Input</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/textarea{% else %}/components/detail/textarea.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Textarea</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/checkboxes{% else %}/components/detail/checkboxes.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Checkboxes</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/radio-buttons{% else %}/components/detail/radio-buttons.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Radio buttons</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/submit{% else %}/components/detail/submit.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Submit button</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/validation{% else %}/components/detail/validation.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Validation</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/table{% else %}/components/detail/table.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Table</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/responsive{% else %}/components/detail/responsive.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Responsive table</h3> <span class="status status--beta">Beta</span>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/skip-nav{% else %}/components/detail/skip-nav.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Skip navigation</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column all-12">
+              <h2>Putting it together</h2>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/layout{% else %}/components/detail/layout.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Page layout</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/centered{% else %}/components/detail/centered.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Centered columns</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/collapse{% else %}/components/detail/collapse.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Removing gutters</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/push-pull{% else %}/components/detail/push-pull.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Reordering columns</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/offset{% else %}/components/detail/offset.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Offsetting columns</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column all-12">
+              <h2>Examples</h2>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/form{% else %}/components/detail/form.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Form</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/page-not-found{% else %}/components/detail/page-not-found.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Page not found</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/internal-server-error{% else %}/components/detail/internal-server-error.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Internal server error</h3>
+              </a>
+         </div>
     </div>
 </div>
 {% endblock %}

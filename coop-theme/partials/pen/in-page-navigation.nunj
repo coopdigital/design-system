@@ -1,13 +1,7 @@
-<div class="row">
-    <div class="column large-8 small-12">
-        <nav>
-            <ul id="in-page-nav" class="list-bare in-page-nav">
-                <li><a href="#code">Code</a></li>
-                <li><a href="#design">Design</a></li>
-                <li><a href="#supporting-information">Supporting information</a></li>
-                <li><a href="#variations">Variations</a></li>
-                <li><a href="#suggest-a-change">Suggest a change</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
+<nav>
+    <ul id="in-page-nav" class="list-bare in-page-nav">
+        <li><a href="#example">Example</a></li>
+        <li><a href="#user-need">User need</a></li>
+        <li><a href="#suggest-a-change">Suggest a change</a></li>
+    </ul>
+</nav>

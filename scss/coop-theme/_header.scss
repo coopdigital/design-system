@@ -1,3 +1,41 @@
+$woodsmoke: #1D2534;
+
+.ds-header {
+  padding-top: 30px;
+  padding-bottom: 27px;
+  background: $woodsmoke;
+
+  .coop-logo {
+    display: inline-block;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 0;
+    border-bottom: 0;
+
+    @include media(medium) {
+      margin-left: 1px;
+    }
+
+    svg {
+      display: inline-block;
+
+      path {
+        fill: $page;
+      }
+    }
+  }
+
+  .service-name {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: em-calc(21px);
+    font-family: $medium;
+    line-height: 1.8;
+    color: $page;
+    vertical-align: top;
+  }
+}
+
 .Header {
   justify-content: space-between;
   background-color: #AB288C;

@@ -2,7 +2,7 @@
     <div class="row">
         <div class="column all-12">
             <header class="ds-pen-example__header">
-                <h2 class="Pen-panel-title pull-left">Example</h2>
+                <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
             </header>
             <a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> {% include "icons/open-in-browser.svg" %}</a>
             <div id="TabContainer">

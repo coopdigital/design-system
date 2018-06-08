@@ -1,0 +1,77 @@
+.card {
+  @include spacing('margin', 'bottom', 'half');
+  @include spacing('padding', 'all', 'half');
+  background: $page;
+  border-radius: 16px;
+
+  P:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.card--np {
+  padding: 0;
+}
+
+.card--nm {
+  margin-bottom: 0;
+}
+
+.card--shadow {
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+     -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+          box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+
+.card--link {
+  display: block;
+  width: 100%;
+  color: $body-copy;
+  transition: all 0.15s ease;
+  padding: $quarter-spacing-unit 0;
+  @include spacing('margin', 'bottom', 'half');
+  border-bottom: 3px solid lighten($grey-mid, 10%);
+
+  &:hover {
+    border-bottom: 3px solid $grey-mid;
+
+    h2,
+    h3 {
+      text-decoration: none;
+    }
+  }
+
+  .card--link__title {
+    font-family: $medium;
+    text-decoration: underline;
+    display: inline;
+    @include spacing('margin', 'bottom', 'half');
+  }
+
+  .card--link__p {
+    margin-top: -16px;
+  }
+}
+
+.card--link--heading {
+  @include spacing('padding', 'bottom', 'half');
+
+  &:hover .card--link__p {
+    border-bottom: 0;
+  }
+
+  .card--link__title {
+    color: $body-copy;
+    font-family: $bold;
+    border-bottom: 0;
+    @include spacing('margin', 'bottom', 'quarter');
+  }
+
+  .card--link__p {
+    display: inline;
+    line-height: 1.1;
+    font-size: em-calc(22px);
+    @include link;
+  }
+
+}

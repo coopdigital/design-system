@@ -21,21 +21,23 @@
         {% set rendered = false %}
     {% endif %}
 {%- endif %}
-
 <div class="Pen" data-behaviour="pen" id="pen-{{ entity.id }}">
-
-    {% block penContent %}
-
-    {% include "partials/pen/header.nunj" %}
-
-    {% include "partials/pen/preview.nunj" %}
-
-    {% include 'partials/browser/panel-userneed.nunj' %}
-
-    {% include 'partials/browser/panel-suggestion.nunj' %}
-
-    {% endblock %}
-
+    <div class="row">
+        <div class="column large-8 small-12">
+            {% include "partials/pen/header.nunj" %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="column large-3 small-12 fixedsticky">
+            {% include "partials/pen/in-page-navigation.nunj" %}
+        </div>
+        <div class="column large-9 small-12">
+            {% block penContent %}
+            {% include "partials/pen/preview.nunj" %}
+            {% include 'partials/browser/panel-userneed.nunj' %}
+            {% include 'partials/browser/panel-suggestion.nunj' %}
+            {% endblock %}
+        </div>
+    </div>
 </div>
-
 {% endblock %}
