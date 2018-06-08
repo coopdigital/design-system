@@ -1,7 +1,7 @@
 .ds-hero {
   padding: 32px;
   @include media(medium) {
-    padding: 64px;
+    padding: 32px 64px;
   }
 
   ul {
