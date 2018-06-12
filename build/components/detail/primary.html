@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../css/coop-theme.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Scale | Design system</title>
+<title>Buttons | Design system</title>
 
 </head>
 <body>
@@ -63,7 +63,7 @@
 
     
     
-<div class="Pen" data-behaviour="pen" id="pen-2cb5ee83b518801dc0e1374ba733fb6b">
+<div class="Pen" data-behaviour="pen" id="pen-2fca259474dd35c4a88a7c7123921081">
     <div class="row">
         <div class="column large-8 small-12">
             <div class="Pen-panel Pen-header ds-pen">
@@ -78,7 +78,7 @@
                 </a>
             </p>
             <header class="ds-pen-header">
-                <h1 class="ds-pen-header__title">Scale  
+                <h1 class="ds-pen-header__title">Buttons  
 
 <span class="Status Status--tag">
 
@@ -91,7 +91,14 @@
             </header>
             <div class="ds-pen-intro Prose Prose--condensed">
                 
-                <p>We use Avenir Next in regular, medium and demi bold weights.</p>
+                <p>Buttons must use:</p>
+<ul>
+<li>Avenir Next Medium at 20px (1em)</li>
+<li>a 7px border radius</li>
+<li>15px 37.5px padding (as calculated by the browser because we size with em)</li>
+<li>a 4px blue outline on focus and active</li>
+</ul>
+<p>Button width should be defined by the content on the button. Buttons should also be ranged left with the left edge aligning with other content.</p>
 
                 
             </div>
@@ -120,7 +127,7 @@
             <header class="ds-pen-example__header">
                 <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
             </header>
-            <a data-no-pjax href="../preview/scale.html" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+            <a data-no-pjax href="../preview/primary.html" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -129,22 +136,22 @@
                 <div class="accordion-wrapper">
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab1">Example</h3>
                     <div class="tabs-container__panel" id="Tab1">
-                        <div class="Pen-panel Pen-preview Preview" id="preview-2cb5ee83b518801dc0e1374ba733fb6b">
+                        <div class="Pen-panel Pen-preview Preview" id="preview-2fca259474dd35c4a88a7c7123921081">
                             <div class="Preview-wrapper">
                                 
                                 <iframe
                                     id="breakpoint-viewer"
                                     class="Preview-iframe"
                                     data-role="window"
-                                    src="../preview/scale.html"
+                                    src="../preview/primary.html"
                                     sandbox="allow-same-origin allow-scripts allow-forms"
-                                     style="min-height: 600px ; "
+                                     style=""
                                     marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
                                 </iframe>
                             </div>
                         </div>
                         <div class="hiding-this-as-i-cant-change-core-theme-js">
-                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-2cb5ee83b518801dc0e1374ba733fb6b">
+                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-2fca259474dd35c4a88a7c7123921081">
                                 <div class="Preview-wrapper" data-role="resizer">
                                     <div class="Preview-resizer"></div>
                                     <div class="Preview-handle" data-role="resize-handle"></div>
@@ -189,152 +196,6 @@
 
 
 
-    
-    <div class="row">
-        <div class="column medium-10 small-12">
-            <section class="ds-section">
-                <table class="typographic-scale table-smallscreen--stacked margin-bb">
-    <caption>Size, line height and spacing above 768px</caption>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Size</th>
-            <th scope="col">Line height</th>
-            <th scope="col">Spacing</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Mega</th>
-            <td data-th="Size above 768px">60px</td>
-            <td data-th="Leading">83px</td>
-            <td data-th="Spacing">Top 32px<br>Bottom 32px</td>
-        </tr>
-        <tr>
-            <th scope="row">H1</th>
-            <td data-th="Size above 768px">46px</td>
-            <td data-th="Leading">64px</td>
-            <td data-th="Spacing">Bottom 32px</td>
-        </tr>
-        <tr>
-            <th scope="row">H2</th>
-            <td data-th="Size above 768px">26px</td>
-            <td data-th="Leading">40px</td>
-            <td data-th="Spacing">Bottom 8px</td>
-        </tr>
-        <tr>
-            <th scope="row">H3</th>
-            <td data-th="Size above 768px">22px</td>
-            <td data-th="Leading">32px</td>
-            <td data-th="Spacing">Top 8px<br>Bottom 8px</td>
-        </tr>
-        <tr>
-            <th scope="row">H4</th>
-            <td data-th="Size above 768px">22px</td>
-            <td data-th="Leading">32px</td>
-            <td data-th="Spacing">Top 8px Btm 8px</td>
-        </tr>
-        <tr>
-            <th scope="row">H5</th>
-            <td data-th="Size above 768px">22px</td>
-            <td data-th="Leading">32px</td>
-            <td data-th="Spacing">Top 8px<br>Bottom 8px</td>
-        </tr>
-        <tr>
-            <th scope="row">H6</th>
-            <td data-th="Size above 768px">16px</td>
-            <td data-th="Leading">24px</td>
-            <td data-th="Spacing">Top 0px<br>Bottom 4px</td>
-        </tr>
-        <tr>
-            <th scope="row">P lead</th>
-            <td data-th="Size above 768px">26px</td>
-            <td data-th="Leading">42px</td>
-            <td data-th="Spacing">Bottom 8px</td>
-        </tr>
-        <tr>
-            <th scope="row">Paragraph</th>
-            <td data-th="Size above 768px">20px</td>
-            <td data-th="Leading">32px</td>
-            <td data-th="Spacing">Bottom 32px</td>
-        </tr>
-    </tbody>
-</table>
-<table class="typographic-scale table-smallscreen--stacked">
-    <caption>Size, line height and spacing below 768px</caption>
-    <thead>
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">Size</th>
-            <th scope="col">Line height</th>
-            <th scope="col">Spacing</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">Mega</th>
-            <td data-th="Size below 768px">36px</td>
-            <td data-th="Line height">50px</td>
-            <td data-th="Spacing">Top 16px<br>Bottom&nbsp;16px</td>
-        </tr>
-        <tr>
-            <th scope="row">H1</th>
-            <td data-th="Size below 768px">30px</td>
-            <td data-th="Line height">42px</td>
-            <td data-th="Spacing">Bottom 16px</td>
-        </tr>
-        <tr>
-            <th scope="row">H2</th>
-            <td data-th="Size below 768px">20px</td>
-            <td data-th="Line height">31px</td>
-            <td data-th="Spacing">Bottom 4px</td>
-        </tr>
-        <tr>
-            <th scope="row">H3</th>
-            <td data-th="Size below 768px">18px</td>
-            <td data-th="Line height">31px</td>
-            <td data-th="Spacing">Top 4px<br>Bottom&nbsp;4px</td>
-        </tr>
-        <tr>
-            <th scope="row">H4</th>
-            <td data-th="Size below 768px">18px</td>
-            <td data-th="Line height">31px</td>
-            <td data-th="Spacing">Top 4px<br>Bottom&nbsp;4px</td>
-        </tr>
-        <tr>
-            <th scope="row">H5</th>
-            <td data-th="Size below 768px">18px</td>
-            <td data-th="Line height">31px</td>
-            <td data-th="Spacing">Top 4px<br>Bottom&nbsp;4px</td>
-        </tr>
-        <tr>
-            <th scope="row">H6</th>
-            <td data-th="Size below 768px">13px</td>
-            <td data-th="Line height">20px</td>
-            <td data-th="Spacing">Top 8px<br>Bottom2px</td>
-        </tr>
-        <tr>
-            <th scope="row">P lead</th>
-            <td data-th="Size below 768px">20px</td>
-            <td data-th="Line height">34px</td>
-            <td data-th="Spacing">Bottom 4px</td>
-        </tr>
-        <tr>
-            <th scope="row">Paragraph</th>
-            <td data-th="Size below 768px">16px</td>
-            <td data-th="Line height">27px</td>
-            <td data-th="Spacing">Bottom 16px</td>
-        </tr>
-    </tbody>
-</table>
-    
-            </section>
-        </div>
-    </div>
-    
-
-
-
 
                     </div>
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
@@ -343,15 +204,7 @@
 <section>
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Heading mega<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Heading 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Heading 2<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Heading 3<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h4</span>&gt;</span>Heading 4<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Heading 5<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Heading 6<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"intro-text"</span>&gt;</span>Lead paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn--primary"</span>&gt;</span>Primary button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
         
     </code>
 </section>
@@ -364,10 +217,6 @@
 </section>
 
             
-
-
-
-    
 
 
 

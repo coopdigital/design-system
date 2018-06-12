@@ -1,4 +1,6 @@
-<p>The default widths (breakpoints) we use are:</p>
+<h2 id="supporting-information">Supporting information</h2>
+<h3>Viewport sizes</h3>
+<p> The default widths (breakpoints) we use are:</p>
 <ul>
     <li>All: 0px and up — (all-{column-span})</li>
     <li>Extra small: 320px and up — (.xsmall-{column-span})</li>

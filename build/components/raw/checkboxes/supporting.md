@@ -1,15 +1,11 @@
-<p>Checkboxes have:</p>
-<ul>
-    <li>a background of #F3F3F3</li>
-    <li>rounded corners of 5px</li>
-    <li>padding of top and bottom of 18px and left and right of 60px</li>
-    <li>a font size of 20px Avenir regular in #282828</li>
-    <li>a bottom margin of 16px</li>
-    <li>a border 2px #6E6E6E when hovered</li>
-    <li>a border 2px #00B1E7 when selected</li>
-    <li>a background of #FFFFFF when selected</li>
-</ul>
+<h2 id="design">Design</h2>
 
+<h2 id="supporting-information">Supporting information</h2>
+<p>Use:</p>
+<ul>
+    <li>radio buttons when the user can choose only one answer</li>
+    <li>checkboxes when the user can choose multiple answers</li>
+</ul>
 <p>If you’re using either radio buttons or checkboxes:</p>
 <ul>
     <li>style them in a way that makes it clear which option or options has been selected</li>
