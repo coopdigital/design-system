@@ -33,9 +33,19 @@
         </div>
         <div class="column large-9 small-12">
             {% block penContent %}
+
             {% include "partials/pen/preview.nunj" %}
+
             {% include 'partials/browser/panel-userneed.nunj' %}
+
+            {% include 'partials/browser/panel-resources.nunj' %}
+
+            {% include 'partials/browser/panel-accessibility.nunj' %}
+
+            {% include 'partials/browser/panel-variations.nunj' %}
+
             {% include 'partials/browser/panel-suggestion.nunj' %}
+
             {% endblock %}
         </div>
     </div>

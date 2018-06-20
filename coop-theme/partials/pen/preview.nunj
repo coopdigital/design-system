@@ -60,16 +60,6 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab2">Design</h3>
-                    <div class="tabs-container__panel" id="Tab2">
-                        <!--
-                        For now design and supporting info are held as HTML in the component folder as supporting.md
-                        Todo:
-                            - Work out how to parse resources .md
-                            - split into design and supporting .md files
-                        -->
-                        {% include 'partials/browser/panel-resources.nunj' %}
-                    </div>
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
                     <div class="tabs-container__panel" id="Tab3">
                         {% include 'partials/browser/panel-html.nunj' %}

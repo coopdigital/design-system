@@ -3,13 +3,14 @@
 {% if collection.size %}
 {% for resource in collection.items() %}
     {% if resource.name == 'supporting' %}
-    <div class="row">
-        <div class="column medium-10 small-12">
-            <section class="ds-section">
-                {{ resource.contents }}    
-            </section>
+    <section class="ds-section ds-section--keyline">
+        <div class="row">
+            <div class="column medium-8 small-12">
+                <h2 id="design">Design</h2>
+                {{ resource.contents }}
+            </div>
         </div>
-    </div>
+    </section>
     {% endif %}
 {% endfor %}
 {% endif %}

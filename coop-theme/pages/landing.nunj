@@ -114,6 +114,23 @@
     </div>
     <div class="row margin-tb">
          <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/card{% else %}/components/detail/card.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Card</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/card-image{% else %}/components/detail/card-image.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Card with image</h3>
+              </a>
+         </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/card-image-paragraph{% else %}/components/detail/card-image-paragraph.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Card with image and paragraph</h3>
+              </a>
+         </div>
+    </div>
+    <div class="row margin-tb">
+         <div class="column small-12 medium-3">
               <a href="{% if frctl.env.server %}/components/detail/skip-nav{% else %}/components/detail/skip-nav.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Skip navigation</h3>
               </a>
