@@ -1,5 +1,14 @@
 .Frame-panel {
-  overflow: visible;
+  overflow: hidden;
+}
+
+[dir="ltr"] .Frame-body.Frame-body {
+  margin-right: 0;
+  // -webkit-margin-end: 0px;
+  // margin-inline-end: 0px;
+  // -webkit-transform: translate3d(1px, 0, 0);
+  // transform: translate3d(1px, 0, 0);
+  // transition: none;
 }
 
 .Frame-panel--sidebar {

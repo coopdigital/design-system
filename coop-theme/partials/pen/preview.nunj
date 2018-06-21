@@ -16,7 +16,7 @@
                                 {% else %}
                                 <iframe
                                     id="breakpoint-viewer"
-                                    class="Preview-iframe"
+                                    class="Preview-iframe" 
                                     data-role="window"
                                     src="{{ previewUrl }}"
                                     sandbox="allow-same-origin allow-scripts allow-forms"

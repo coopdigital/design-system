@@ -15,9 +15,15 @@
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
 
   .ds-tabs {
-    position: relative;
-    top: -45px;
-    right: 32px;
+    display: none;
+
+
+    @include media(medium) {
+      display: block;
+      position: relative;
+      top: -45px;
+      right: 32px;
+    }
 
     .btn-pill {
       font-size: 1rem;
@@ -27,18 +33,27 @@
 
 .btn--preview {
   position: relative;
-  top: -55px;
+  top: -40px;
   left: -20px;
+
+  @include media(medium) {
+    top: -55px;
+  }
 }
 
 .tabs-container__panel {
   @include spacing('padding', 'top', 'quarter');
-  @include spacing('padding', 'right', 'half');
+  padding-left: 0;
   @include spacing('padding', 'bottom', 'quarter');
-  @include spacing('padding', 'left', 'half');
+  padding-right: 0;
+
+  @include media(medium) {
+    padding-left: $half-spacing-unit;
+    padding-right: $half-spacing-unit;
+  }
 }
 
-@media (min-width: 49.8125em) {
+@media (min-width: 751px) {
   .tabs-nav-init .tabs-container__title,
   .tabs-nav-init .tabs-container__panel {
     display:none;
@@ -50,7 +65,7 @@
 
 }
 
-@media (max-width: 49.75em) {
+@media (max-width: 750px) {
   .tabs-navigation,
   .tabs-init .tabs-container__panel,
   .tabs-init .accordion--closed .tabs-container__panel {
@@ -58,8 +73,6 @@
   }
 
   .tabs-init {
-    margin-left: -1.5em;
-    margin-right: -1.5em
   }
 
   .tabs-init .tabs-container__title {
@@ -69,7 +82,7 @@
 
   .accordion--closed .tabs-container__title,
   .tabs-init .tabs-container__title {
-
+    background: #F3F3F3;
   }
 
   .tabs-container__panel[aria-hidden="false"] {
@@ -77,7 +90,7 @@
   }
 
   .tabs-container__title[aria-selected="true"] {
-    background: #fff;
+    background: lighten(#394C61, 40%);
   }
 
   .tabs-container__panel.accordion--closed {

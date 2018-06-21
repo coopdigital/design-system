@@ -26,7 +26,7 @@
   margin-left: $quarter-spacing-unit;
   text-transform: capitalize;
   letter-spacing: 0;
-  border-radius: 3px;
+  // border-radius: 3px;
 }
 
 .Status-dot {
@@ -36,8 +36,8 @@
 .status {
   font-size: em-calc(16px);
   color: $page;
-  padding: 3px 5px;
-  border-radius: 3px;
+  padding: 5px 8px;
+  // border-radius: 3px;
   text-decoration: none;
 }
 

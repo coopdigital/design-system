@@ -11,6 +11,10 @@
   width: auto;
 }
 
+.intro-text {
+  color: lighten($text, 30%);
+}
+
 .ds-pen-header {
   @include clearfix();
 }
@@ -54,14 +58,19 @@
   @include spacing('margin', 'bottom', 'base');
   p,
   ul {
+    color: lighten($text, 30%);
     font-size: em-calc(24px);
-    font-family: $medium;
+    font-family: $regular;
   }
 }
 
 .ds-pen-example__header {
-  padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
+  padding: $half-spacing-unit/2 $half-spacing-unit/2 0 0;
   @include clearfix();
+
+  @include media(medium) {
+    padding: $half-spacing-unit $half-spacing-unit 0 $half-spacing-unit;
+  }
 }
 
 .ds-pen-example__tools {
@@ -113,6 +122,7 @@
   display: block;
   max-height: 9999px;
   padding: 0;
+  border-bottom: 0;
 }
 
 .Pen-info {
@@ -226,4 +236,16 @@
   .list-bare {
     list-style-type: none;
   }
+}
+
+.in-page-nav {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.in-page-nav-title {
+  text-transform: uppercase;
+  font-family: $medium;
+  color: lighten($text, 30%);
+  font-size: 16px;
 }
