@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../../css/coop-theme.css?cachebust=1.2.0" type="text/css">
 
 
-<title>Card | Design system</title>
+<title>Card group | Design system</title>
 
 </head>
 <body>
@@ -63,7 +63,7 @@
 
     
     
-<div class="Pen" data-behaviour="pen" id="pen-015ead02f508c7a79e8a0f901524c55a">
+<div class="Pen" data-behaviour="pen" id="pen-52f177758c2c092f8f802f2d7eddfe1b">
     <div class="row">
         <div class="column large-8 small-12">
             <div class="Pen-panel Pen-header ds-pen">
@@ -78,7 +78,7 @@
                 </a>
             </p>
             <header class="ds-pen-header">
-                <h1 class="ds-pen-header__title">Card  
+                <h1 class="ds-pen-header__title">Card group  
 
 <span class="Status Status--tag">
 
@@ -91,7 +91,7 @@
             </header>
             <div class="ds-pen-intro Prose Prose--condensed">
                 
-                <p>Cards are used to group discrete pieces of information.</p>
+                <p>Cards are used to group discrete pieces of information such as blog posts.</p>
 
                 
             </div>
@@ -125,7 +125,7 @@
             <header class="ds-pen-example__header">
                 <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
             </header>
-            <a data-no-pjax href="../preview/card.html" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+            <a data-no-pjax href="../preview/card-group-image.html" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
 </svg>
@@ -134,22 +134,22 @@
                 <div class="accordion-wrapper">
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab1">Example</h3>
                     <div class="tabs-container__panel" id="Tab1">
-                        <div class="Pen-panel Pen-preview Preview" id="preview-015ead02f508c7a79e8a0f901524c55a">
+                        <div class="Pen-panel Pen-preview Preview" id="preview-52f177758c2c092f8f802f2d7eddfe1b">
                             <div class="Preview-wrapper">
                                 
                                 <iframe
                                     id="breakpoint-viewer"
                                     class="Preview-iframe" 
                                     data-role="window"
-                                    src="../preview/card.html"
+                                    src="../preview/card-group-image.html"
                                     sandbox="allow-same-origin allow-scripts allow-forms"
-                                     style="min-height: 300px ; max-width: 750px ; "
+                                     style="min-height: 650px ; "
                                     marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
                                 </iframe>
                             </div>
                         </div>
                         <div class="hiding-this-as-i-cant-change-core-theme-js">
-                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-015ead02f508c7a79e8a0f901524c55a">
+                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-52f177758c2c092f8f802f2d7eddfe1b">
                                 <div class="Preview-wrapper" data-role="resizer">
                                     <div class="Preview-resizer"></div>
                                     <div class="Preview-handle" data-role="resize-handle"></div>
@@ -188,14 +188,30 @@
 <section>
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__link"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>We’re celebrating LGBT history&amp;nbsp;month<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’re also asking all Co-op colleagues which Pride events they’d like to get involved in.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"row"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column small-12 medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__link"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/placeholders/pride.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Co-op colleagues at Manchester Pride"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>We’re celebrating LGBT history&amp;nbsp;month<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’re also asking all Co-op colleagues which Pride events they’d like to get involved in.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column small-12 medium-6"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__link"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/images/placeholders/pride.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Co-op colleagues at Manchester Pride"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__image"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__content"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"card__title"</span>&gt;</span>We’re celebrating LGBT history&amp;nbsp;month<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>We’re also asking all Co-op colleagues which Pride events they’d like to get involved in.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">article</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </section>
@@ -247,9 +263,9 @@
                 <h2 id="design">Design</h2>
                 <p>Cards should be used:</p>
 <ul>
-    <li>never on their own &mdash; always in rows of 2 to 4</li>
-    <li>for discrete grouped pieces of information within a page</li>
-    <li>as links to content that will change over time (such as blog posts) not as navigational signposts to permanent pages</li>
+    <li>in rows of 2 to 4</li>
+    <li>for discrete grouped pieces of information within a page &mdash; such as blog posts</li>
+    <li>as links to long form content, not as navigational signposts</li>
 </ul>
 
             </div>

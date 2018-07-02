@@ -6,6 +6,10 @@
 //   margin: 0 $half-spacing-unit 0 0;
 // }
 
+.ds-wrap--padded {
+  @include spacing('margin', 'top', 'half');
+}
+
 .demo-column-block {
   display: block;
   height: 100px;

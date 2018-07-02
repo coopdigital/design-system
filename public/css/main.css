@@ -5420,6 +5420,37 @@ Helpers mixins - Co-op Front-end Toolkit
 .card__title {
   color: #282828; }
 
+.card-heading {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  z-index: 110;
+  display: block;
+  padding: 20px 24px;
+  background: #FFFFFF;
+  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding: 8px 12px; }
+  @media (min-width: 750px) {
+    .card-heading {
+      top: -24px;
+      left: 40px;
+      padding: 8px 12px;
+      font-size: 1.25em; } }
+  @media (min-width: 960px) {
+    .card-heading {
+      top: -35px;
+      padding: 18px 24px; } }
+
+.card-heading__link {
+  display: block;
+  color: #282828;
+  text-decoration: underline;
+  border-bottom: 0; }
+  .card-heading__link:hover {
+    color: #282828;
+    text-decoration: none; }
+
 .card__link {
   display: block;
   border-bottom: 0; }
@@ -7776,6 +7807,12 @@ Helpers mixins - Co-op Front-end Toolkit
 
 .added-to-page-bg {
   background: #FFEC00; }
+
+.ds-wrap--padded {
+  margin-top: 16px; }
+  @media (min-width: 750px) {
+    .ds-wrap--padded {
+      margin-top: 32px; } }
 
 .demo-column-block {
   display: block;
