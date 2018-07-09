@@ -7548,25 +7548,27 @@ Helpers mixins - Co-op Front-end Toolkit
   background: #00729A; }
 
 .link-hover-blue {
-  color: #00394E; }
+  color: #00394e; }
 
 .link-hover-blue-bg {
-  background: #00394E; }
+  background: #00394e; }
 
-.link-focus-blue {
-  color: #00A1CC; }
+.link-focus {
+  color: #eec300; }
 
-.link-focus-blue-bg {
-  background: #00A1CC; }
+.link-focus-bg {
+  background: #eec300; }
 
-.link-blue-focused {
-  outline: 4px solid #00A1CC; }
+.link-focused {
+  outline: 4px solid #eec300; }
 
-.link-visited {
-  color: #551A8B; }
+.link-visited,
+.link-active {
+  color: #00394e; }
 
-.link-visited-bg {
-  background: #551A8B; }
+.link-visited-bg,
+.link-active-bg {
+  background: #00394e; }
 
 .button-green {
   color: #0F8482; }
