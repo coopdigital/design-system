@@ -19,14 +19,13 @@
 
 .Status-label {
   border-radius: 0;
-  font-size: 1rem;
-  font-family: $regular;
+  font-size: 1.8rem;
+  font-family: $medium;
   display: inline;
-  padding: 6px 20px;
+  padding: 5px 8px;
   margin-left: $quarter-spacing-unit;
   text-transform: capitalize;
   letter-spacing: 0;
-  // border-radius: 3px;
 }
 
 .Status-dot {
@@ -34,11 +33,20 @@
 }
 
 .status {
-  font-size: em-calc(16px);
+  font-size: em-calc(20px);
   color: $page;
-  padding: 5px 8px;
-  // border-radius: 3px;
+  padding: 6px 8px;
   text-decoration: none;
+}
+
+.status__link {
+  border-bottom: 0;
+  text-decoration: underline;
+  color: $page;
+  &:hover {
+    color: $page;
+    text-decoration: none;
+  }
 }
 
 .status--alpha {

@@ -3,7 +3,7 @@
 {% endmacro %}
 
 {% macro _tag(color, label) %}
-<label class="Status-label" style="background-color: {{ color }};">{{ label }}</label>
+<label class="Status-label" style="background-color: {{ color }};"><a href="https://coop-design-manual.herokuapp.com/process.html" class="status__link">{{ label }}</a></label>
 {% endmacro %}
 
 {% macro _dots(status) %}
@@ -31,7 +31,7 @@
 {% macro labelled(status, modifier) %}
 {% if status %}
 <span class="Status Status--labelled{% if modifier %} Status--{{ modifier }}{% endif %}">
-    <label class="Status-label">{{ status.label }}</label>
+    <label class="Status-label"><a href="https://coop-design-manual.herokuapp.com/process.html" class="status__link">{{ status.label }}</a></label>
     {{ _dots(status) }}
 </span>
 {% endif %}
