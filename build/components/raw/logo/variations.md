@@ -1,1 +1,1 @@
-<p>There are no variations of the logo.</p>
+<p>There are no variations of this pattern yet.</p>

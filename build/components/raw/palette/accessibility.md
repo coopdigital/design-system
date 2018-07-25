@@ -5,3 +5,5 @@
 </ul>
 <p>As well as using these tools, test colour contrast with people of all abilities.</p>
 <p>If you have a question about colour, contact <a href="mailto:design@coopdigital.co.uk">design@coopdigital.co.uk</a>.</p>
+
+<p><a href="https://coop-design-manual.herokuapp.com/accessibility.html">For more information see our general guide on accessibility</a>.</p>
