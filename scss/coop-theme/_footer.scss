@@ -1,9 +1,9 @@
 .footer-main {
-  background-color: $grey-light;
+  @include spacing('margin', 'top', 'base');
   padding: $quarter-spacing-unit 0;
+  background-color: $grey-light;
 
   .secondary-nav {
-    @include spacing('margin', 'right', 'half');
     @include media(medium) {
       text-align: right;
     }
