@@ -15,7 +15,7 @@
     <nav class="skip-nav">
         <ul>
             <li><a href="#main" title="Skip to main content">Skip to content</a></li>
-            <li><a href="#sidebar-navigation" title="Skip to sidebar navigation">Skip to sidebar navigation</a></li>
+            <li><a href="#in-page-nav" title="Skip to sidebar navigation">Skip to sidebar navigation</a></li>
             <li><a href="#main-navigation" title="Skip to main navigation">Skip to main navigation</a></li>
         </ul>
     </nav>
