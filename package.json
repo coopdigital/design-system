@@ -1,6 +1,12 @@
 {
   "name": "design-system",
   "version": "0.1.0",
+  "scripts": {
+    "gulp": "gulp",
+    "fractal": "fractal start --watch --sync",
+    "build": "fractal build",
+    "start": "concurrently npm:fractal npm:gulp"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
@@ -19,6 +25,7 @@
     "gulp-uglify": "^2.0.0",
     "helper-markdown": "^1.0.0",
     "npm-safe-install": "^1.0.0",
-    "nunjucks-markdown-filter": "^0.1.0"
+    "nunjucks-markdown-filter": "^0.1.0",
+    "concurrently": "^3.6.1"
   }
 }
