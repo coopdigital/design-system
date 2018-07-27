@@ -137,6 +137,11 @@
                   <h3 class="card--link__title">Card group with heading</h3>
               </a>
          </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/card-background{% else %}/components/detail/card-background.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Card background</h3>
+              </a>
+         </div>
     </div>
     <div class="row margin-tb">
          <div class="column all-12">
@@ -178,25 +183,25 @@
               </a>
          </div>
     </div>
-    {# <div class="row margin-tb">
+    <div class="row margin-tb">
          <div class="column all-12">
               <h2>Pages</h2>
          </div>
-         <div class="column small-12 medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/form{% else %}/components/detail/form.html{% endif %}" class="card--link m-bh-med-b">
+         {# <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/preview/form{% else %}/components/preview/form.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Form</h3>
               </a>
-         </div>
+         </div> #}
          <div class="column small-12 medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/page-not-found{% else %}/components/detail/page-not-found.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/preview/page-not-found{% else %}/components/preview/page-not-found.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Page not found</h3>
               </a>
          </div>
          <div class="column small-12 medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/internal-server-error{% else %}/components/detail/internal-server-error.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/preview/internal-server-error{% else %}/components/preview/internal-server-error.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Internal server error</h3>
               </a>
          </div>
-    </div> #}
+    </div>
 </div>
 {% endblock %}

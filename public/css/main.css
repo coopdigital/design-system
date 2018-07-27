@@ -4473,10 +4473,10 @@ Helpers mixins - Co-op Front-end Toolkit
 
 .header {
   margin-bottom: 16px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-left: 8px;
+  padding-top: 16px;
+  padding-right: 0;
+  padding-bottom: 16px;
+  padding-left: 0;
   background: #FFFFFF; }
   .header:before, .header:after {
     content: " ";
@@ -4488,22 +4488,16 @@ Helpers mixins - Co-op Front-end Toolkit
       margin-bottom: 32px; } }
   @media (min-width: 750px) {
     .header {
-      padding-top: 16px; } }
+      padding-top: 32px; } }
   @media (min-width: 750px) {
     .header {
-      padding-right: 16px; } }
-  @media (min-width: 750px) {
-    .header {
-      padding-bottom: 16px; } }
-  @media (min-width: 750px) {
-    .header {
-      padding-left: 16px; } }
-
-.header--shadow {
-  box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.15); }
+      padding-bottom: 32px; } }
 
 .header--bgcolour {
   background-color: #AD208E; }
+
+.header--shadow {
+  box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.15); }
 
 /*===============================================
 Main header - Co-op Front-end Toolkit
@@ -5454,12 +5448,17 @@ Helpers mixins - Co-op Front-end Toolkit
 .card__link {
   display: block;
   border-bottom: 0; }
-  .card__link .card__content:hover {
-    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.05); }
-    .card__link .card__content:hover .card__title {
-      text-decoration: none; }
+  .card__link .card__content:hover .card__title {
+    text-decoration: none; }
   .card__link .card__content .card__title {
     text-decoration: underline; }
+
+.card__content--background {
+  background-color: #FFD308;
+  box-shadow: none; }
+  .card__content--background a {
+    color: #282828;
+    border-color: #282828; }
 
 /*===============================================
 Messages/alerts - Co-op Front-end Toolkit

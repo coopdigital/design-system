@@ -29,7 +29,6 @@
   @include spacing('margin', 'bottom', 'half');
   padding: $half-spacing-unit 0;
   border-bottom: 5px solid rgba(15,114,152,0.1);
-  text-indent: 2px;
   transition: all 0.15s ease;
 
   &:hover {

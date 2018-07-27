@@ -1,9 +1,15 @@
 $woodsmoke: #1D2534;
 
 .ds-header {
-  padding-top: 30px;
-  padding-bottom: 27px;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: $woodsmoke;
+
+  @include media(medium) {
+    padding-top: 30px;
+    padding-bottom: 27px;  
+  }
 
   .coop-logo {
     display: inline-block;
