@@ -217,7 +217,7 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column small-6 medium-4"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour__swatch dm-colour__swatch--wide link-focus-yellow-bg"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour__swatch dm-colour__swatch--wide link-focus-bg"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-bare dm-colour__definition"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bold"</span>&gt;</span>Link focus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>$link-focus<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
@@ -229,12 +229,12 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"column small-6 medium-4"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour__swatch dm-colour__swatch--wide link-focus-yellow-bg"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-bare dm-colour__definition"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dm-colour__swatch dm-colour__swatch--wide link-active-bg"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"list-bare dm-colour__definition white"</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"bold"</span>&gt;</span>Link active<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>$brand<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>rgb(231,196,66)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>#E7C442<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>$link-active<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>rgb(0,50,69)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>#002C3D<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -257,17 +257,23 @@
 
 
     
+
+    
+
+    
     <section class="ds-section ds-section--keyline">
         <div class="row">
             <div class="column medium-8 small-12">
                 <h2 id="user-need">User need</h2>
-                <p>We are currently working on the user need for this.</p>
+                <p>Users need links to navigate from one page to another. For this reason it is important that they look like links, and have styles that indicate their state (hover, active, focus and visited) defined.</p>
 
             </div>
         </div>
     </section>
     
 
+    
+
 
 
 
@@ -275,6 +281,51 @@
             
 
 
+
+    
+
+    
+    <section class="ds-section ds-section--keyline">
+        <div class="row">
+            <div class="column medium-8 small-12">
+                <h2 id="design">Design</h2>
+                <p>A link should always be displayed as above <a href="#variations">unless it's used on a background colour</a>.</p>
+<p>Links that are in context, for example within a header or footer &mdash; can be styled differently.</p>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    
+
+
+
+
+
+            
+
+
+
+    
+    <section class="ds-section ds-section--keyline">
+        <div class="row">
+            <div class="column medium-8 small-12">
+                <h2 id="accessibility">Accessibility</h2>
+                <p>A link should be descriptive of the place it's taking the user. Find out <a href="https://coop-design-manual.herokuapp.com/content.html#links">how we write link text</a>.</p>
+
+<p><a href="https://coop-design-manual.herokuapp.com/accessibility.html">For more information see our general guide on accessibility</a>.</p>
+
+            </div>
+        </div>
+    </section>
+    
+
+    
+
+    
 
     
 
@@ -288,14 +339,20 @@
 
     
 
+    
 
+    
 
+    
+    <section class="ds-section ds-section--keyline">
+        <div class="row">
+            <div class="column medium-8 small-12">
+                <h2 id="variations">Variations</h2>
+                <p>Links can appear in white or black (default, hover and focus &mdash; using the same underline) if used on a background colour.</p>
 
-
-            
-
-
-
+            </div>
+        </div>
+    </section>
     
 
 

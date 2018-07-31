@@ -11,24 +11,31 @@
     <body class="">
         <header class="header">
     <div class="wrap">
-        <a class="coop-logo pull-left" aria-label="Homepage" href="/">
-            <img src="/images/logos/coop-logo.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coopX2.png'">
-        </a>
-        <div class="search column xsmall-12 large-8 large-centered">
-            <form class="search-form" action="/search" method="get">
-                <div class="form-row">
-                    <label for="id_query" class="visually-hidden">Search terms</label>
-                    <input class="input-inline input-search" placeholder="Search Co-op colleagues" id="id_query" name="query" required="required" type="text">
-                    <button class="button button-search" type="submit">
-                        <img src="/static/colleagues/images/search.svg" alt="Search">
+        <div class="row">
+            <div class="column small-12 large-2">
+                <a class="coop-logo pull-left margin-tq" aria-label="Homepage" href="/">
+                    <img src="/images/logos/coop-logo.svg" alt="Co-op" onerror="this.onerror=null; this.src='/images/logos/coopX2.png'">
+                </a>
+            </div>
+            <div class="column small-12 large-7">
+                <form class="tk-search">
+                    <label for="search">Search</label>
+                    <input type="search" name="search" id="search" placeholder="Search the design system" class="tk-search__input">
+                    <button class="tk-search__button">
+                        <span class="visuallyhidden">Search</span>
+                        <svg width="32" height="32" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0 6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5 1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5 11z" fill="#282828" fill-rule="evenodd"/></svg>
                     </button>
-                </div>
-            </form>
+                </form>
+            </div>
+            <div class="column small-12 large-3">
+                <p class="pull-right padding-tq margin-x">
+                    <a href="#">Sign in to my HR</a>
+                </p>
+            </div>
         </div>
-        <p class="pull-right"><a href="#">Sign in to my HR</a></p>
     </div>
 </header>
-<div class="wrap">
+<main class="wrap">
     <div class="row">
         <div class="column small-12 medium-6">
             <article class="card">
@@ -50,13 +57,16 @@
         </div>
     </div>
     <div class="row">
+        <div class="column all-12">
+            <h2 class="card-heading"><a href="#" class="card-heading__link">Colleague stories</a></h2>
+        </div>
         <div class="column small-12 medium-6">
             <article class="card">
                 <a href="#" class="card__link">
                     <img src="/images/placeholders/pride.jpg" alt="Co-op colleagues at Manchester Pride" class="card__image" />
                     <div class="card__content">
                         <h3 class="card__title">We’re celebrating LGBT history&nbsp;month</h3>
-                        <p></p>
+                        <p>We’re also asking all Co-op colleagues which Pride events they’d like to get involved in.</p>
                     </div>
                 </a>
             </article>
@@ -67,13 +77,75 @@
                     <img src="/images/placeholders/pride.jpg" alt="Co-op colleagues at Manchester Pride" class="card__image" />
                     <div class="card__content">
                         <h3 class="card__title">We’re celebrating LGBT history&nbsp;month</h3>
-                        <p></p>
+                        <p>We’re also asking all Co-op colleagues which Pride events they’d like to get involved in.</p>
                     </div>
                 </a>
             </article>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="column small-12 medium-4">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+                <p class="tk-signpost__text">Discounts, pensions, health and wellbeing, help wirth your finances, advice and support.</p>
+            </a>
+        </div>
+        <div class="column small-12 medium-4">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+                <p class="tk-signpost__text">Discounts, pensions, health and wellbeing, help wirth your finances, advice and support.</p>
+            </a>
+        </div>
+        <div class="column small-12 medium-4">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+                <p class="tk-signpost__text">Discounts, pensions, health and wellbeing, help wirth your finances, advice and support.</p>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+        <div class="column small-12 medium-6">
+            <a href="#" class="tk-signpost">
+                <h3 class="tk-signpost__title">Colleague benefits</h3>
+            </a>
+        </div>
+    </div>
+</main>
 
         <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>

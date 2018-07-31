@@ -102,6 +102,11 @@
                   <h3 class="card--link__title">Validation</h3>
               </a>
          </div>
+         <div class="column small-12 medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/search{% else %}/components/detail/search.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Search</h3>
+              </a>
+         </div>
     </div>
     <div class="row margin-tb">
         <div class="column all-12">
@@ -151,6 +156,16 @@
               <a href="{% if frctl.env.server %}/components/detail/skip-nav{% else %}/components/detail/skip-nav.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Skip navigation</h3>
               </a>
+         </div>
+         <div class="column small-12 medium-3">
+             <a href="{% if frctl.env.server %}/components/detail/signpost-group{% else %}/components/detail/signpost-group.html{% endif %}" class="card--link m-bh-med-b">
+                 <h3 class="card--link__title">Signpost group</h3>
+             </a>
+         </div>
+         <div class="column small-12 medium-3">
+             <a href="{% if frctl.env.server %}/components/detail/signpost-group-paragraph{% else %}/components/detail/signpost-group-paragraph.html{% endif %}" class="card--link m-bh-med-b">
+                 <h3 class="card--link__title">Signpost description</h3>
+             </a>
          </div>
     </div>
     <div class="row margin-tb">

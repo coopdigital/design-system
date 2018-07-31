@@ -6733,32 +6733,72 @@ Variables - Co-op Front-end Toolkit
 /*
 Colour
 ===============================================*/
-.search-form {
-  position: relative;
-  padding: 0; }
-  .search-form input {
-    margin-bottom: 0;
-    padding-right: 4em; }
-    .search-form input:hover + button,
-    .search-form input:focus + button {
-      background: #00A1CC; }
-  .search-form button {
+.tk-search {
+  position: relative; }
+  .tk-search .tk-search__input {
+    box-sizing: border-box;
+    padding: 15px;
+    border-color: #C4C4C4; }
+    @media (min-width: 750px) {
+      .tk-search .tk-search__input {
+        padding: 20px; } }
+    .tk-search .tk-search__input:hover, .tk-search .tk-search__input:focus {
+      border-color: #6E6E6E; }
+    .tk-search .tk-search__input:focus {
+      transition: none;
+      outline: 2px dotted #eec300;
+      outline-offset: 3px; }
+  .tk-search .tk-search__button {
     position: absolute;
     bottom: 0;
     right: 0;
     height: 100%;
     padding: 0 15px;
     margin-bottom: 0;
-    background: #6E6E6E;
+    background: transparent;
     border: 0;
-    border-radius: 0 7px 7px 0;
     box-shadow: none; }
-    .search-form button:hover, .search-form button:focus {
-      background: #00A1CC !important; }
-    .search-form button .icon {
+    .tk-search .tk-search__button:focus {
+      transition: none;
+      outline: 2px dotted #eec300;
+      outline-offset: 3px; }
+    .tk-search .tk-search__button svg {
       position: relative;
-      top: -.125em;
-      color: #FFFFFF; }
+      top: 4px; }
+
+/*===============================================
+Signpost - Co-op Front-end Toolkit
+===============================================*/
+/*===============================================
+Variables - Co-op Front-end Toolkit
+===============================================*/
+/*
+Colour
+===============================================*/
+.tk-signpost {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 32px 0;
+  border-bottom: 5px solid rgba(15, 114, 152, 0.1);
+  transition: all 0.15s ease; }
+  @media (min-width: 750px) {
+    .tk-signpost {
+      margin-bottom: 32px; } }
+  .tk-signpost:hover {
+    border-bottom: 5px solid #00394E; }
+    .tk-signpost:hover .tk-signpost__title {
+      text-decoration: none; }
+  .tk-signpost .tk-signpost__title {
+    margin-bottom: 16px;
+    display: inline;
+    font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: underline; }
+    @media (min-width: 750px) {
+      .tk-signpost .tk-signpost__title {
+        margin-bottom: 32px; } }
+  .tk-signpost .tk-signpost__text {
+    color: #282828; }
 
 /*===============================================
 Tabs - Co-op Front-end Toolkit

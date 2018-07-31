@@ -1,1 +1,1 @@
-<p>We are currently working on the user need for this.</p>
+<p>Users need links to navigate from one page to another. For this reason it is important that they look like links, and have styles that indicate their state (hover, active, focus and visited) defined.</p>
