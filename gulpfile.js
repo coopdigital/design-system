@@ -16,6 +16,7 @@ gulp.task('sass', function () {
   .pipe(sass({
     includePaths: [
       'node_modules/coop-frontend-toolkit/styles/',
+      'node_modules/coop-frontend-components/',
       'scss/'
     ]
     // outputStyle: 'compressed'
@@ -46,7 +47,7 @@ gulp.task('coop-theme-sass', function () {
 
 
 gulp.task('watch', function () {
-  gulp.watch(['scss/**/*.scss', 'node_modules/coop-frontend-toolkit/styles/**/*.scss'], ['sass', 'coop-theme-sass']);
+  gulp.watch(['scss/**/*.scss', 'node_modules/coop-frontend-toolkit/styles/**/*.scss', 'node_modules/coop-frontend-components/**/*.scss'], ['sass', 'coop-theme-sass']);
 });
 
 gulp.task('default', ['sass', 'coop-theme-sass', 'copy', 'watch']);

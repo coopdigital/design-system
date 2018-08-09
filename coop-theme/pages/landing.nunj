@@ -19,7 +19,7 @@
         </div>
          <div class="column small-12 medium-3">
               <a href="{% if frctl.env.server %}/components/detail/logo{% else %}/components/detail/logo.html{% endif %}" class="card--link m-bh-med-b">
-                  <h3 class="card--link__title">Brand</h3>
+                  <h3 class="card--link__title">Logo</h3>
               </a>
          </div>
          <div class="column small-12 medium-3">

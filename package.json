@@ -15,7 +15,9 @@
     "@frctl/nunjucks-engine": "^0.4.0",
     "@frctl/nunjucks-helpers": "^0.3.0",
     "browser-sync": "^2.12.5",
+    "concurrently": "^3.6.1",
     "coop-components": "github:coopdigital/coop-components#0414b05",
+    "coop-frontend-components": "github:coopdigital/coop-frontend-components",
     "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#04bf0e9",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "1.0.0",
@@ -25,7 +27,6 @@
     "gulp-uglify": "^2.0.0",
     "helper-markdown": "^1.0.0",
     "npm-safe-install": "^1.0.0",
-    "nunjucks-markdown-filter": "^0.1.0",
-    "concurrently": "^3.6.1"
+    "nunjucks-markdown-filter": "^0.1.0"
   }
 }

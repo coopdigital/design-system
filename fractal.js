@@ -18,9 +18,16 @@ fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Matt Tyas');
 
 /*
+ * Nunjucks is similar to Jinja2 which we use for our django apps
+ * So we'll try that...
+ */
+fractal.components.engine('@frctl/nunjucks');
+fractal.components.set('ext', '.html');
+
+/*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'node_modules/coop-components/components'));
+fractal.components.set('path', path.join(__dirname, 'node_modules/coop-frontend-components'));
 
 /*
  * Tell Fractal where to look for documentation pages.
