@@ -15,8 +15,9 @@ gulp.task('sass', function () {
   return gulp.src('scss/main.scss')
   .pipe(sass({
     includePaths: [
-      'node_modules/coop-frontend-toolkit/styles/',
-      'node_modules/coop-frontend-components/',
+      'node_modules/coop-frontend-toolkit/styles',
+      'node_modules/@coopdigital/coop-frontend-foundations/',
+      'node_modules/@coopdigital/coop-frontend-components/',
       'scss/'
     ]
     // outputStyle: 'compressed'
@@ -45,9 +46,8 @@ gulp.task('coop-theme-sass', function () {
   .pipe(gulp.dest('public/css'));
 });
 
-
 gulp.task('watch', function () {
-  gulp.watch(['scss/**/*.scss', 'node_modules/coop-frontend-toolkit/styles/**/*.scss', 'node_modules/coop-frontend-components/**/*.scss'], ['sass', 'coop-theme-sass']);
+  gulp.watch(['scss/**/*.scss', 'node_modules/@coopdigital/coop-frontend-foundations/**/*.scss', 'node_modules/@coopdigital/coop-frontend-components/**/*.scss'], ['sass', 'coop-theme-sass']);
 });
 
 gulp.task('default', ['sass', 'coop-theme-sass', 'copy', 'watch']);

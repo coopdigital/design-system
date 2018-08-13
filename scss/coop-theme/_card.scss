@@ -32,17 +32,17 @@
   transition: all 0.15s ease;
 
   &:hover {
-    border-bottom: 5px solid $coop-link-hover-blue;
+    border-bottom: 5px solid $link-hover;
 
     .card--link__title {
       text-decoration: none;
-      color: $coop-link-hover-blue;
+      color: $link-hover;
     }
   }
 
   .card--link__title {
     font-family: $medium;
-    color: $coop-link-blue;
+    color: $link;
     text-decoration: underline;
     display: inline;
     @include spacing('margin', 'bottom', 'half');
@@ -65,7 +65,7 @@
   }
 
   .card--link__title {
-    color: $body-copy;
+    color: $text;
     font-family: $bold;
     border-bottom: 0;
     @include spacing('margin', 'bottom', 'quarter');

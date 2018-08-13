@@ -95,7 +95,7 @@
 }
 
 .ds-section--keyline {
-  border-bottom: 1px solid lighten($mid-grey, 10%);
+  border-bottom: 1px solid lighten($grey-mid, 10%);
 }
 
 .Frame-inner {
@@ -150,6 +150,36 @@
   list-style-type: disc;
 }
 
+.code--panel {
+  position: relative;
+  background: lighten($grey-light, 2%);
+  padding-top: 64px;
+
+  .code--panel--links {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    a,
+    button {
+      margin-left: 10px;
+      color: $link;
+      border: 0;
+      text-decoration: underline;
+      font-family: $regular;
+      cursor: pointer;
+      &:hover {
+        color: $link-hover;
+        text-decoration: none;
+      }
+    }
+
+  }
+}
+
+.Code.code--panel pre {
+  padding-bottom: 16px;
+}
+
 .Code pre {
   padding: 0 0 $base-spacing-unit 0;
   white-space: pre-wrap;
@@ -157,6 +187,7 @@
   white-space: -pre-wrap;
   white-space: -o-pre-wrap;
   word-wrap: break-word;
+  font-size: 1rem;
 }
 
 .ds-section .responsive-list {
@@ -220,10 +251,12 @@
 }
 
 .Code {
-  background: $page;
+  // background: $page;
 
   pre {
-    background: $page;
+    background: lighten($grey-light, 2%);
+    padding: 10px 16px;
+    margin-bottom: $half-spacing-unit;
   }
 }
 

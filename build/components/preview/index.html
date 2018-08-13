@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="wf-active">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>document.write('<link rel="stylesheet" type="text/css" href="/css/main.css?v='+Date.now()+'" />');</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body class="ds">
+        <div class="ds-wrap">
+            <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Node-webkit-based module test</title>
+<script>
+function nwModuleTest(){
+   var util = require('util');
+   var moduleFolder = require('nw.gui').App.argv[0];
+   try {
+      require(moduleFolder);
+   } catch(e) {
+      if( process.platform !== 'win32' ){
+         util.log('nw-pre-gyp error:');
+         util.log(e.stack);
+      }
+      process.exit(1);
+   }
+   process.exit(0);
+}
+</script>
+</head>
+<body onload="nwModuleTest()">
+<h1>Node-webkit-based module test</h1>
+</body>
+</html>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>  
+

@@ -28,5 +28,8 @@
     "helper-markdown": "^1.0.0",
     "npm-safe-install": "^1.0.0",
     "nunjucks-markdown-filter": "^0.1.0"
+  },
+  "devDependencies": {
+    "@coopdigital/coop-frontend-foundations": "^0.1.0"
   }
 }

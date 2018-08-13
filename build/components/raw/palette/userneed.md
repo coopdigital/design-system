@@ -1,0 +1,1 @@
+<p>Colour should convey meaning to a user and feel suitable for the subject matter. It should have high enough contrast where text is being used. This will help to build trust and confidence in a&nbsp;service. </p>

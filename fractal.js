@@ -27,7 +27,7 @@ fractal.components.set('ext', '.html');
 /*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'node_modules/coop-frontend-components'));
+fractal.components.set('path', path.join(__dirname, 'node_modules/@coopdigital/coop-frontend-components/'));
 
 /*
  * Tell Fractal where to look for documentation pages.
@@ -63,6 +63,21 @@ fractal.components.set('statuses', {
       description: "Ready to implement.",
       color: "#1AA579"
   }
+});
+
+fractal.components.set('resources', {
+    scss: {
+        label: 'SCSS',
+        match: ['**/*.scss']
+    },
+    css: {
+        label: 'CSS',
+        match: ['**/*.css']
+    },
+    other: {
+        label: 'Other Assets',
+        match: ['**/*', '!**/*.scss', '!**.css']
+    }
 });
 
 /*

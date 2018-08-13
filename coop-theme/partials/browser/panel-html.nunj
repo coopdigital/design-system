@@ -1,8 +1,11 @@
 {% import "macros/render.nunj" as render %}
 <section>
-    <code class="Code Code--lang-html">
+    <code class="Code Code--lang-html code--panel">
+        <ul class="list-bare list-inline code--panel--links">
+            <li><button onclick="CopyToClipboard('html')">Copy to clipboard</button></li>
+        </ul>
         {% if not entity.isCollated or entity.isVariant or entity.variants().size == 1 %}
-        <pre>{{ render.entity(entity.render(null, renderEnv, {preview: false, collate: false}) | async(true)) | trim }}</pre>
+        <pre id="html">{{ render.entity(entity.render(null, renderEnv, {preview: false, collate: false}) | async(true)) | trim }}</pre>
         {% else %}
         {% for variant in entity.variants().items() %}
             <pre>{{ '<span class="hljs-comment">&lt;!-- ' + variant.label + ' --&gt;</span>' }}

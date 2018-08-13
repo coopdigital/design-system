@@ -11,13 +11,13 @@
 }
 
 .ds-pen-example {
+  margin-right: 16px;
   border-radius: 10px;
   box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
 
   .ds-tabs {
     display: none;
-
-
+    
     @include media(medium) {
       display: block;
       position: relative;

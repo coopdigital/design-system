@@ -4,7 +4,7 @@
             <header class="ds-pen-example__header">
                 <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
             </header>
-            <a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> {% include "icons/open-in-browser.svg" %}</a>
+            {# <a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> {% include "icons/open-in-browser.svg" %}</a> #}
             <div id="TabContainer">
                 <div class="accordion-wrapper">
                     <h3 class="tabs-container__title" id="TabPanelTitle-Tab1">Example</h3>
@@ -16,7 +16,7 @@
                                 {% else %}
                                 <iframe
                                     id="breakpoint-viewer"
-                                    class="Preview-iframe" 
+                                    class="Preview-iframe"
                                     data-role="window"
                                     src="{{ previewUrl }}"
                                     sandbox="allow-same-origin allow-scripts allow-forms"
@@ -60,9 +60,17 @@
                             </div>
                         </div>
                     </div>
-                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">Code</h3>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">HTML</h3>
                     <div class="tabs-container__panel" id="Tab3">
                         {% include 'partials/browser/panel-html.nunj' %}
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab4">SCSS</h3>
+                    <div class="tabs-container__panel" id="Tab4">
+                        {% include 'partials/browser/panel-scss.nunj' %}
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
+                    <div class="tabs-container__panel" id="Tab5">
+                        {% include 'partials/browser/panel-js.nunj' %}
                     </div>
                 </div>
             </div>
