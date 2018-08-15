@@ -7,45 +7,24 @@
   color: $text;
   transition: background .15s ease;
   &:hover {
-    background: $button-primary-dark;
+    background: $button-dark;
     color: $page;
   }
 }
 
 .btn-pill[aria-selected="true"] {
-  background: $button-primary-dark;
+  background: $button-dark;
   color: $page;
 }
 
 .btn--outline {
   background: transparent;
-  border: 2px solid $coop-link-blue;
-  color: $coop-link-blue;
+  border: 2px solid $link;
+  color: $link;
   border-radius: 6px;
   &:hover {
     background: transparent;
-    border: 2px solid $coop-link-hover-blue;
-    color: $coop-link-hover-blue;
+    border: 2px solid $link-hover;
+    color: $link-hover;
   }
 }
-
-// .ds-outline-btn--primary {
-//   border: 3px solid $button-green;
-//   color: $button-green;
-//
-//   &:hover {
-//     border: 3px solid $button-green-highlighted;
-//     color: $button-green-highlighted;
-//   }
-// }
-//
-// .ds-outline-btn--primary[aria-selected="true"] {
-//   border: 3px solid $button-green;
-//   background: $button-green;
-//   color: $page;
-//   &:hover {
-//     border: 3px solid $button-green;
-//     background: $button-green;
-//     color: $page;
-//   }
-// }

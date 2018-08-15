@@ -1,11 +1,6 @@
-// coop toolkit ^2.0.2
-@import "coop-toolkit";
-@import "coop-components";
 
-// Demo styles
-// .ds-wrap {
-//   margin: 0 $half-spacing-unit 0 0;
-// }
+@import "coop-foundations";
+@import "coop-components";
 
 .ds-wrap--padded {
   @include spacing('margin', 'top', 'half');

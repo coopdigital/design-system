@@ -30,6 +30,6 @@
     "nunjucks-markdown-filter": "^0.1.0"
   },
   "devDependencies": {
-    "@coopdigital/coop-frontend-foundations": "^0.1.0"
+    "@coopdigital/coop-frontend-foundations": "^0.1.1"
   }
 }

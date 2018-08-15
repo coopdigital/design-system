@@ -34,6 +34,7 @@ gulp.task('coop-theme-sass', function () {
   return gulp.src('scss/coop-theme.scss')
   .pipe(sass({
     includePaths: [
+      'node_modules/@coopdigital/coop-frontend-foundations/',
       'scss/'
     ],
     outputStyle: 'compressed'
