@@ -20,7 +20,7 @@ if (document.selection) {
   Tabs = (function () {
 
     var templates = {
-      tplTabNav: Handlebars.compile("<ul class='list-inline ds-tabs pull-right' role='tablist'>{{#each tab}}<li role='presentation' class='ds-tabs__item'><a href='#{{tabId}}' id='TabController-{{tabId}}' class='btn-pill' role='tab' aria-selected='false' aria-controls='{{tabId}}' tabindex=-1 aria-expanded='false' data-title='{{tabTitle}}'>{{tabTitle}}</a></li>{{/each}}</ul>")
+      tplTabNav: Handlebars.compile("<ul class='coop-list-inline ds-tabs coop-u-pull-right' role='tablist'>{{#each tab}}<li role='presentation' class='ds-tabs__item'><a href='#{{tabId}}' id='TabController-{{tabId}}' class='btn-pill' role='tab' aria-selected='false' aria-controls='{{tabId}}' tabindex=-1 aria-expanded='false' data-title='{{tabTitle}}'>{{tabTitle}}</a></li>{{/each}}</ul>")
     };
 
     /**

@@ -1,7 +1,7 @@
 <div class="Pen-panel Pen-header ds-pen">
-    <div class="row">
-        <div class="column all-12">
-            <p class="margin-bb">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-all-12">
+            <p class="coop-u-margin-bb">
                 <a href="{{ path('/') }}" class="link-back" data-pjax>
                 <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.6 29.2">
                   <path d="M1 15.6c-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4L13.7.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L1.7 15.3c-.2.2-.4.3-.7.3zm13.6 13.6c-.3 0-.5-.1-.7-.3L.3 15.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l13.6 13.6c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z"/>

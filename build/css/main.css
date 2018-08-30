@@ -3853,6 +3853,94 @@ table,
  *
  */
 /* Navigation */
+/* =========================================
+Skip navigation - Co-op front-end components
+============================================ */
+.coop-c-skip-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .coop-c-skip-nav ul {
+    list-style: none;
+    margin: 0; }
+  .coop-c-skip-nav a {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    font-size: 1.25em;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    background: #6E6E6E;
+    white-space: nowrap; }
+    .coop-c-skip-nav a:focus, .coop-c-skip-nav a:active {
+      left: 16px; }
+
+/* ===================================
+Signposts - Co-op front-end components
+====================================== */
+.coop-c-signpost {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 32px 0;
+  border-bottom: 5px solid rgba(15, 114, 152, 0.1);
+  transition: all 0.15s ease; }
+  @media (min-width: 750px) {
+    .coop-c-signpost {
+      margin-bottom: 32px; } }
+  .coop-c-signpost:hover {
+    border-bottom: 5px solid #000102; }
+    .coop-c-signpost:hover .coop-c-signpost__title {
+      text-decoration: none; }
+  .coop-c-signpost .coop-c-signpost__title {
+    margin-bottom: 16px;
+    display: inline;
+    font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: underline; }
+    @media (min-width: 750px) {
+      .coop-c-signpost .coop-c-signpost__title {
+        margin-bottom: 32px; } }
+  .coop-c-signpost .coop-c-signpost__text {
+    color: #282828; }
+
+/* forms */
+/* ================================
+Search - Co-op front-end components
+=================================== */
+.coop-c-search {
+  position: relative; }
+  .coop-c-search .coop-c-search__input {
+    box-sizing: border-box;
+    padding: 15px;
+    border-color: #C4C4C4; }
+    @media (min-width: 750px) {
+      .coop-c-search .coop-c-search__input {
+        padding: 20px; } }
+    .coop-c-search .coop-c-search__input:hover, .coop-c-search .coop-c-search__input:focus {
+      border-color: #6E6E6E; }
+    .coop-c-search .coop-c-search__input:focus {
+      transition: none;
+      outline: 2px dotted #eec300;
+      outline-offset: 3px; }
+  .coop-c-search .coop-c-search__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+    margin-bottom: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none; }
+    .coop-c-search .coop-c-search__button:focus {
+      transition: none;
+      outline: 2px dotted #eec300;
+      outline-offset: 3px; }
+    .coop-c-search .coop-c-search__button svg {
+      position: relative;
+      top: 4px; }
+
 /* Cards */
 /*================================
 Cards - Co-op front-end components

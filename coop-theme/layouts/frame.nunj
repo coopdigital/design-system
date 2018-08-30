@@ -7,7 +7,7 @@
     <div class="Frame-header">
         {% include 'partials/header.nunj' %}
     </div>
-    <div class="wrap">
+    <div class="coop-l-wrap">
         <main id="main">
             {# <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
                 {% include 'icons/close-nav.svg' %}

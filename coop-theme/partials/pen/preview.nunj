@@ -1,6 +1,6 @@
 <section class="ds-section ds-pen-example">
-    <div class="row">
-        <div class="column all-12">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-all-12">
             <header class="ds-pen-example__header">
                 <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
             </header>
@@ -36,8 +36,8 @@
                             </div>
                         </div>
                         <div class="ds-pen-example__tools">
-                            <div class="row">
-                                <div class="column all-12">
+                            <div class="coop-l-row">
+                                <div class="coop-l-column coop-l-all-12">
                                     <h3>See this at:</h3>
                                     <ul class="responsive-list">
                                         <li class="responsive-list--item">

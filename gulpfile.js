@@ -15,7 +15,6 @@ gulp.task('sass', function () {
   return gulp.src('scss/main.scss')
   .pipe(sass({
     includePaths: [
-      'node_modules/coop-frontend-toolkit/styles',
       'node_modules/@coopdigital/coop-frontend-foundations/',
       'node_modules/@coopdigital/coop-frontend-components/',
       'scss/'

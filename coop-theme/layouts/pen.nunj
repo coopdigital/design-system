@@ -22,16 +22,16 @@
     {% endif %}
 {%- endif %}
 <div class="Pen" data-behaviour="pen" id="pen-{{ entity.id }}">
-    <div class="row">
-        <div class="column large-8 small-12">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-large-8 coop-l-small-12">
             {% include "partials/pen/header.nunj" %}
         </div>
     </div>
-    <div class="row">
-        <div class="column large-3 small-12 fixedsticky">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-large-3 coop-l-small-12 fixedsticky">
             {% include "partials/pen/in-page-navigation.nunj" %}
         </div>
-        <div class="column large-9 small-12">
+        <div class="coop-l-column coop-l-large-9 coop-l-small-12">
             {% block penContent %}
             {% include "partials/pen/preview.nunj" %}
             {% include 'partials/browser/panel-resources.nunj' %}

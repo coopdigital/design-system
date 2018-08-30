@@ -19,7 +19,6 @@ fractal.set('project.author', 'Matt Tyas');
 
 /*
  * Nunjucks is similar to Jinja2 which we use for our django apps
- * So we'll try that...
  */
 fractal.components.engine('@frctl/nunjucks');
 fractal.components.set('ext', '.html');
