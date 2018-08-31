@@ -1,4 +1,38 @@
 {% set compHandle = entity.component().handle %}
+
+<!-- taken from mandlebrot - views/partials/browser/panel-info.nunj -->
+{% if entity.isComponent %}
+{% set variants = entity.variants() %}
+{% else %}
+{% set variants = entity.parent.variants() %}
+{% endif %}
+<!-- taken from mandlebrot - views/partials/browser/panel-info.nunj -->
+
+{% if variants %}
+<section class="ds-section ds-section--keyline">
+    <div class="row">
+        <div class="column medium-8 small-12">
+          <h2 id="variations">Variations</h2>
+          <ul>
+
+          {% for item in variants.items() %}
+            {% if entity.name !== item.name %}
+              <li><a href="{{item.handle}}">{{item.label}}</a></li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!--
+  Keeping this in for the moment -
+  TODO:
+    • will need to check on other components to make sure nothing breaks
+    • will move other components over to variants and then remove this block
+-->
+{% if entity.resources().items() %}
 {% for collection in entity.resources().items() %}
 {% if collection.size %}
 {% for resource in collection.items() %}
@@ -15,3 +49,4 @@
 {% endfor %}
 {% endif %}
 {% endfor %}
+{% endif %}
