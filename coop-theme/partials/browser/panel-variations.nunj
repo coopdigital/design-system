@@ -25,6 +25,7 @@
 </section>
 {% endif %}
 
+<!-- Keep for now but don't render -->
 {% if entity.rainbows %}
 <section class="ds-section ds-section--keyline">
     <div class="row">
