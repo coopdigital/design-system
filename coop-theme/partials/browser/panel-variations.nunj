@@ -1,17 +1,23 @@
-{% set compHandle = entity.component().handle %}
-{% for collection in entity.resources().items() %}
-{% if collection.size %}
-{% for resource in collection.items() %}
-    {% if resource.name == 'variations' %}
-    <section class="ds-section ds-section--keyline">
-        <div class="row">
-            <div class="column medium-8 small-12">
-                <h2 id="variations">Variations</h2>
-                {{ resource.contents }}
-            </div>
+<section class="ds-section ds-section--keyline">
+    <div class="row">
+        <div class="column medium-8 small-12">
+            <h2 id="variations">Variations on this pattern</h2>
+            <ul class="list-bare">
+                {% if entity.isComponent %}
+                {% set variants = entity.variants() %}
+                {% else %}
+                {% set variants = entity.parent.variants() %}
+                {% endif %}
+                {% if variants.size > 1 %}
+                    {% for variant in variants.items() %}
+                    <li>
+                        <a href="{{ path(frctl.theme.urlFromRoute('component', { handle: variant.handle })) }}">
+                            {{ variant.label }}
+                        </a>{% if not loop.last %} {% endif %}
+                    </li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
         </div>
-    </section>
-    {% endif %}
-{% endfor %}
-{% endif %}
-{% endfor %}
+    </div>
+</section>
