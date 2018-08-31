@@ -1,31 +1,21 @@
-
 {% set compHandle = entity.component().handle %}
 {% for collection in entity.resources().items() %}
     {% if collection.size %}
         {% for resource in collection.items() %}
-
             {% if resource.lang == 'SCSS' %}
             <p>To use this component in your service add this import in your main SCSS file:</p>
             <code class="Code Code--lang-{{ resource.lang }} code--panel">
                 <pre id="import">@import '{{ resource.path | componentPath }}';</pre>
-
-                <pre id="import">{{ path(frctl.theme.urlFromRoute('component-resource', {handle: 'cards', asset:resource.base} )) }}</pre>
-
                 <ul class="coop-list-bare coop-list-inline code--panel--links">
                     <li><a href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}">View the component SCSS</a></li>
                     <li><button onclick="CopyToClipboard('import')">Copy to clipboard</button></li>
                 </ul>
             </code>
-            {# <p>Customise this component by following the guide here.</p> #}
+            <p>Customise this component by <a href="https://github.com/coopdigital/coop-frontend-components/blob/master/README.md">following the guide here</a>.</p>
             {# <code class="Code Code--lang-{{ resource.lang }}">
                 <pre>{{ resource.contents | highlight(resource.lang) }}</pre>
             </code> #}
-            {% else %}
-            Hello
             {% endif %}
-
         {% endfor %}
-
     {% endif %}
-
 {% endfor %}

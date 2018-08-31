@@ -128,22 +128,22 @@
            <h2>Components</h2>
         </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/card-group{% else %}/components/detail/card-group.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/card--group{% else %}/components/detail/card--group.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Card group</h3>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/card-group-image{% else %}/components/detail/card-image.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/card--group-image{% else %}/components/detail/card--group-image.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Card group with images</h3>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/card-group-heading{% else %}/components/detail/card-group-heading.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/card--group-heading{% else %}/components/detail/card--group-heading.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Card group with heading</h3>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/card-background{% else %}/components/detail/card-background.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/card--background{% else %}/components/detail/card--background.html{% endif %}" class="card--link m-bh-med-b">
                   <h3 class="card--link__title">Card background</h3>
               </a>
          </div>

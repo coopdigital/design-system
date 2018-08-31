@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="wf-active">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <script>document.write('<link rel="stylesheet" type="text/css" href="/css/main.css?v='+Date.now()+'" />');</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body class="ds">
+        <div class="ds-wrap">
+            <div class="coop-c-message coop-c-message--error">
+    <h2>There's a problem</h2>
+    <p>Check the form. You must:</p>
+    <ul>
+        <li>Enter your full name</li>
+        <li>Enter an email address</li>
+    </ul>
+</div>
+<fieldset>
+    <div class="coop-form-row coop-form-group-error">
+       <div class="coop-field_with_errors">
+            <label for="client_name">Your full name</label>
+       </div>
+       <p class="coop-form-error">Enter your full name</p>
+       <div class="coop-field_with_errors">
+            <input class="name" type="text" value="" name="client[name]" id="client_name">
+       </div>
+    </div>
+    <div class="coop-form-row coop-form-group-error">
+        <div class="coop-field_with_errors">
+            <label for="client_email_address">
+                Your email address
+                <span class="coop-label__hint">We'll only use this to contact you about your will.</span>
+            </label>
+            <p class="coop-form-error">Enter an email address</p>
+        </div>
+        <div class="coop-field_with_errors">
+            <input class="email" type="email" value="" name="client[email_address]" id="client_email_address">
+        </div>
+    </div>
+</fieldset>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+        <script src="/js/main.js"></script>
+    </body>
+</html>  
+

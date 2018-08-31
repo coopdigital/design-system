@@ -1,0 +1,31 @@
+/* ===================================
+Signposts - Co-op front-end components
+====================================== */
+
+.coop-c-signpost {
+  display: block;
+  width: 100%;
+  @include spacing('margin', 'bottom', 'half');
+  padding: $half-spacing-unit 0;
+  border-bottom: 5px solid rgba(15,114,152,0.1);
+  transition: all 0.15s ease;
+
+  &:hover {
+    border-bottom: 5px solid $link-hover;
+
+    .coop-c-signpost__title {
+      text-decoration: none;
+    }
+  }
+
+  .coop-c-signpost__title {
+    @include spacing('margin', 'bottom', 'half');
+    display: inline;
+    font-family: $medium;
+    text-decoration: underline;
+  }
+
+  .coop-c-signpost__text {
+    color: $text;
+  }
+}
