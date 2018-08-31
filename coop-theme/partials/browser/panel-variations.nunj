@@ -8,7 +8,7 @@
 {% endif %}
 <!-- taken from mandlebrot - views/partials/browser/panel-info.nunj -->
 
-{% if variants %}
+{% if variants.length > 1 %}
 <section class="ds-section ds-section--keyline">
     <div class="row">
         <div class="column medium-8 small-12">
