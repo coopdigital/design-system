@@ -7,9 +7,10 @@
             {% if resource.lang == 'SCSS' %}
             <p>To use this component in your service add this import in your main SCSS file:</p>
             <code class="Code Code--lang-{{ resource.lang }} code--panel">
-                <pre id="import">@import '{{ resource.path | componentPath }}';</pre>
 
-                <pre id="import">{{ path(frctl.theme.urlFromRoute('component-resource', {handle: 'cards', asset:resource.base} )) }}</pre>
+                <pre id="import">@import '{{ resource.path | componentPath | replace(compHandle, '') }}';</pre>
+
+                <pre id="import">{{ path(frctl.theme.urlFromRoute()) }}</pre>
 
                 <ul class="coop-list-bare coop-list-inline code--panel--links">
                     <li><a href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}">View the component SCSS</a></li>
@@ -17,9 +18,9 @@
                 </ul>
             </code>
             {# <p>Customise this component by following the guide here.</p> #}
-            {# <code class="Code Code--lang-{{ resource.lang }}">
+            <code class="Code Code--lang-{{ resource.lang }}">
                 <pre>{{ resource.contents | highlight(resource.lang) }}</pre>
-            </code> #}
+            </code>
             {% else %}
             Hello
             {% endif %}

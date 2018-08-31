@@ -1,0 +1,52 @@
+/* ================================
+Search - Co-op front-end components
+=================================== */
+
+.coop-c-search {
+  position: relative;
+
+  .coop-c-search__input {
+    box-sizing: border-box;
+    padding: 15px;
+    border-color: $grey-mid;
+
+    @include media(medium) {
+      padding: 20px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $grey-dark;
+    }
+
+    &:focus {
+      transition: none;
+      outline: 2px dotted $link-focus;
+      outline-offset: 3px;
+    }
+
+  }
+
+  .coop-c-search__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    padding: 0 15px;
+    margin-bottom: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+
+    &:focus {
+      transition: none;
+      outline: 2px dotted $link-focus;
+      outline-offset: 3px;
+    }
+
+    svg {
+      position: relative;
+      top: 4px;
+    }
+  }
+}
