@@ -1,23 +1,26 @@
+{% set compHandle = entity.component().handle %}
+
+<!-- taken from mandlebrot - views/partials/browser/panel-info.nunj -->
+{% if entity.isComponent %}
+{% set variants = entity.variants() %}
+{% else %}
+{% set variants = entity.parent.variants() %}
+{% endif %}
+<!-- taken from mandlebrot - views/partials/browser/panel-info.nunj -->
+
+{% if variants.size > 1 %}
 <section class="ds-section ds-section--keyline">
     <div class="row">
         <div class="column medium-8 small-12">
             <h2 id="variations">Variations on this pattern</h2>
-            <ul class="list-bare">
-                {% if entity.isComponent %}
-                {% set variants = entity.variants() %}
-                {% else %}
-                {% set variants = entity.parent.variants() %}
-                {% endif %}
-                {% if variants.size > 1 %}
-                    {% for variant in variants.items() %}
-                    <li>
-                        <a href="{{ path(frctl.theme.urlFromRoute('component', { handle: variant.handle })) }}">
-                            {{ variant.label }}
-                        </a>{% if not loop.last %} {% endif %}
-                    </li>
-                    {% endfor %}
-                {% endif %}
+            <ul>
+            {%- for item in variants.items() -%}
+              {% if entity.name !== item.name %}
+                <li><a href="{{item.handle}}">{{item.label}}</a></li>
+              {% endif %}
+            {% endfor %}
             </ul>
         </div>
     </div>
 </section>
+{% endif %}
