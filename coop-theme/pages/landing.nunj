@@ -171,17 +171,17 @@
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-image{% else %}/components/detail/cards--group-image.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-image{% else %}/components/detail/cards--card-group-with-image.html{% endif %}" class="card--link m-bh-med-b">
                   <h4 class="card--link__title">Card group with images</h4>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-heading{% else %}/components/detail/cards--card-group-heading.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-heading{% else %}/components/detail/cards--card-group-with-heading.html{% endif %}" class="card--link m-bh-med-b">
                   <h4 class="card--link__title">Card group with heading</h4>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
-              <a href="{% if frctl.env.server %}/components/detail/cards--card-with-background{% else %}/components/detail/cards--card-background.html{% endif %}" class="card--link m-bh-med-b">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-with-background{% else %}/components/detail/cards--card-with-background.html{% endif %}" class="card--link m-bh-med-b">
                   <h4 class="card--link__title">Card with background</h4>
               </a>
          </div>
