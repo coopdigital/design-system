@@ -21,7 +21,15 @@
   @include clearfix();
 }
 
+@mixin sentence-case() {
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
 .ds-pen-header__title {
+  @include sentence-case();
   float: left;
   margin-bottom: $quarter-spacing-unit;
 }
