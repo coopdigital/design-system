@@ -1,0 +1,50 @@
+.footer-main {
+  @include spacing('margin', 'top', 'base');
+  padding: $quarter-spacing-unit 0;
+  background-color: $grey-light;
+
+  .secondary-nav {
+    @include media(medium) {
+      text-align: right;
+    }
+    ul {
+      margin-bottom: 0;
+
+      .active {
+
+        a {
+          padding-right: 0;
+          padding-top: $eighth-spacing-unit;
+          border-top: 0;
+
+          @include media(medium) {
+            padding-top: 65px;
+            border-top: 11px solid $white;
+            font-family: $regular;
+          }
+        }
+      }
+    }
+    li {
+
+      @include media(medium) {
+        display: inline-block;
+        margin-right: $half-spacing-unit;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      color: $text;
+      border: none;
+      border-bottom: 0.05em solid $text;
+      font-size: 18px;
+      &:hover {
+        border-bottom: 0;
+      }
+    }
+  }
+}

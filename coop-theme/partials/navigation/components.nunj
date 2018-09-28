@@ -1,0 +1,5 @@
+{% if frctl.components.size %}
+<div class="Navigation-group" id="sidebar-navigation">
+{{ nav.tree(frctl.components, entity, request) }}
+</div>
+{% endif %}

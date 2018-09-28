@@ -1,0 +1,230 @@
+{% extends "layouts/landing.nunj"%}
+
+{% block landingContent %}
+<div class="coop-l-wrap coop-u-margin-tb">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-medium-7 coop-l-small-12">
+            <h1>Pattern library</h1>
+            <p class="coop-intro-text coop-u-margin-bh">These patterns are meant as a starting point when designing for Co&#8209;op. Experimenting is encouraged.</p>
+        </div>
+        <div class="coop-l-column coop-l-small-12">
+            <div class="message message--info">
+                <p>We're updating our design guidance. You can find our old design manual in the <a href="https://coop-design-manual.herokuapp.com/archive.html">archive</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+        <div class="coop-l-column  coop-l-medium-7 coop-l-small-12">
+           <h2>Foundations</h2>
+           <p>The foundation styles give you the basic Co&#8209;op look and feel. Use the foundation styles by <a href="https://github.com/coopdigital/coop-frontend-foundations">following the guide on github</a>.</p>
+        </div>
+        <div class="coop-l-column coop-l-all-12">
+           <h3>Branding</h3>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/logo{% else %}/components/detail/logo.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Logo</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/palette{% else %}/components/detail/palette.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Colour palette</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/links{% else %}/components/detail/links.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Links</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/buttons{% else %}/components/detail/buttons.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Buttons</h4>
+            </a>
+        </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+        <div class="coop-l-column coop-l-all-12">
+           <h3>Typography</h3>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/fonts{% else %}/components/detail/fonts.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Font</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/scale{% else %}/components/detail/scale.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Scale</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/bullet-list{% else %}/components/detail/bullet-list.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Bullet list</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/numbered-list{% else %}/components/detail/numbered-list.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Numbered list</h4>
+            </a>
+        </div>
+        <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+            <a href="{% if frctl.env.server %}/components/detail/quotations{% else %}/components/detail/quotations.html{% endif %}" class="card--link m-bh-med-b">
+                <h4 class="card--link__title">Quotation</h4>
+            </a>
+        </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+        <div class="coop-l-column coop-l-all-12">
+           <h3>Forms</h3>
+        </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/input{% else %}/components/detail/input.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Input</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/textarea{% else %}/components/detail/textarea.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Textarea</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/checkboxes{% else %}/components/detail/checkboxes.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Checkboxes</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/radio-buttons{% else %}/components/detail/radio-buttons.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Radio buttons</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/submit{% else %}/components/detail/submit.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Submit button</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/validation{% else %}/components/detail/validation.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Validation</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/search{% else %}/components/detail/search.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Search</h4>
+              </a>
+         </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+        <div class="coop-l-column coop-l-all-12">
+           <h3>Displaying data</h3>
+        </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/table{% else %}/components/detail/table.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Table</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/responsive{% else %}/components/detail/responsive.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Responsive table</h4> <span class="status status--beta">Beta</span>
+              </a>
+         </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+         <div class="coop-l-column coop-l-all-12">
+             <h3>Grid</h3>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/layout{% else %}/components/detail/layout.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Page layout</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/centered{% else %}/components/detail/centered.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Centered columns</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/collapse{% else %}/components/detail/collapse.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Removing gutters</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/push-pull{% else %}/components/detail/push-pull.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Reordering columns</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/offset{% else %}/components/detail/offset.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Offsetting columns</h4>
+              </a>
+         </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+        <div class="coop-l-column  coop-l-medium-7 coop-l-small-12">
+            <h2>Components</h2>
+            <p>The components are design patterns that can help to build a service.</p>
+        </div>
+        <div class="coop-l-column coop-l-all-12">
+            <h3>Cards</h3>
+        </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-group{% else %}/components/detail/cards--card-group.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Card group</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-image{% else %}/components/detail/cards--group-image.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Card group with images</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-group-with-heading{% else %}/components/detail/cards--card-group-heading.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Card group with heading</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/cards--card-with-background{% else %}/components/detail/cards--card-background.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Card with background</h4>
+              </a>
+         </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+         <div class="coop-l-column coop-l-all-12">
+            <h3>Navigation</h3>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/detail/skip-nav{% else %}/components/detail/skip-nav.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Skip navigation</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+             <a href="{% if frctl.env.server %}/components/detail/signposts--group{% else %}/components/detail/signposts--group.html{% endif %}" class="card--link m-bh-med-b">
+                 <h4 class="card--link__title">Signpost group</h4>
+             </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+             <a href="{% if frctl.env.server %}/components/detail/signposts--group-with-paragraph{% else %}/components/detail/signposts--group-with-paragraph.html{% endif %}" class="card--link m-bh-med-b">
+                 <h4 class="card--link__title">Signpost with description</h4>
+             </a>
+         </div>
+    </div>
+    <div class="coop-l-row coop-u-margin-tb">
+         <div class="coop-l-column coop-l-all-12">
+              <h3>Pages</h3>
+         </div>
+         {# <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/preview/form{% else %}/components/preview/form.html{% endif %}" class="card--link m-bh-med-b">
+                  <h3 class="card--link__title">Form</h3>
+              </a>
+         </div> #}
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/preview/page-not-found{% else %}/components/preview/page-not-found.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Page not found</h4>
+              </a>
+         </div>
+         <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
+              <a href="{% if frctl.env.server %}/components/preview/internal-server-error{% else %}/components/preview/internal-server-error.html{% endif %}" class="card--link m-bh-med-b">
+                  <h4 class="card--link__title">Internal server error</h4>
+              </a>
+         </div>
+    </div>
+</div>
+{% endblock %}

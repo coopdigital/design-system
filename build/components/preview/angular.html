@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="/images/logos/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../css/coop-theme.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Error rendering component angular | Design system</title>
+
+</head>
+<body>
+    <nav class="skip-nav">
+        <ul>
+            <li><a href="#main" title="Skip to main content">Skip to content</a></li>
+            <li><a href="#in-page-nav" title="Skip to sidebar navigation">Skip to sidebar navigation</a></li>
+            <li><a href="#main-navigation" title="Skip to main navigation">Skip to main navigation</a></li>
+        </ul>
+    </nav>
+    <div class="app-wrap">
+        
+
+<div class="Frame Frame--full" id="frame">
+
+
+<div class="Error Error--render">
+    <h4 class="Error-title">Error rendering component</h4>
+    <div class="Error-message Prose">
+        <p>(unknown path) [Line 9, Column 27]
+  expected variable end</p>
+
+    </div>
+    
+    <code class="Error-stack">
+        <pre>Template render error: (unknown path) [Line 9, Column 27]
+  expected variable end
+    at Object.exports.prettifyError (/Applications/MAMP/htdocs/design-system/node_modules/nunjucks/src/lib.js:34:15)
+    at new_cls.render (/Applications/MAMP/htdocs/design-system/node_modules/nunjucks/src/environment.js:469:27)
+    at new_cls.renderString (/Applications/MAMP/htdocs/design-system/node_modules/nunjucks/src/environment.js:327:21)
+    at new_cls.tryCatcher (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/util.js:16:23)
+    at new_cls.ret [as renderStringAsync] (eval at makeNodePromisifiedEval (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promisify.js:184:12), <anonymous>:14:23)
+    at NunjucksAdapter.render (/Applications/MAMP/htdocs/design-system/node_modules/@frctl/nunjucks/src/adapter.js:103:28)
+    at ComponentSource._renderVariant (/Applications/MAMP/htdocs/design-system/node_modules/@frctl/fractal/src/api/components/source.js:207:30)
+    at _renderVariant.next (<anonymous>)
+    at onFulfilled (/Applications/MAMP/htdocs/design-system/node_modules/co/index.js:65:19)
+    at tryCatcher (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/util.js:16:23)
+    at Promise._settlePromiseFromHandler (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:512:31)
+    at Promise._settlePromise (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:693:18)
+    at Promise._fulfill (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:638:18)
+    at Promise._resolveCallback (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:432:57)
+    at Promise._settlePromiseFromHandler (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:524:17)
+    at Promise._settlePromise (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:569:18)
+    at Promise._settlePromise0 (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:614:10)
+    at Promise._settlePromises (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:693:18)
+    at Promise._fulfill (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:638:18)
+    at Promise._resolveCallback (/Applications/MAMP/htdocs/design-system/node_modules/bluebird/js/release/promise.js:432:57)</pre>
+    </code>
+    
+</div>
+
+
+</div>
+
+
+    </div>
+    <footer class="footer-main">
+    <div class="coop-l-wrap">
+        <nav class="secondary-nav">
+            <ul class="coop-list-bare">
+                <li><a href="https://coop-design-manual.herokuapp.com/process.html">What alpha, beta and live mean</a></li>
+                <li><a href="https://coop-design-manual.herokuapp.com/supported-devices.html">Supported devices</a></li>
+                <li><a href="https://coop-design-manual.herokuapp.com/archive.html">Archived versions</a></li>
+                <li><a href="https://coop-design-manual.herokuapp.com/updates.html">Updates</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
+<script src="/js/includes/handlebars.js?cachebust=1.2.0"></script>
+<script src="https://cdn.rawgit.com/leafo/sticky-kit/master/dist/sticky-kit.min.js" crossorigin="anonymous"></script>
+<script src="/js/theme.js"></script>
+
+
+
+</body>
+</html>

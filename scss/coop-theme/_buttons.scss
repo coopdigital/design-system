@@ -1,0 +1,30 @@
+
+.btn-pill {
+  padding: 12px 20px;
+  border-radius: 40px;
+  border: 0;
+  background: $grey-light;
+  color: $text;
+  transition: background .15s ease;
+  &:hover {
+    background: $button-dark;
+    color: $page;
+  }
+}
+
+.btn-pill[aria-selected="true"] {
+  background: $button-dark;
+  color: $page;
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid $link;
+  color: $link;
+  border-radius: 6px;
+  &:hover {
+    background: transparent;
+    border: 2px solid $link-hover;
+    color: $link-hover;
+  }
+}

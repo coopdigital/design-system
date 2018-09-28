@@ -1,20 +1,35 @@
 {
   "name": "design-system",
   "version": "0.1.0",
+  "scripts": {
+    "gulp": "gulp",
+    "fractal": "fractal start --watch --sync",
+    "build": "fractal build",
+    "start": "concurrently npm:fractal npm:gulp"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
     "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/nunjucks": "^1.0.3",
+    "@frctl/nunjucks-adapter": "^0.4.6",
+    "@frctl/nunjucks-engine": "^0.4.0",
+    "@frctl/nunjucks-helpers": "^0.3.0",
     "browser-sync": "^2.12.5",
-    "coop-components": "github:coopdigital/coop-components",
-    "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#2.1.2",
+    "concurrently": "^3.6.1",
+    "coop-components": "github:coopdigital/coop-components#0414b05",
+    "coop-frontend-components": "github:coopdigital/coop-frontend-components",
+    "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#04bf0e9",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "1.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-copy": "^1.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-uglify": "^2.0.0",
-    "npm-safe-install": "^1.0.0"
+    "helper-markdown": "^1.0.0",
+    "npm-safe-install": "^1.0.0",
+    "nunjucks-markdown-filter": "^0.1.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "@coopdigital/coop-frontend-foundations": "^0.1.1"
   }
 }

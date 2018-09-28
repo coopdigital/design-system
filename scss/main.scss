@@ -1,10 +1,8 @@
-// coop toolkit ^2.0.2
-@import "coop-toolkit";
+@import "coop-foundations";
+@import "coop-components";
 
-// Demo styles
-.wrap {
-  margin-top: 16px;
-  margin-bottom: 32px;
+.ds-wrap--padded {
+  @include spacing('margin', 'top', 'half');
 }
 
 .demo-column-block {
@@ -179,7 +177,7 @@
 }
 
 .dm-colour__swatch {
-  height: 132px;
+  min-height: 132px;
   width: 100%;
 }
 
@@ -187,7 +185,7 @@
   padding: 10px 0 10px 0;
   float: right;
   width: 100%;
-  height: auto;
+  min-height: 160px;
 }
 
 .dm-colour__definition {
@@ -203,6 +201,8 @@
 }
 
 .dm-colour__definition_link-dark {
+  width: 200px;
+  display: inline;
   color: $text;
   border-color: $text;
   &:hover {
@@ -212,6 +212,7 @@
 }
 
 .dm-colour__definition_link-light {
+  display: inline;
   color: $white;
   border-color: $white;
   &:hover {

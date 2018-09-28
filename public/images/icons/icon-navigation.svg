@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+<g id="plus">
+	<title  id="t-plus">Plus</title>
+	<desc  id="d-plus">Two horizontal and vertical lines crossed</desc>
+	<path d="M18,18v12c0,1.1-0.9,2-2,2c-1.1,0-2-0.9-2-2V18H2c-1.1,0-2-0.9-2-2s0.9-2,2-2h12V2c0-1.1,0.9-2,2-2c1.1,0,2,0.9,2,2v12h12
+		c1.1,0,2,0.9,2,2c0,1.1-0.9,2-2,2H18z"/>
+</g>
+</svg>

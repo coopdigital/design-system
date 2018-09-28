@@ -1,0 +1,15 @@
+.message {
+  @include spacing("padding", "top", "quarter");
+  @include spacing("padding", "left", "half");
+  @include spacing("padding", "bottom", "quarter");
+  @include spacing("padding", "right", "half");
+
+  p {
+    font-family: $medium;
+    margin-bottom: 0;
+  }
+}
+
+.message--info {
+  background: lighten($yellow-mid, 30%);
+}

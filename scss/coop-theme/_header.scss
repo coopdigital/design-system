@@ -1,0 +1,110 @@
+$woodsmoke: #1D2534;
+
+.ds-header {
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: $woodsmoke;
+
+  @include media(medium) {
+    padding-top: 30px;
+    padding-bottom: 27px;  
+  }
+
+  .coop-logo {
+    display: inline-block;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 0;
+    border-bottom: 0;
+
+    @include media(medium) {
+      margin-left: 1px;
+    }
+
+    svg {
+      display: inline-block;
+
+      path {
+        fill: $page;
+      }
+    }
+  }
+
+  .service-name {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: em-calc(21px);
+    font-family: $medium;
+    line-height: 1.8;
+    color: $page;
+    vertical-align: top;
+  }
+}
+
+.Header {
+  justify-content: space-between;
+  background-color: #AB288C;
+  box-shadow: none;
+  padding: 16px 16px;
+  @include media(medium) {
+    padding: 32px 64px;
+  }
+}
+
+.header-main {
+  color: #fff;
+  border-bottom: none;
+  @include spacing('margin', 'bottom', 'quarter');
+  padding-top: 3px;
+  padding-bottom: 0px;
+  @include media(medium) {
+    padding-top: 3px;
+    padding-bottom: 0px;
+  }
+ a {
+    color: #fff;
+    border: 0;
+    &:hover {
+      border: 0;
+    }
+ }
+}
+
+.Header-button {
+  position: absolute;
+  background: $grey-mid;
+  left: 215px;
+  top: 28px;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 100%;
+  z-index: 9999;
+  transition: all .25s ease;
+
+  &:hover {
+    background: darken($grey-mid, 10%);
+  }
+}
+
+.is-closed .Header-button {
+  left: 250px;
+}
+
+
+.Header-navToggle svg {
+  position: relative;
+  left: 0px;
+  bottom: 1px;
+}
+
+.Header-title {
+  margin-left: 0px;
+  line-height: 0.4;
+  padding: 0 0 3px 0;
+
+  img {
+    width: 38px;
+    height: 40px;
+  }
+}

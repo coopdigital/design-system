@@ -1,0 +1,62 @@
+[dir="ltr"] .Pen-header .Status {
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+  -webkit-padding-start: 0;
+  padding-inline-start:  0;
+  display: inline;
+  vertical-align: text-bottom;
+  position: relative;
+  top: -5px;
+}
+
+.ds-status {
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-family: $bold;
+  }
+}
+
+.Status-label {
+  border-radius: 0;
+  font-size: 1.8rem;
+  font-family: $medium;
+  display: inline;
+  padding: 5px 8px;
+  margin-left: $quarter-spacing-unit;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+
+.Status-dot {
+  display: none;
+}
+
+.status {
+  font-size: em-calc(20px);
+  color: $page;
+  padding: 6px 8px;
+  text-decoration: none;
+}
+
+.status__link {
+  border-bottom: 0;
+  text-decoration: underline;
+  color: $page;
+  &:hover {
+    color: $page;
+    text-decoration: none;
+  }
+}
+
+.status--alpha {
+  background: #FF3333;
+}
+
+.status--beta {
+  background: #FF9233;
+}
+
+.status--live {
+  background: #1AA579;
+}

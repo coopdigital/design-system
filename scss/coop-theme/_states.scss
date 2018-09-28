@@ -1,0 +1,60 @@
+.is--open {
+  height: auto;
+}
+
+.fixedsticky.is--hidden,
+.is--hidden {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.fixedsticky {
+	background: $page;
+	position: static;
+	@include media(medium) {
+    align-self: flex-start;
+    height: auto;
+		opacity: 1;
+		visibility: visible;
+		transition: opacity 0.3s;
+		-webkit-transition: opacity 0.3s;
+		top: $base-spacing-unit;
+		z-index: 200;
+		position: -webkit-sticky;
+		position: -moz-sticky;
+		position: -ms-sticky;
+		position: -o-sticky;
+		position: sticky;
+  }
+}
+
+.fixedsticky.is_stuck {
+  position: static !important;
+  @include media(large) {
+    position: fixed !important;
+  }
+}
+
+/* When position: sticky is supported but native behavior is ignored */
+.fixedsticky-withoutfixedfixed .fixedsticky-off,
+.fixed-supported .fixedsticky-off {
+	position: static;
+}
+
+.fixedsticky-withoutfixedfixed .fixedsticky-on,
+.fixed-supported .fixedsticky-on {
+
+	position: static;
+	@include media(medium) {
+		top: $base-spacing-unit;
+		position: fixed;
+  }
+}
+
+.fixedsticky-dummy {
+	display: none;
+}
+
+.fixedsticky-on + .fixedsticky-dummy {
+	display: block;
+}

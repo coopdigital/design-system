@@ -1,0 +1,79 @@
+<section class="ds-section ds-pen-example">
+    <div class="coop-l-row">
+        <div class="coop-l-column coop-l-all-12">
+            <header class="ds-pen-example__header">
+                <h2 id="example" class="Pen-panel-title pull-left">Example</h2>
+            </header>
+            {# <a data-no-pjax href="{{ path(frctl.theme.urlFromRoute('preview', { handle: entity.handle })) }}" class="btn-pill pull-right btn--outline btn--preview"><span>Preview</span> {% include "icons/open-in-browser.svg" %}</a> #}
+            <div id="TabContainer">
+                <div class="accordion-wrapper">
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab1">Example</h3>
+                    <div class="tabs-container__panel" id="Tab1">
+                        <div class="Pen-panel Pen-preview Preview" id="preview-{{ entity.id }}">
+                            <div class="Preview-wrapper">
+                                {% if renderError -%}
+                                    {{ renderError }}
+                                {% else %}
+                                <iframe
+                                    id="breakpoint-viewer"
+                                    class="Preview-iframe"
+                                    data-role="window"
+                                    src="{{ previewUrl }}"
+                                    sandbox="allow-same-origin allow-scripts allow-forms"
+                                    {% if entity.display %} style="{% for property, value in entity.display %}{{ property }}: {{ value }} ; {% endfor %}"{% endif %}
+                                    marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+                                </iframe>
+                                {%- endif %}
+                            </div>
+                        </div>
+                        <div class="hiding-this-as-i-cant-change-core-theme-js">
+                            <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-{{ entity.id }}">
+                                <div class="Preview-wrapper" data-role="resizer">
+                                    <div class="Preview-resizer"></div>
+                                    <div class="Preview-handle" data-role="resize-handle"></div>
+                                    <div class="Preview-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-pen-example__tools">
+                            <div class="coop-l-row">
+                                <div class="coop-l-column coop-l-all-12">
+                                    <h3>See this at:</h3>
+                                    <ul class="responsive-list">
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('xs')" class="responsive-list--item-link btn-pill">Xsmall (320px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('s')" class="responsive-list--item-link btn-pill">Small (480px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('m')" class="responsive-list--item-link btn-pill">Medium (750px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('l')" class="responsive-list--item-link btn-pill">Large (990px)</a>
+                                        </li>
+                                        <li class="responsive-list--item">
+                                            <a href="#" onClick="responsiveInspector('xl')" class="responsive-list--item-link btn-pill">XLarge  (1300px)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab3">HTML</h3>
+                    <div class="tabs-container__panel" id="Tab3">
+                        {% include 'partials/browser/panel-html.nunj' %}
+                    </div>
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab4">SCSS</h3>
+                    <div class="tabs-container__panel" id="Tab4">
+                        {% include 'partials/browser/panel-scss.nunj' %}
+                    </div>
+                    {# <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
+                    <div class="tabs-container__panel" id="Tab5">
+                        {% include 'partials/browser/panel-js.nunj' %}
+                    </div> #}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

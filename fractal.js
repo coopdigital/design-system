@@ -18,9 +18,15 @@ fractal.set('project.version', 'v1.0');
 fractal.set('project.author', 'Matt Tyas');
 
 /*
+ * Nunjucks is similar to Jinja2 which we use for our django apps
+ */
+fractal.components.engine('@frctl/nunjucks');
+fractal.components.set('ext', '.html');
+
+/*
  * Tell Fractal where to look for components.
  */
-fractal.components.set('path', path.join(__dirname, 'node_modules/coop-components/components'));
+fractal.components.set('path', path.join(__dirname, 'node_modules/@coopdigital/coop-frontend-components/'));
 
 /*
  * Tell Fractal where to look for documentation pages.
@@ -54,8 +60,23 @@ fractal.components.set('statuses', {
   ready: {
       label: "Live",
       description: "Ready to implement.",
-      color: "#29CC29"
+      color: "#1AA579"
   }
+});
+
+fractal.components.set('resources', {
+    scss: {
+        label: 'SCSS',
+        match: ['**/*.scss']
+    },
+    css: {
+        label: 'CSS',
+        match: ['**/*.css']
+    },
+    other: {
+        label: 'Other Assets',
+        match: ['**/*', '!**/*.scss', '!**.css']
+    }
 });
 
 /*
@@ -68,10 +89,17 @@ const coopTheme = mandelbrot({
       "default",
       "/css/coop-theme.css"
   ],
-  panels: ["html", "notes", "context", "info" ]
+  panels: ["html", "notes", "context", "info", "resources" ]
+
 });
 
-// template overrides
+// Template overrides
 coopTheme.addLoadPath(__dirname + '/coop-theme');
+
+// Homepage override
+coopTheme.addRoute('/', {
+  handle: 'overview',
+  view: (__dirname + '/coop-theme/pages/landing.nunj')
+});
 
 fractal.web.theme(coopTheme);

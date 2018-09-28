@@ -1,0 +1,31 @@
+<section class="ds-section ds-section--keyline">
+    <div class="row">
+        <div class="column medium-8 small-12">
+            <h2 id="suggest-a-change">To use this pattern</h2>
+            <p>You will need the Co-op front-end <a href="https://github.com/coopdigital/coop-frontend-foundations">foundations</a> and <a href="https://github.com/coopdigital/coop-frontend-components">components</a> installed in your service.</p>
+            <p><a href="#">Follow the installation guide here</a>.</p>
+            <p>Import:</p>
+            {% set compHandle = entity.component().handle %}
+            {% for collection in entity.resources().items() %}
+                {% if collection.size %}
+                    {% for resource in collection.items() %}
+                        {% if resource.lang == 'SCSS' %}
+                        <code class="Code Code--lang-{{ resource.lang }} code--panel">
+                            <pre>@import '{{ resource.path | componentPath }}';</pre>
+                        </code>
+                        <p>Into you main SCSS file.</p> 
+                        {% endif %}
+                        {% if resource.lang == 'JavaScript' %}
+                        <p>And:</p>
+                        <code class="Code Code--lang-{{ resource.lang }} code--panel">
+                            <pre>{{ resource.path | componentPath }}</pre>
+                        </code>
+                        <p>Into your Javascript files.</p>
+                        {% endif %}
+
+                    {% endfor %}
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
