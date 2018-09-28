@@ -1089,6 +1089,9 @@ legend,
 .coop-u-button-primary-hover-bg {
   background: #2B9E9C; }
 
+.coop-u-button-primary-active-bg {
+  background: #0c6d6b; }
+
 .coop-u-button-dark {
   color: #374C63; }
 
@@ -1097,6 +1100,9 @@ legend,
 
 .coop-u-button-dark-hover-bg {
   background: #4A6683; }
+
+.coop-u-button-dark-active-bg {
+  background: #2e3f53; }
 
 .coop-u-yellow-bright {
   color: #FFFF00; }
@@ -3911,9 +3917,10 @@ Search - Co-op front-end components
 .coop-c-search {
   position: relative; }
   .coop-c-search .coop-c-search__input {
+    width: 100%;
     box-sizing: border-box;
     padding: 15px;
-    border-color: #C4C4C4; }
+    border: 1px solid #C4C4C4; }
     @media (min-width: 750px) {
       .coop-c-search .coop-c-search__input {
         padding: 20px; } }

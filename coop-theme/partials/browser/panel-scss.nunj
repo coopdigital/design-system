@@ -1,6 +1,6 @@
 {% set compHandle = entity.component().handle %}
 {% for collection in entity.resources().items() %}
-    {% if collection.size %}
+    {% if collection.size > 0 %}
         {% for resource in collection.items() %}
             {% if resource.lang == 'SCSS' %}
             <p>To use this component in your service add this import in your main SCSS file:</p>
@@ -15,7 +15,12 @@
             {# <code class="Code Code--lang-{{ resource.lang }}">
                 <pre>{{ resource.contents | highlight(resource.lang) }}</pre>
             </code> #}
+            {% else %}
             {% endif %}
         {% endfor %}
+    {% else %}
+      {% if loop.first %}
+      <p>The styles for this pattern can be found in the <a href="https://github.com/coopdigital/coop-frontend-foundations/">foundations on github</a>.</p>
+      {% endif %}
     {% endif %}
 {% endfor %}

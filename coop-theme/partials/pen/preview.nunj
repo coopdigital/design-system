@@ -68,10 +68,10 @@
                     <div class="tabs-container__panel" id="Tab4">
                         {% include 'partials/browser/panel-scss.nunj' %}
                     </div>
-                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
+                    {# <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
                     <div class="tabs-container__panel" id="Tab5">
                         {% include 'partials/browser/panel-js.nunj' %}
-                    </div>
+                    </div> #}
                 </div>
             </div>
         </div>
