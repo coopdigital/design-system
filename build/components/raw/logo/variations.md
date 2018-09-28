@@ -1,1 +1,1 @@
-<p>There are no variations of this pattern yet.</p>
+<p>There are no variations of this pattern.</p>
