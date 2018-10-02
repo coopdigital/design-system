@@ -1,41 +1,44 @@
 {
   "name": "design-system",
-  "version": "0.1.0",
-  "scripts": {
-    "gulp": "gulp",
-    "fractal": "fractal start --watch --sync",
-    "build": "fractal build",
-    "start": "concurrently npm:fractal npm:gulp"
+  "version": "1.0.0",
+  "description": "WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. The SCSS and HTML exist in separate repositories so they can be included in projects as needed.",
+  "main": "fractal.js",
+  "directories": {
+    "doc": "docs"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.1.7",
-    "@frctl/mandelbrot": "^1.2.0",
-    "@frctl/nunjucks": "^1.0.3",
-    "@frctl/nunjucks-adapter": "^0.4.6",
-    "@frctl/nunjucks-engine": "^0.4.0",
-    "@frctl/nunjucks-helpers": "^0.3.0",
-    "browser-sync": "^2.12.5",
-    "concurrently": "^3.6.1",
-    "coop-components": "github:coopdigital/coop-components#0414b05",
-    "coop-frontend-components": "github:coopdigital/coop-frontend-components",
-    "coop-frontend-toolkit": "github:coopdigital/coop-frontend-toolkit#04bf0e9",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "1.0.0",
     "gulp-babel": "^8.0.0",
-    "gulp-concat": "^2.6.1",
     "gulp-copy": "^1.1.0",
     "gulp-include": "^2.3.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^2.0.0",
+    "gulp-rename": "^1.4.0",
     "helper-markdown": "^1.0.0",
     "npm-safe-install": "^1.0.0",
     "nunjucks-markdown-filter": "^0.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@coopdigital/coop-frontend-foundations": "^0.1.1"
-  }
+    "@coopdigital/coop-frontend-components": "^0.1.1",
+    "@coopdigital/coop-frontend-foundations": "^0.1.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coopdigital/design-system.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coopdigital/design-system/issues"
+  },
+  "homepage": "https://github.com/coopdigital/design-system#readme"
 }
