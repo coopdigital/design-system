@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "../public/js"),
-    filename: "frontend-components.js"
+    filename: "[name].js",
   },
   plugins: [
     plugins.ExtractTextPlugin,
