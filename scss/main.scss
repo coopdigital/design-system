@@ -1,5 +1,5 @@
-@import "coop-foundations";
-@import "coop-components";
+@import 'coop-foundations';
+@import 'coop-components';
 
 .ds-wrap--padded {
   @include spacing('margin', 'top', 'half');

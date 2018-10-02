@@ -6,10 +6,9 @@ Search - Co-op front-end components
   position: relative;
 
   .coop-c-search__input {
-    width: 100%;
     box-sizing: border-box;
     padding: 15px;
-    border: 1px solid $grey-mid;
+    border-color: $grey-mid;
 
     @include media(medium) {
       padding: 20px;

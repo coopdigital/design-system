@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
 
-<link rel="stylesheet" href="../../css/coop-theme.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../css/coopTheme.css?cachebust=1.2.0" type="text/css">
 
 
 <title>Preview Bg | Design system</title>
@@ -183,9 +183,7 @@
                         
 <section>
     <code class="Code Code--lang-html code--panel">
-        <ul class="list-bare list-inline code--panel--links">
-            <li><button onclick="CopyToClipboard('html')">Copy to clipboard</button></li>
-        </ul>
+        
         
         <pre id="html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wf-active"</span>&gt;</span>
@@ -194,7 +192,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Document<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-        <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;link rel="stylesheet" type="text/css" href="/css/main.css?v='</span> + <span class="hljs-built_in">Date</span>.now() + <span class="hljs-string">'" /&gt;'</span>);
+        <span class="hljs-built_in">document</span>.write(<span class="hljs-string">'&lt;link rel="stylesheet" type="text/css" href="/css/coopComponents.css?v='</span> + <span class="hljs-built_in">Date</span>.now() + <span class="hljs-string">'" /&gt;'</span>);
     </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1"</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
@@ -203,11 +201,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ds-wrap"</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://code.jquery.com/jquery-1.12.1.min.js"</span> <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I="</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="handlebars"><span class="xml">
-        window.jQuery || document.write('<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/vendor/jquery-1.12.1.min.js"</span>&gt;</span><span class="handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">\</span>/<span class="hljs-attr">script</span>&gt;</span>')
-    </span></span></span></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/main.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/js/frontend-components.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
 
 <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></pre>
@@ -236,7 +230,26 @@
 
 
                     </div>
-                    
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
+                    <div class="tabs-container__panel" id="Tab5">
+                        
+
+    
+      
+      <p>There is no javascript needed for this component.</p>
+      
+    
+
+    
+      
+    
+
+    
+      
+    
+
+
+                    </div>
                 </div>
             </div>
         </div>

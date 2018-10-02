@@ -87,7 +87,7 @@ const mandelbrot = require('@frctl/mandelbrot');
 const coopTheme = mandelbrot({
   "styles": [
       "default",
-      "/css/coop-theme.css"
+      "/css/coopTheme.css"
   ],
   panels: ["html", "notes", "context", "info", "resources" ]
 

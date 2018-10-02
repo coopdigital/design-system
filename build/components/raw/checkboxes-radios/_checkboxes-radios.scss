@@ -1,0 +1,82 @@
+@mixin tap-check {
+  padding: calc(#{$quarter-spacing-unit} + .1em) calc(#{$half-spacing-unit} + 1.4em);
+  background: $grey-light;
+  border-radius: 5px;
+  font-size: em-calc(20);
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-bottom: $quarter-spacing-unit;
+  width: 100%;
+  min-width: 25%;
+  position: relative;
+  transition: border-color 0.1s linear;
+
+  @include media(medium) {
+    width: auto;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border: 2px solid $grey-dark;
+  }
+
+  &.coop-js-is--selected {
+    border: 2px solid $brand;
+    background: $white;
+
+    input[type=radio], input[type=checkbox] {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  input[type=radio],
+  input[type=checkbox] {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: calc(#{$base-spacing-unit/3} + 6px);
+    left: $base-spacing-unit/3;
+
+    &:focus {
+      box-shadow: 0px 0px 10px $brand;
+    }
+  }
+}
+
+@mixin indented {
+  border-left: 3px solid $coop-brand-blue;
+  padding: $quarter-spacing-unit 0 $quarter-spacing-unit $half-spacing-unit;
+  margin: 0 0 $half-spacing-unit $half-spacing-unit/1.1;
+  width: calc(100% - #{$base-spacing-unit} - 3px);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium) {
+    label {
+      font-size: 1.1rem;
+    }
+  }
+
+  fieldset {
+    margin-bottom: $three-quarter-spacing-unit;
+  }
+}
+
+.coop-c-checkbox-radio__label {
+  @include tap-check();
+}
