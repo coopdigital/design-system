@@ -7,11 +7,12 @@
     "doc": "docs"
   },
   "dependencies": {
+    "fractal-webpack-plugin": "^2.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-copy": "^1.1.0",
     "gulp-include": "^2.3.1",
-    "gulp-sourcemaps": "^2.6.4",
     "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.4",
     "helper-markdown": "^1.0.0",
     "npm-safe-install": "^1.0.0",
     "nunjucks-markdown-filter": "^0.1.0"
@@ -19,16 +20,34 @@
   "devDependencies": {
     "@coopdigital/coop-frontend-components": "^0.1.1",
     "@coopdigital/coop-frontend-foundations": "^0.1.1",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@frctl/fractal": "^1.1.7",
+    "@frctl/mandelbrot": "^1.2.0",
+    "@frctl/nunjucks": "^1.0.3",
+    "@frctl/nunjucks-adapter": "^0.4.6",
+    "@frctl/nunjucks-engine": "^0.4.0",
+    "@frctl/nunjucks-helpers": "^0.3.0",
+    "@csstools/postcss-sass": "*",
+    "browser-sync": "^2.12.5",
     "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-env": "*",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "extract-text-webpack-plugin": "^4.0.0-alpha.0",
+    "postcss-import": "*",
+    "postcss-loader": "*",
+    "postcss-preset-env": "*",
+    "css-loader": "*",
+    "cssnano": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config _webpack/webpack.config.js",
+    "watch": "webpack --mode development --watch --config _webpack/webpack.config.js --display-error-details"
   },
   "repository": {
     "type": "git",

@@ -1,1 +1,2 @@
-import coopCheckRadio from './node_modules/@coopdigital/coop-frontend-components/forms/checkboxes-radios/checkboxes-radios.js';
+import '../scss/main.scss';
+import coopCheckRadio from '@coopdigital/coop-frontend-components/forms/checkboxes-radios/_checkboxes-radios';
