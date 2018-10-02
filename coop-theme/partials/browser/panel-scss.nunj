@@ -8,7 +8,7 @@
                 <pre id="import">@import '{{ resource.path | componentPath }}';</pre>
                 <ul class="coop-list-bare coop-list-inline code--panel--links">
                     <li><a href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}">View the component SCSS</a></li>
-                    <li><button onclick="CopyToClipboard('import')">Copy to clipboard</button></li>
+                    {# <li><button onclick="CopyToClipboard('import')">Copy to clipboard</button></li> #}
                 </ul>
             </code>
             <p>Customise this component by <a href="https://github.com/coopdigital/coop-frontend-components/blob/master/README.md">following the guide here</a>.</p>

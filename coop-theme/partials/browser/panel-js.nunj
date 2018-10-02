@@ -4,15 +4,19 @@
         {% for resource in collection.items() %}
             {% if resource.lang == 'JavaScript' %}
             <code class="Code Code--lang-{{ resource.lang }} code--panel">
+                <pre id="import">'{{ resource.path | componentPath }}';</pre>
                 <ul class="list-bare list-inline code--panel--links">
                     <li><a href="{{ path(frctl.theme.urlFromRoute('component-resource', {handle: compHandle, asset:resource.base} )) }}">View the component JS</a></li>
-                    <li><button onclick="CopyToClipboard('JS-raw')">Copy to clipboard</button></li>
+                    {# <li><button onclick="CopyToClipboard('JS-raw')">Copy to clipboard</button></li> #}
                 </ul>
-                <pre id="JS-raw">{{ resource.contents | highlight(resource.lang) }}</pre>
+                {# <pre id="JS-raw">{{ resource.contents | highlight(resource.lang) }}</pre> #}
             </code>
-            {# {% else %}
-            <p>No JS for this component</p> #}
+            {% else %}
             {% endif %}
         {% endfor %}
+    {% else %}
+      {% if loop.first %}
+      <p>There is no javascript needed for this component.</p>
+      {% endif %}
     {% endif %}
 {% endfor %}
