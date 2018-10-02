@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
 
-<link rel="stylesheet" href="../../css/coop-theme.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../css/coopTheme.css?cachebust=1.2.0" type="text/css">
 
 
 <title>Buttons | Design system</title>
@@ -140,7 +140,7 @@
                                     data-role="window"
                                     src="../preview/buttons.html"
                                     sandbox="allow-same-origin allow-scripts allow-forms"
-                                     style="min-height: 50px ; "
+                                     style="min-height: 200px ; "
                                     marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
                                 </iframe>
                             </div>
@@ -184,9 +184,7 @@
                         
 <section>
     <code class="Code Code--lang-html code--panel">
-        <ul class="list-bare list-inline code--panel--links">
-            <li><button onclick="CopyToClipboard('html')">Copy to clipboard</button></li>
-        </ul>
+        
         
         <pre id="html"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"coop-btn coop-btn--primary"</span>&gt;</span>Primary button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
@@ -228,7 +226,38 @@
 
 
                     </div>
-                    
+                    <h3 class="tabs-container__title" id="TabPanelTitle-Tab5">JS</h3>
+                    <div class="tabs-container__panel" id="Tab5">
+                        
+
+    
+      
+      <p>There is no javascript needed for this component.</p>
+      
+    
+
+    
+      
+    
+
+    
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -251,11 +280,13 @@
             <div class="column medium-8 small-12">
                 <h2 id="design">Design and content</h2>
                 <p>Button width should be defined by the content on the button. Buttons should also be ranged left with the left edge aligning with other content.</p>
+
 <p>The primary button should only be used once per page.</p>
+
 <div class="coop-l-row coop-u-margin-th">
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-bg coop-u-padding-q">
+        <div class="dm-colour ">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button</li>
                   <li>$button-primary</li>
@@ -266,8 +297,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-hover-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-hover-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button hover</li>
                   <li>$button-primary-hover</li>
@@ -278,8 +309,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-active-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-active-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button active</li>
                   <li>$button-primary-active</li>
@@ -290,8 +321,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Button dark</li>
                   <li>$button-primary-dark</li>
@@ -302,9 +333,9 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide  coop-u-button-dark-hover-bg coop-u-padding-q">
-              <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide  coop-u-button-dark-hover-bg coop-u-padding-q coop-u-margin-bh">
+              <ul class="list-bare dm-colour__definition coop-u-white  coop-u-margin-x">
                   <li class="coop-bold">Button dark hover</li>
                   <li>$button-primary-dark-hover</li>
                   <li>rgb(74,102,131)</li>
@@ -314,8 +345,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-active-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-active-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Button dark active</li>
                   <li>$button-primary-dark-active</li>

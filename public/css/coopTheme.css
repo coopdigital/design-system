@@ -986,12 +986,16 @@ legend,
   background: #0F8482; }
 .coop-u-button-primary-hover-bg {
   background: #2B9E9C; }
+.coop-u-button-primary-active-bg {
+  background: #0c6d6b; }
 .coop-u-button-dark {
   color: #374C63; }
 .coop-u-button-dark-bg {
   background: #374C63; }
 .coop-u-button-dark-hover-bg {
   background: #4A6683; }
+.coop-u-button-dark-active-bg {
+  background: #2e3f53; }
 .coop-u-yellow-bright {
   color: #FFFF00; }
 .coop-u-yellow-bright-bg {

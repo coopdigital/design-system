@@ -1,9 +1,11 @@
 <p>Button width should be defined by the content on the button. Buttons should also be ranged left with the left edge aligning with other content.</p>
+
 <p>The primary button should only be used once per page.</p>
+
 <div class="coop-l-row coop-u-margin-th">
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-bg coop-u-padding-q">
+        <div class="dm-colour ">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button</li>
                   <li>$button-primary</li>
@@ -14,8 +16,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-hover-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-hover-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button hover</li>
                   <li>$button-primary-hover</li>
@@ -26,8 +28,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-active-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-primary-active-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Primary button active</li>
                   <li>$button-primary-active</li>
@@ -38,8 +40,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Button dark</li>
                   <li>$button-primary-dark</li>
@@ -50,9 +52,9 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide  coop-u-button-dark-hover-bg coop-u-padding-q">
-              <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide  coop-u-button-dark-hover-bg coop-u-padding-q coop-u-margin-bh">
+              <ul class="list-bare dm-colour__definition coop-u-white  coop-u-margin-x">
                   <li class="coop-bold">Button dark hover</li>
                   <li>$button-primary-dark-hover</li>
                   <li>rgb(74,102,131)</li>
@@ -62,8 +64,8 @@
         </div>
     </div>
     <div class="coop-l-column coop-l-small-6 coop-l-medium-4">
-        <div class="dm-colour coop-u-margin-bh">
-            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-active-bg coop-u-padding-q">
+        <div class="dm-colour">
+            <div class="dm-colour__swatch dm-colour__swatch--wide coop-u-button-dark-active-bg coop-u-padding-q coop-u-margin-bh">
               <ul class="list-bare dm-colour__definition coop-u-white coop-u-margin-x">
                   <li class="coop-bold">Button dark active</li>
                   <li>$button-primary-dark-active</li>
