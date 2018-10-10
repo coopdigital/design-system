@@ -3641,7 +3641,14 @@ table ul,
         transition: none;
         outline: 2px dotted #eec300;
         outline-offset: 3px; }
-      .coop-c-nav__list-item:hover .coop-c-nav__level-2, .coop-c-nav__list-item:focus .coop-c-nav__level-2 {
+      .coop-c-nav__list-item:hover .coop-c-nav__level-2, .coop-c-nav__list-item[focus-within] .coop-c-nav__level-2 {
+        display: inline-block;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: opacity 0.15s ease-in-out;
+        transition: opacity 0.15s ease-in-out;
+        max-height: 9999px; }
+      .coop-c-nav__list-item:hover .coop-c-nav__level-2, .coop-c-nav__list-item:focus-within .coop-c-nav__level-2 {
         display: inline-block;
         visibility: visible;
         opacity: 1;
