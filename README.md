@@ -2,12 +2,12 @@
 
 WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. The SCSS and HTML exist in separate repositories so they can be included in projects as needed.
 
-- SCSS: Co-op front-end toolkit - https://github.com/coopdigital/coop-frontend-toolkit
-- HTML (as HBS): Co-op components - https://github.com/coopdigital/coop-components
+- SCSS: Co-op foundations - https://github.com/coopdigital/coop-frontend-foundations
+- HTML: Co-op components - https://github.com/coopdigital/coop-frontend-components
 
 ## Installation
 
-[Fractal](https://fractal.build/) component library for future membership work
+[Fractal](https://fractal.build/) component library
 
 Requirements: NodeJS 4.4.7+ / npm 6.0.0
 
@@ -26,14 +26,14 @@ The Design system is set up to allow easy development work on the Toolkit and HT
 First clone the Toolkit repository:
 
 ```sh
-git clone git@github.com:coopdigital/coop-frontend-toolkit.git
+git clone git@github.com:coopdigital/coop-frontend-foundations.git
 ```
 
 Create a reference to the local NPM package from the Toolkit directory:
 
 
 ```sh
-cd coop-frontend-toolkit
+cd coop-frontend-foundations
 npm link
 ```
 
@@ -41,19 +41,19 @@ From the Design system directory, link the NPM package to the local version:
 
 ```sh
 cd ../design-system
-npm link coop-frontend-toolkit
+npm link coop-frontend-foundations
 ```
 
 Then clone the Components repository:
 
 ```sh
-git clone git@github.com:coopdigital/coop-components.git
+git clone git@github.com:coopdigital/coop-frontend-components.git
 ```
 
 Create a reference to the local NPM package from the Components directory:
 
 ```sh
-cd coop-components
+cd coop-frontend-components
 npm link
 ```
 
@@ -61,19 +61,19 @@ From the Design system directory, link the NPM package to the local version:
 
 ```sh
 cd ../design-system
-npm link coop-components
+npm link coop-frontend-components
 ```
 
-Any changes made to the local version of the Toolkit or Components will now automatically be reflected in the local version of the Design system.
+Any changes made to the local version of the Foundations or Components will now automatically be reflected in the local version of the Design system.
 
 ## Start local server
 
-Start Fractal & Gulp locally.
+Start Fractal & webpack locally.
 
-This triggers file watching and browser syncing, which means your local dev site will auto-update with changes.
+This triggers file watching and browser syncing
 
 ```sh
-$ npm start
+$ npm run watch
 ```
 
 Navigate to http://localhost:3000/

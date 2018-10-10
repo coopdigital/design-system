@@ -1,0 +1,20 @@
+.coop-c-message {
+  @include spacing('padding', 'all', 'half');
+  @include spacing('margin', 'bottom', 'half');
+  border: 2px solid;
+}
+
+.coop-c-message--error {
+  border-color: $red-mid;
+  color: $text;
+  background: $page;
+}
+
+.coop-c-form-error {
+  border-left: 2px solid $red-mid;
+  padding-left: $half-spacing-unit;
+}
+
+.coop-c-form-error__text {
+  color: $red-mid;
+}
