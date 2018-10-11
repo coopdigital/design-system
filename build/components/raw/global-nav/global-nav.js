@@ -1,6 +1,33 @@
 function coopGlobalNav(input) {
   if (!input) return;
 
+    var $window = $(window)
+
+    var memberButton = $('#js-coop-c-nav-btn-member')
+
+    function checkWidth() {
+      var windowsize = $window.width();
+      if (windowsize < 960) {
+        $('#js-coop-c-nav__list').prepend(memberButton);
+      }
+      if (windowsize > 960) {
+        $('.js_nav-toggle').removeClass('js-is--active');
+        $('#js-coop-c-nav-list-secondary li:eq(1)').after(memberButton);
+        $('#js-coop-c-nav__list').removeClass('js-is--open');
+        $('.coop-c-nav__menu-trigger').removeClass('js-is--active');
+        // $(".coop-c-nav__list-item").on({
+        //   mouseenter: function () {
+        //     $('body').addClass('js-has--overlay');
+        //   },
+        //   mouseleave: function () {
+        //     $('body').removeClass('js-has--overlay');
+        //   }
+        // });
+      }
+    }
+
+    $(window).resize(checkWidth);
+
     var menuTrigger = $('.coop-c-nav__menu-trigger');
     var toggleTrigger = $('.js_nav-toggle');
     var toggleContent = $('.js_nav-toggle-content');
@@ -11,6 +38,7 @@ function coopGlobalNav(input) {
       if (isSmallScreen()) {
         e.preventDefault()
       }
+      // $('body').toggleClass('js-has--overlay');
       closeAllToggle($(this))
       toggleMobileNav($(this))
       toggleTargetActive($(this))
@@ -20,23 +48,27 @@ function coopGlobalNav(input) {
       bindEvents()
       addAria()
       initClickTracking()
+      checkWidth();
     }
+
+    init()
+
     function bindEvents() {
 
-      var self = this
+      var $self = this
 
-      this.toggleTrigger.on('click.coop-c-nav', function (e) {
+      $('.js_nav-toggle').on('click.coop-c-nav', function (e) {
 
         var $this = $(this)
         var isLevelOne = $this.children().hasClass('coop-c-nav__level-1')
 
         // if navItem is levelOne and on mobile or touch device, prevent top link
-        if (isSmallScreen() || self.isTouchEnabled() && isLevelOne) {
+        if (isSmallScreen() || isTouchEnabled() && isLevelOne) {
           e.preventDefault()
         }
 
         // if both trigger and content are active and showing - toggle them
-        if (hasClass('js-is--active') && $this.next().hasClass('js-is--open')) {
+        if ($('.js_nav-toggle').hasClass('js-is--active') && $('.js_nav-toggle').next().hasClass('js-is--open')) {
           // toggle current item clicked
           toggleCurrentNavItemActiveState($this)
         } else {
@@ -49,6 +81,7 @@ function coopGlobalNav(input) {
         if (isSmallScreen()) {
           animateToActiveElement($this)
         }
+
       })
 
     }
@@ -96,27 +129,28 @@ function coopGlobalNav(input) {
       $('.js_nav-toggle-content.js-is--open').not($this.next()).removeClass('js-is--open')
     }
     function toggleMobileNav($this) {
-      $('.coop-c-nav__list').toggleClass('js-is--open')
+      $('.coop-c-nav__list').toggleClass('js-is--open');
+      $('.coop-c-header').toggleClass('js-no--shadow');
     }
     function toggleTargetActive($this) {
-      $this.toggleClass('js-is--active')
+      $this.toggleClass('js-is--active');
     }
     function toggleContentShown($this) {
-      $this.next().toggleClass('js-is--open')
+      $this.next().toggleClass('js-is--open');
     }
     function removeOthersActive($this) {
-      $this.closest('.js_nav-toggle-content').find('.js_nav-toggle.js-is--active').removeClass('js-is--active')
+      $this.closest('.js_nav-toggle-content').find('.js_nav-toggle.js-is--active').removeClass('js-is--active');
     }
     function closeOtherToggles($this) {
       $this.closest('.js_nav-toggle-content.toggle-show').find('.js_nav-toggle-content.js-is--open').removeClass('js-is--open');
     }
     function addAria() {
       var self = this
-      $.each(self.toggleTrigger, function (idx, el) {
-        $(el).attr('aria-expanded', 'false')
+      $.each($('.js_nav-toggle'), function (idx, el) {
+        $(el).attr('aria-expanded', 'false');
       })
-      $.each(self.toggleContent, function (idx, el) {
-        $(el).attr('aria-hidden', 'true')
+      $.each($('.js_nav-toggle-content'), function (idx, el) {
+        $(el).attr('aria-hidden', 'true');
       })
     }
     function toggleAriaExpanded($this) {
@@ -149,6 +183,44 @@ function coopGlobalNav(input) {
     function isSmallScreen() {
       return window.innerWidth < 960
     }
+
+  //   $(function(){
+  //     $('.coop-c-nav').setup_navigation();
+  //   });
+  //
+  //   $.fn.setup_navigation = function(settings) {
+  //     settings = jQuery.extend({
+  //       menuHoverClass: 'focus',
+  //     }, settings);
+  //
+  //     // Set tabIndex to -1 so that links can't receive focus until menu is open
+  //     $(this).find('> li > a').next('ul').find('a').attr('tabIndex',-1);
+  //
+  //     $(this).find('> li > a').hover(function(){
+  //       $(this).closest('ul').find('.'+settings.menuHoverClass).removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1);
+  //     });
+  //     $(this).find('> li > a').focus(function(){
+  //       $(this).closest('ul').find('.'+settings.menuHoverClass).removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1);
+  //       $(this).next('ul')
+  //         .addClass(settings.menuHoverClass)
+  //         .find('a').attr('tabIndex',0);
+  //     });
+  //
+  //   // Hide menu if click or focus occurs outside of navigation
+  //   $(this).find('a').last().keydown(function(e){
+  //     if(e.keyCode == 9) {
+  //       // If the user tabs out of the navigation hide all menus
+  //       $('.'+settings.menuHoverClass).removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1);
+  //     }
+  //   });
+  //   $(document).click(function(){ $('.'+settings.menuHoverClass).removeClass(settings.menuHoverClass).find('a').attr('tabIndex',-1); });
+  //
+  //   $(this).click(function(e){
+  //     e.stopPropagation();
+  //   });
+  // }
+
+  $("html").removeClass("no-js");
 
 }
 

@@ -53,17 +53,21 @@
     padding-right: 0;
     margin-left: 0;
 
-    &:hover {
+    &:focus {
+      transition: none;
+      outline: 2px dotted $link-focus;
+      outline-offset: 3px;
+    }
+
+    &:hover,
+    // Might need to polyfill this
+    &:focus-within {
       .coop-c-nav__level-2 {
         display: inline-block;
         visibility: visible;
         opacity: 1;
         transition: opacity 0.15s ease-in-out;
         max-height: 9999px;
-
-        .coop-c-nav__level-1 {
-          border-bottom: 8px solid #326BB7;
-        }
       }
     }
   }
@@ -92,7 +96,7 @@
     color: $text;
     border-bottom: 1px solid $grey-dark;
     @include media(large) {
-      border-bottom: 1px solid $grey-dark;
+      border-bottom: 2px solid $grey-dark;
     }
   }
 
@@ -178,17 +182,10 @@
   }
 
 	@include media(large) {
-    border-bottom: 2px solid $white;
-
     @include regular;
     padding-left: 10px;
     padding-right: 10px;
-
-    &:hover + .coop-c-nav__level-2 {
-      display: block;
-      display: flex;
-
-    }
+    border-bottom: 2px solid $white;
 	}
 }
 
@@ -231,7 +228,7 @@
   	background-color: #F7F7F7;
     width: 100vw;
     left: -32px;
-    top: 54px;
+    top: 51px;
     z-index: 10;
     justify-content: space-between;
 
@@ -402,8 +399,35 @@
     border-color: #3B70B1;
     color: $white;
   }
+
+  @include media(large){
+    .coop-c-nav__list-item-link {
+      background: $white;
+      border-color: 0;
+      color: $text;
+
+      .open-chevron {
+        display: none;
+      }
+    }
+  }
 }
 
+// .js-has--overlay {
+//   transition: background-color 0.5s ease;
+//   transition-delay: 0.25s;
+//   &:after {
+//     content: "";
+//     display: block;
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 10;
+//     background-color: rgba(0,0,0,0.2);
+//   }
+// }
 
 .mega-content {
 	display: none;
@@ -459,7 +483,6 @@
       margin-bottom: 0;
     }
   }
-
 }
 
 @media (max-width: 960px) {
@@ -638,9 +661,18 @@
   background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIGNsYXNzPSJjbG9zZS1tZW51IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xIDFsMTAuMDEgMTAuMDFNMTEgMUwxIDExIiBzdHJva2U9IiMyODI4MjgiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
 }
 
+.js_nav-toggle.js-is--active {
+  .chevron {
+    display: none;
+  }
+  .open-chevron {
+    display: block;
+  }
+}
 
-
-
+.coop-c-header.js-no--shadow {
+  box-shadow: none;
+}
 
 @media (max-width: 960px) {
   .no-js {
@@ -655,6 +687,7 @@
       .coop-c-nav__list {
         display: block;
         z-index: 10;
+
         .coop-c-nav__item {
           margin-left: 0;
           margin-right: 24px;
@@ -687,16 +720,18 @@
         .coop-c-nav__link {
           border-bottom: 0;
           padding: $eighth-spacing-unit $eighth-spacing-unit 0 0;
-            svg {
-              display: none;
-            }
+
+          svg {
+            display: none;
+          }
         }
       }
+
       .coop-c-nav__member {
-         @include bold;
-         background-color: transparent;
-         color: #282828;
-         padding-left: 0;
+        @include bold;
+        background-color: transparent;
+        color: #282828;
+        padding-left: 0;
       }
     }
   }
@@ -709,35 +744,36 @@
 }
 
 @media (max-width: 960px) {
-   .same-column {
+  .same-column {
 
-      .margin-tq {
-        margin-top: 0;
-      }
-  .margin-bq {
-        margin-bottom: 0;
-      }
+    .margin-tq {
+      margin-top: 0;
+    }
 
+    .margin-bq {
+      margin-bottom: 0;
     }
   }
+}
 
 @include media(large){
-    .same-column {
+  .same-column {
 
-      .margin-bq {
-        margin-bottom: $quarter-spacing-unit;
-      }
+    .margin-bq {
+      margin-bottom: $quarter-spacing-unit;
+    }
 
-      ul {
-        .coop-c-nav__item {
+    ul {
+      .coop-c-nav__item {
 
-          .coop-c-nav__link {
-            padding-bottom: 0;
-          }
-          .coop-c-nav__link--strong {
-            @include bold;
-          }
+        .coop-c-nav__link {
+          padding-bottom: 0;
+        }
+
+        .coop-c-nav__link--strong {
+          @include bold;
         }
       }
     }
+  }
 }

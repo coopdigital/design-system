@@ -1,6 +1,8 @@
 .coop-c-header {
+  position: relative;
+  z-index: 100;
+  background: $white;
   padding: $quarter-spacing-unit;
-
   @include media(medium) {
     padding: $half-spacing-unit;
   }
