@@ -3680,7 +3680,7 @@ table ul,
     border-bottom: 1px solid #6E6E6E; }
 @media (min-width: 960px) {
       .coop-c-nav__list-item-link:hover {
-        border-bottom: 1px solid #6E6E6E; } }
+        border-bottom: 2px solid #6E6E6E; } }
 @media (max-width: 959px) {
     .coop-c-nav__list-item-link {
       background-color: #FFFFFF;
@@ -3731,15 +3731,10 @@ table ul,
     color: #282828; }
 @media (min-width: 960px) {
     .coop-c-nav__level-1 {
-      border-bottom: 2px solid #FFFFFF;
       font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
       padding-left: 10px;
-      padding-right: 10px; }
-      .coop-c-nav__level-1:hover + .coop-c-nav__level-2 {
-        display: block;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; } }
+      padding-right: 10px;
+      border-bottom: 2px solid #FFFFFF; } }
 .coop-c-nav__level-2 {
   visibility: hidden;
   margin-bottom: 0;
@@ -3784,7 +3779,7 @@ table ul,
       background-color: #F7F7F7;
       width: 100vw;
       left: -32px;
-      top: 54px;
+      top: 51px;
       z-index: 10;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
@@ -3897,6 +3892,13 @@ table ul,
   background: #3B70B1;
   border-color: #3B70B1;
   color: #FFFFFF; }
+@media (min-width: 960px) {
+  .js_nav-toggle.js-is--active .coop-c-nav__list-item-link {
+    background: #FFFFFF;
+    border-color: 0;
+    color: #282828; }
+    .js_nav-toggle.js-is--active .coop-c-nav__list-item-link .open-chevron {
+      display: none; } }
 .mega-content {
   display: none; }
 .mega-content p {
@@ -4066,6 +4068,9 @@ table ul,
   display: none; }
 .js_nav-toggle.js-is--active .open-chevron {
   display: block; }
+.coop-c-header.js-no--shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 @media (max-width: 960px) {
   .no-js #Search {
     margin-top: 1435px; }
@@ -4126,6 +4131,9 @@ table ul,
     font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; } }
 /* Header */
 .coop-c-header {
+  position: relative;
+  z-index: 100;
+  background: #FFFFFF;
   padding: 16px; }
 @media (min-width: 750px) {
     .coop-c-header {
