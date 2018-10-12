@@ -8,7 +8,7 @@ $woodsmoke: #1D2534;
 
   @include media(medium) {
     padding-top: 30px;
-    padding-bottom: 27px;  
+    padding-bottom: 27px;
   }
 
   .coop-logo {
@@ -83,7 +83,7 @@ $woodsmoke: #1D2534;
   transition: all .25s ease;
 
   &:hover {
-    background: darken($grey-mid, 10%);
+    background: $grey-dark;
   }
 }
 

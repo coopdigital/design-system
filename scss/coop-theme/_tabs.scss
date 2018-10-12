@@ -6,7 +6,7 @@
   padding-top: 10px;
 }
 .tabs-container__panel:focus {
-  outline: 2px dotted darken($yellow-mid, 5%);
+  outline: 2px dotted $yellow-mid;
   outline-offset: 3px;
 }
 
@@ -17,7 +17,7 @@
 
   .ds-tabs {
     display: none;
-    
+
     @include media(medium) {
       display: block;
       position: relative;
@@ -90,7 +90,7 @@
   }
 
   .tabs-container__title[aria-selected="true"] {
-    background: lighten(#394C61, 40%);
+    background: #9FB1C6;
   }
 
   .tabs-container__panel.accordion--closed {

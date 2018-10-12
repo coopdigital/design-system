@@ -82,7 +82,7 @@
 
 [dir="ltr"] .Tree-depth-1 .is-current .Tree-entityLink {
   background: transparent;
-  border-left: 5px solid lighten($purple-mid, 50%);
+  border-left: 5px solid #F7D5F0;
   margin-left: 1.5rem;
   padding-left: 1rem;
   color: $text;
@@ -96,25 +96,3 @@
     background-size: .75rem;
   }
 }
-
-// [dir="ltr"] .Tree-collection.is-closed .Tree-collectionLabel span::before {
-//   transition: all .15s ease;
-//   transform: rotate(0deg);
-//   background-image: url('../images/icons/icon-navigation.svg');
-//   //background-color: lighten($light-grey, 5%);
-//   padding: 5px;
-//   border-radius: 100%;
-//   width: 1.25rem;
-//   height: 1.25rem;
-// }
-//
-// .Tree-collectionLabel span::before {
-//   transition: all .15s ease;
-//   transform: rotate(45deg);
-//   background-image: url('../images/icons/icon-navigation.svg');
-//   //background-color: lighten($light-grey, 5%);
-//   padding: 5px;
-//   border-radius: 100%;
-//   width: 1.25rem;
-//   height: 1.25rem;
-// }

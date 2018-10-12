@@ -18,8 +18,8 @@
     "nunjucks-markdown-filter": "^0.1.0"
   },
   "devDependencies": {
-    "@coopdigital/coop-frontend-components": "^0.1.1",
-    "@coopdigital/coop-frontend-foundations": "^0.1.1",
+    "@coopdigital/coop-frontend-components": "^0.1.2",
+    "@coopdigital/coop-frontend-foundations": "^0.1.2",
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",

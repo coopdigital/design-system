@@ -14,7 +14,7 @@
 
 
 .intro-text {
-  color: lighten($text, 30%);
+  color: #757575;
 }
 
 .ds-pen-header {
@@ -68,7 +68,7 @@
   @include spacing('margin', 'bottom', 'base');
   p,
   ul {
-    color: lighten($text, 30%);
+    color: #757575;
     font-size: em-calc(24px);
     font-family: $regular;
   }
@@ -103,7 +103,7 @@
 }
 
 .ds-section--keyline {
-  border-bottom: 1px solid lighten($grey-mid, 10%);
+  border-bottom: 1px solid #F7F7F7;
 }
 
 .Frame-inner {
@@ -160,7 +160,7 @@
 
 .code--panel {
   position: relative;
-  background: lighten($grey-light, 2%);
+  background: #F8F8F8;
   padding-top: 64px;
 
   .code--panel--links {
@@ -259,10 +259,9 @@
 }
 
 .Code {
-  // background: $page;
 
   pre {
-    background: lighten($grey-light, 2%);
+    background: #F6F6F6;
     padding: 10px 16px;
     margin-bottom: $half-spacing-unit;
   }
@@ -293,6 +292,6 @@
 .in-page-nav-title {
   text-transform: uppercase;
   font-family: $medium;
-  color: lighten($text, 30%);
+  color: #757575;
   font-size: 16px;
 }

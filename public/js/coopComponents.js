@@ -141,7 +141,7 @@ eval("__webpack_require__.r(__webpack_exports__);\nfunction coopGlobalNav(input)
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./scss/main.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/extract-text-webpack-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/postcss-loader/src/index.js):\\nError: argument `$color` of `lighten($color, $amount)` must be a color\\n    at options.error (/Applications/MAMP/htdocs/design-system/node_modules/node-sass/lib/index.js:291:26)\\n    at runLoaders (/Applications/MAMP/htdocs/design-system/node_modules/webpack/lib/NormalModule.js:286:20)\\n    at /Applications/MAMP/htdocs/design-system/node_modules/loader-runner/lib/LoaderRunner.js:364:11\\n    at /Applications/MAMP/htdocs/design-system/node_modules/loader-runner/lib/LoaderRunner.js:230:18\\n    at context.callback (/Applications/MAMP/htdocs/design-system/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Promise.resolve.then.then.catch (/Applications/MAMP/htdocs/design-system/node_modules/postcss-loader/src/index.js:208:9)\\n    at <anonymous>\");\n\n//# sourceURL=webpack:///./scss/main.scss?");
 
 /***/ })
 
