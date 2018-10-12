@@ -16,7 +16,7 @@
             <ul>
             {%- for item in variants.items() -%}
               {% if entity.name !== item.name %}
-                <li><a href="{{item.handle}}">{{item.label}}</a></li>
+                <li><a href="{% if frctl.env.server %}{{item.handle}}{% else %}{{item.handle}}.html{% endif %}">{{item.label}}</a></li>
               {% endif %}
             {% endfor %}
             </ul>
