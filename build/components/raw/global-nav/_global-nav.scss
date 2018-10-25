@@ -198,7 +198,7 @@
   opacity: 0;
   transition-delay: 0.25s;
   z-index: 100;
-  border-bottom: 1px solid lighten($grey-mid, 15%);
+  border-bottom: 1px solid $grey-mid;
   max-height: 0;
 
   @include media(large) {

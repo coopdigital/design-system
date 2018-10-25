@@ -2,6 +2,7 @@
 //= include includes/feedback.js
 //= include includes/FeedbackWrongInfo.js
 
+
 $(function(){
 
   // Coop.init();

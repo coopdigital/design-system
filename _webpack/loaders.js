@@ -49,5 +49,5 @@ const CSSLoader = {
 module.exports = {
     JSLoader: JSLoader,
     CSSLoader: CSSLoader,
-    ESLintLoader:ESLintLoader
+    ESLintLoader: ESLintLoader
 };

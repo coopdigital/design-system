@@ -7,6 +7,8 @@
     "doc": "docs"
   },
   "dependencies": {
+    "cli-table2": "^0.2.0",
+    "contentful": "^4.6.5",
     "fractal-webpack-plugin": "^2.0.1",
     "gulp-babel": "^8.0.0",
     "gulp-copy": "^1.1.0",
@@ -50,6 +52,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --config _webpack/webpack.config.js",
     "watch": "webpack --mode development --watch --config ./_webpack/webpack.config.js --display-error-details"
+  },
+  "config": {
+    "accessToken": "9ee9badaa2d7bdf90b84b001b21358f267a8b6a17f72b5d14538ef0937d509ad",
+    "space": "95z9ms2kvox3"
   },
   "repository": {
     "type": "git",

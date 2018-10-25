@@ -1,16 +1,29 @@
-function CopyToClipboard(containerid) {
-if (document.selection) {
-    var range = document.body.createTextRange();
-    range.moveToElementText(document.getElementById(containerid));
-    range.select().createTextRange();
-    document.execCommand("copy");
-
-} else if (window.getSelection) {
-    var range = document.createRange();
-    range.selectNode(document.getElementById(containerid));
-    window.getSelection().addRange(range);
-    document.execCommand("copy");
-}}
+// // const contentful = require("contentful");
+// const client = contentful.createClient({
+//   // This is the space ID. A space is like a project folder in Contentful terms
+//   space: "95z9ms2kvox3",
+//   // This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+//   accessToken: "9ee9badaa2d7bdf90b84b001b21358f267a8b6a17f72b5d14538ef0937d509ad"
+// });
+// // This API call will request an entry with the specified ID from the space defined at the top, using a space-specific access token.
+// client
+//   .getEntry("14fiLmQ4P2o8aMiaWCSYiC")
+//   .then(entry => console.log(entry))
+//   .catch(err => console.log(err));
+//
+// function CopyToClipboard(containerid) {
+// if (document.selection) {
+//     var range = document.body.createTextRange();
+//     range.moveToElementText(document.getElementById(containerid));
+//     range.select().createTextRange();
+//     document.execCommand("copy");
+//
+// } else if (window.getSelection) {
+//     var range = document.createRange();
+//     range.selectNode(document.getElementById(containerid));
+//     window.getSelection().addRange(range);
+//     document.execCommand("copy");
+// }}
 
 /* Accessible tabs > accordian */
 /* replace this JS handlebars implementation */

@@ -23,6 +23,16 @@ fractal.set('project.author', 'Matt Tyas');
 fractal.components.engine('@frctl/nunjucks');
 fractal.components.set('ext', '.html');
 
+// 
+// var contentful = require('contentful')
+//
+// var client = contentful.createClient({
+//   accessToken: '9ee9badaa2d7bdf90b84b001b21358f267a8b6a17f72b5d14538ef0937d509ad',
+//   space: '95z9ms2kvox3'
+// })
+//
+// exports.client = client
+
 /*
  * Tell Fractal where to look for components.
  */

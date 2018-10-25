@@ -6,6 +6,11 @@
         <div class="coop-l-column coop-l-medium-7 coop-l-small-12">
             <h1>Pattern library</h1>
             <p class="coop-intro-text coop-u-margin-bh">These patterns are meant as a starting point when designing for Co&#8209;op. Experimenting is encouraged.</p>
+            
+
+            {{ sys.id }}
+
+
         </div>
         <div class="coop-l-column coop-l-small-12">
             <div class="message message--info">
@@ -88,7 +93,7 @@
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">
               <a href="{% if frctl.env.server %}/components/detail/checkboxes-radios{% else %}/components/detail/checkboxes-radios.html{% endif %}" class="card--link m-bh-med-b">
-                  <h4 class="card--link__title">Checkboxes and radios</h4> 
+                  <h4 class="card--link__title">Checkboxes and radios</h4>
               </a>
          </div>
          <div class="coop-l-column coop-l-small-12 coop-l-medium-3">

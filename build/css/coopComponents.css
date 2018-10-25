@@ -2,6 +2,97 @@
  * Co-op Front-end Foundations
  * =========================== */
 /* ===================================
+ * Fonts - Co-op Front-end Foundations
+ * =================================== */
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: normal;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: normal;
+  font-style: italic;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg"); }
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 500;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg"); }
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 600;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg"); }
+@font-face {
+  font-family: "Avenir-Next";
+  font-weight: 600;
+  font-style: italic;
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix");
+  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/687932cb-145b-4690-a21d-ed1243db9e36.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/bc350df4-3100-4ce1-84ce-4a5363dbccfa.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/bc13ae80-cd05-42b4-b2a9-c123259cb166.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/4862b373-2643-46b1-b0b5-88537c52d15c.svg#4862b373-2643-46b1-b0b5-88537c52d15c") format("svg"); }
+:root {
+  --base-line-height: 1.6;
+  --font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+:root {
+  --color-brand: #00B1E7;
+  --color-text: #282828;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  /* Links */
+  --color-link: #00729A;
+  --color-link--hover: #000102;
+  --color-link--focus: #EEC300;
+  --color-link--active: #005981;
+  --color-link--visited: #004C67;
+  /* Buttons */
+  --color-button-primary: #0F8482;
+  --color-button-primary--hover: #2B9E9C;
+  --color-button-primary--disabled: #005452;
+  --color-button-primary--active: #0C6D6B;
+  --color-button-dark: #374C63;
+  --color-button-dark--hover: #4A6683;
+  --color-button-dark--active: #2E3F53;
+  /* default button */
+  --color-button: var(--color-button-dark);
+  --color-button--hover: var(--color-button-dark--hover);
+  --color-button--active: var(--color-button-dark--active);
+  /* Palette */
+  /* Greyscale */
+  --color-grey-light: #F3F3F3;
+  --color-grey-mid: #C4C4C4;
+  --color-grey-dark: #6E6E6E;
+  /* Yellowscale */
+  --color-yellow-bright: #FFFF00;
+  --color-yellow-light: #FFEC00;
+  --color-yellow-mid: #FFD308;
+  /* Greenscale */
+  --color-green-bright: #EDFB3C;
+  --color-green-light: #BAD303;
+  --color-green-mid: #4F820D;
+  --color-green-dark: #385C0A;
+  /* Turquoisescale - previously GreenBlue */
+  --color-turquoise-bright: #0AFBFB;
+  --color-turquoise-light: #72DCDB;
+  --color-turquoise-mid: #0F8482;
+  --color-turquoise-dark: #166D66;
+  /* Bluescale */
+  --color-blue-bright: #418CFC;
+  --color-blue-light: #92D8FE;
+  --color-blue-mid: #326BB7;
+  --color-blue-dark: #334C89;
+  /* Pinkscale */
+  --color-pink-bright: #FC43D3;
+  --color-pink-light: #FF80D3;
+  /* Purplescale */
+  --color-purple-mid: #AD208E;
+  --color-purple-dark: #61307D;
+  /* Orangescale */
+  --color-orange-mid: #F8642C;
+  /* Redscale */
+  --color-red-mid: #D63118;
+  --color-red-dark: #9F2A00; }
+/* ===================================
  * Variables - Co-op Front-end Toolkit
  * =================================== */
 /*
@@ -17,7 +108,6 @@
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -35,6 +125,9 @@
 /* Links */
 /* Buttons */
 /* Palette */
+body, input, select, textarea {
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family); }
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -317,7 +410,6 @@ template {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -391,7 +483,6 @@ template {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -486,7 +577,6 @@ template {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -563,7 +653,6 @@ template {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -607,7 +696,10 @@ template {
   display: inline-block;
   padding: 16px 40px;
   color: #00729A;
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-link);
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   text-align: center;
   border: 0;
   border-radius: 7px;
@@ -622,7 +714,8 @@ template {
 .coop-btn:focus {
     -webkit-transition: none;
     transition: none;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     outline-offset: 3px; }
 .coop-btn:active {
     outline: 0; }
@@ -657,7 +750,6 @@ template {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -718,7 +810,9 @@ template {
     clear: both; }
 label,
 .coop-form__label {
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   display: block;
   margin: 0 0 8px;
   font-size: 1.125em; }
@@ -730,7 +824,9 @@ label,
   display: inline; }
 legend,
 .coop-form__legend {
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   display: block;
   margin: 0 0 16px;
   font-size: 1.5em; }
@@ -739,12 +835,14 @@ legend,
     .coop-form__legend {
       font-size: 1.75em; } }
 .coop-form__invalid {
-  border-color: #D63118; }
+  border-color: #D63118;
+  border-color: var(--color-red-mid); }
 .coop-form__error {
   position: relative;
   margin: .5em 0;
   padding-left: 2em;
-  color: #D63118; }
+  color: #D63118;
+  color: var(--color-red-mid); }
 .coop-form__error:before {
     position: absolute;
     left: 0;
@@ -771,7 +869,6 @@ legend,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -863,15 +960,20 @@ legend,
 .coop-u-margin-tb {
   margin-top: 64px; }
 .coop-u-border {
-  border: 1px solid #C4C4C4; }
+  border: 1px solid #C4C4C4;
+  border: 1px solid var(--color-grey-mid); }
 .coop-u-border-t {
-  border-top: 1px solid #C4C4C4; }
+  border-top: 1px solid #C4C4C4;
+  border-top: 1px solid var(--color-grey-mid); }
 .coop-u-border-r {
-  border-right: 1px solid #C4C4C4; }
+  border-right: 1px solid #C4C4C4;
+  border-right: 1px solid var(--color-grey-mid); }
 .coop-u-border-b {
-  border-bottom: 1px solid #C4C4C4; }
+  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid var(--color-grey-mid); }
 .coop-u-border-l {
-  border-left: 1px solid #C4C4C4; }
+  border-left: 1px solid #C4C4C4;
+  border-left: 1px solid var(--color-grey-mid); }
 .coop-u-text-centre {
   text-align: center; }
 .coop-u-text-left {
@@ -926,7 +1028,6 @@ legend,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -945,157 +1046,226 @@ legend,
 /* Buttons */
 /* Palette */
 .coop-u-brand {
-  color: #00B1E7; }
+  color: #00B1E7;
+  color: var(--color-brand); }
 .coop-u-brand-bg {
-  background: #00B1E7; }
+  background: #00B1E7;
+  background: var(--color-brand); }
 .coop-u-text {
-  color: #282828; }
+  color: #282828;
+  color: var(--color-text); }
 .coop-u-text-bg {
-  background: #282828; }
+  background: #282828;
+  background: var(--color-text); }
 .coop-u-white {
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  color: var(--color-white); }
 .coop-u-white-bg {
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  background: var(--color-white); }
 .coop-u-black {
-  color: #000000; }
+  color: #000000;
+  color: var(--color-black); }
 .coop-u-black-bg {
-  background: #000000; }
+  background: #000000;
+  background: var(--color-black); }
 .coop-u-link-blue {
-  color: #00729A; }
+  color: #00729A;
+  color: var(--color-link); }
 .coop-u-link-blue-bg {
-  background: #00729A; }
+  background: #00729A;
+  background: var(--color-link); }
 .coop-u-link-hover-blue {
-  color: #000102; }
+  color: #000102;
+  color: var(--color-link--hover); }
 .coop-u-link-hover-blue-bg {
-  background: #000102; }
+  background: #000102;
+  background: var(--color-link--hover); }
 .coop-u-link-focus {
-  color: #eec300; }
+  color: #EEC300;
+  color: var(--color-link--focus); }
 .coop-u-link-focus-bg {
-  background: #eec300; }
+  background: #EEC300;
+  background: var(--color-link--focus); }
 .coop-u-link-focus-outline {
-  outline: 4px solid #eec300; }
+  outline: 4px solid #EEC300;
+  outline: 4px solid var(--color-link--focus); }
 .coop-u-link-visited,
 .coop-u-link-active {
-  color: #004c67; }
+  color: #004C67;
+  color: var(--color-link--visited); }
 .coop-u-link-visited-bg,
 .coop-u-link-active-bg {
-  background: #004c67; }
+  background: #004C67;
+  background: var(--color-link--visited); }
 .coop-u-button-primary {
-  color: #0F8482; }
+  color: #0F8482;
+  color: var(--color-button-primary); }
 .coop-u-button-primary-bg {
-  background: #0F8482; }
+  background: #0F8482;
+  background: var(--color-button-primary); }
 .coop-u-button-primary-hover-bg {
-  background: #2B9E9C; }
-.coop-u-button-primary-active-bg {
-  background: #0c6d6b; }
+  background: #2B9E9C;
+  background: var(--color-button-primary--hover); }
 .coop-u-button-dark {
-  color: #374C63; }
+  color: #374C63;
+  color: var(--color-button-dark); }
 .coop-u-button-dark-bg {
-  background: #374C63; }
+  background: #374C63;
+  background: var(--color-button-dark); }
 .coop-u-button-dark-hover-bg {
-  background: #4A6683; }
-.coop-u-button-dark-active-bg {
-  background: #2e3f53; }
+  background: #4A6683;
+  background: var(--color-button-dark--hover); }
 .coop-u-yellow-bright {
-  color: #FFFF00; }
+  color: #FFFF00;
+  color: var(--color-yellow-bright); }
 .coop-u-yellow-bright-bg {
-  background: #FFFF00; }
+  background: #FFFF00;
+  background: var(--color-yellow-bright); }
 .coop-u-yellow-light {
-  color: #FFEC00; }
+  color: #FFEC00;
+  color: var(--color-yellow-light); }
 .coop-u-yellow-light-bg {
-  background: #FFEC00; }
+  background: #FFEC00;
+  background: var(--color-yellow-light); }
 .coop-u-yellow-mid {
-  color: #FFD308; }
+  color: #FFD308;
+  color: var(--color-yellow-mid); }
 .coop-u-yellow-mid-bg {
-  background: #FFD308; }
+  background: #FFD308;
+  background: var(--color-yellow-mid); }
 .coop-u-green-bright {
-  color: #EDFB3C; }
+  color: #EDFB3C;
+  color: var(--color-green-bright); }
 .coop-u-green-bright-bg {
-  background: #EDFB3C; }
+  background: #EDFB3C;
+  background: var(--color-green-bright); }
 .coop-u-green-light {
-  color: #BAD303; }
+  color: #BAD303;
+  color: var(--color-green-light); }
 .coop-u-green-light-bg {
-  background: #BAD303; }
+  background: #BAD303;
+  background: var(--color-green-light); }
 .coop-u-green-mid {
-  color: #4F820D; }
+  color: #4F820D;
+  color: var(--color-green-mid); }
 .coop-u-green-mid-bg {
-  background: #4F820D; }
+  background: #4F820D;
+  background: var(--color-green-mid); }
 .coop-u-green-dark {
-  color: #385C0A; }
+  color: #385C0A;
+  color: var(--color-green-dark); }
 .coop-u-green-dark-bg {
-  background: #385C0A; }
+  background: #385C0A;
+  background: var(--color-green-dark); }
 .coop-u-green-blue-bright {
-  color: #0AFBFB; }
+  color: #0AFBFB;
+  color: var(--color-turquoise-bright); }
 .coop-u-green-blue-bright-bg {
-  background: #0AFBFB; }
+  background: #0AFBFB;
+  background: var(--color-turquoise-bright); }
 .coop-u-green-blue-light {
-  color: #72DCDB; }
+  color: #72DCDB;
+  color: var(--color-turquoise-light); }
 .coop-u-green-blue-light-bg {
-  background: #72DCDB; }
+  background: #72DCDB;
+  background: var(--color-turquoise-light); }
 .coop-u-green-blue-mid {
-  color: #0F8482; }
+  color: #0F8482;
+  color: var(--color-turquoise-mid); }
 .coop-u-green-blue-mid-bg {
-  background: #0F8482; }
+  background: #0F8482;
+  background: var(--color-turquoise-mid); }
 .coop-u-green-blue-dark {
-  color: #166D66; }
+  color: #166D66;
+  color: var(--color-turquoise-dark); }
 .coop-u-green-blue-dark-bg {
-  background: #166D66; }
+  background: #166D66;
+  background: var(--color-turquoise-dark); }
 .coop-u-blue-bright {
-  color: #418CFC; }
+  color: #418CFC;
+  color: var(--color-blue-bright); }
 .coop-u-blue-bright-bg {
-  background: #418CFC; }
+  background: #418CFC;
+  background: var(--color-blue-bright); }
 .coop-u-blue-light {
-  color: #92D8FE; }
+  color: #92D8FE;
+  color: var(--color-blue-light); }
 .coop-u-blue-light-bg {
-  background: #92D8FE; }
+  background: #92D8FE;
+  background: var(--color-blue-light); }
 .coop-u-blue-mid {
-  color: #326BB7; }
+  color: #326BB7;
+  color: var(--color-blue-mid); }
 .coop-u-blue-mid-bg {
-  background: #326BB7; }
+  background: #326BB7;
+  background: var(--color-blue-mid); }
 .coop-u-blue-dark {
-  color: #334C89; }
+  color: #334C89;
+  color: var(--color-blue-dark); }
 .coop-u-blue-dark-bg {
-  background: #334C89; }
+  background: #334C89;
+  background: var(--color-blue-dark); }
 .coop-u-pink-bright {
-  color: #FC43D3; }
+  color: #FC43D3;
+  color: var(--color-pink-bright); }
 .coop-u-pink-bright-bg {
-  background: #FC43D3; }
+  background: #FC43D3;
+  background: var(--color-pink-bright); }
 .coop-u-pink-light {
-  color: #FF80D3; }
+  color: #FF80D3;
+  color: var(--color-pink-light); }
 .coop-u-pink-light-bg {
-  background: #FF80D3; }
+  background: #FF80D3;
+  background: var(--color-pink-light); }
 .coop-u-purple-mid {
-  color: #AD208E; }
+  color: #AD208E;
+  color: var(--color-purple-mid); }
 .coop-u-purple-mid-bg {
-  background: #AD208E; }
+  background: #AD208E;
+  background: var(--color-purple-mid); }
 .coop-u-purple-dark {
-  color: #61307D; }
+  color: #61307D;
+  color: var(--color-purple-dark); }
 .coop-u-purple-dark-bg {
-  background: #61307D; }
+  background: #61307D;
+  background: var(--color-purple-dark); }
 .coop-u-orange-mid {
-  color: #F8642C; }
+  color: #F8642C;
+  color: var(--color-orange-mid); }
 .coop-u-orange-mid-bg {
-  background: #F8642C; }
+  background: #F8642C;
+  background: var(--color-orange-mid); }
 .coop-u-red-mid {
-  color: #D63118; }
+  color: #D63118;
+  color: var(--color-red-mid); }
 .coop-u-red-mid-bg {
-  background: #D63118; }
+  background: #D63118;
+  background: var(--color-red-mid); }
 .coop-u-red-dark {
-  color: #9F2A00; }
+  color: #9F2A00;
+  color: var(--color-red-dark); }
 .coop-u-red-dark-bg {
-  background: #9F2A00; }
+  background: #9F2A00;
+  background: var(--color-red-dark); }
 .coop-u-grey-light {
-  color: #F3F3F3; }
+  color: #F3F3F3;
+  color: var(--color-grey-light); }
 .coop-u-grey-light-bg {
-  background: #F3F3F3; }
+  background: #F3F3F3;
+  background: var(--color-grey-light); }
 .coop-u-grey-mid {
-  color: #C4C4C4; }
+  color: #C4C4C4;
+  color: var(--color-grey-mid); }
 .coop-u-grey-mid-bg {
-  background: #C4C4C4; }
+  background: #C4C4C4;
+  background: var(--color-grey-mid); }
 .coop-u-grey-dark {
-  color: #6E6E6E; }
+  color: #6E6E6E;
+  color: var(--color-grey-dark); }
 .coop-u-grey-dark-bg {
-  background: #6E6E6E; }
+  background: #6E6E6E;
+  background: var(--color-grey-dark); }
 /* Foundations */
 /* ====================================
  * Global - Co-op front-end foundations
@@ -1116,7 +1286,6 @@ legend,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -1153,7 +1322,6 @@ legend,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -1214,7 +1382,6 @@ legend,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -1280,7 +1447,9 @@ body {
   margin: 0;
   padding: 0;
   color: #282828;
-  font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 @media (min-width: 750px) {
@@ -1309,7 +1478,6 @@ img {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -1362,7 +1530,6 @@ img {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2189,87 +2356,6 @@ img {
     float: left;
     margin-left: 0;
     margin-right: 0; } }
-/* ===================================
- * Fonts - Co-op Front-end Foundations
- * =================================== */
-/* =======================================
- * Functions - Co-op Front-end Foundations
- * ======================================= */
-/* ===================================
- * Variables - Co-op Front-end Toolkit
- * =================================== */
-/*
- * These default settings can be overriden in your project's stylesheet.
- * To do so, declare them before this file is included, which will
- * replace the defaults given here.
- */
-/*
- * Base URL for any linked assets. This should be the path to your assets
- * relative to the generated stylesheet.
- */
-/* Maximum IE version targetted by the generated stylesheet */
-/* Spacing */
-/* Type scale */
-/* Border radius */
-/* Font */
-/* Grid settings */
-/* Breakpoints */
-/* Viewport orientation */
-/*
- * Colour
- *
- * Where colours are attached to an element. They should be named as the element where possible
- * in case it changes colour in the future. EG: $link
- * Where the colour is an explicit part of the palette it should be named as: $colour-hue
- */
-/* Brand */
-/* Text */
-/* Page */
-/* Greyscale */
-/* Links */
-/* Buttons */
-/* Palette */
-/**
- * Returns a full-formed url based on the $base-url setting.
- * @param  {string} $url the relative URL for the resource
- * @return {string}      the fully-formed url() value
- */
-/**
- * Strip unit from given value
- * @param  {Number} $value Value to remove unit from
- * @return {Number}        Raw value without unit
- */
-/**
- * Convert a pixel value to em
- * @param  {Number} $value The pixel value to convert
- * @return {Number}        The value converted to em
- */
-/**
- * Returns map-get($map, $key) or the default if the key doesn't exist
- */
-/**
- * Returns a value from a deeply-nested map
- */
-@font-face {
-  font-family: "AvenirNextLTW01-Regular";
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg"); }
-@font-face {
-  font-family: "AvenirNextLTW01-Italic";
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix");
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/d1fddef1-d940-4904-8f6c-17e809462301.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/7377dbe6-f11a-4a05-b33c-bc8ce1f60f84.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/92b66dbd-4201-4ac2-a605-4d4ffc8705cc.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/18839597-afa8-4f0b-9abb-4a30262d0da8.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585.svg#1de7e6f4-9d4d-47e7-ab23-7d5cf10ab585") format("svg"); }
-@font-face {
-  font-family: "AvenirNextLTW01-Medium";
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg"); }
-@font-face {
-  font-family: "AvenirNextLTW01-Demi";
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix");
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/aad99a1f-7917-4dd6-bbb5-b07cedbff64f.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d") format("svg"); }
-@font-face {
-  font-family: "AvenirNextLTW01-DemiIta";
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix");
-  src: url("https://assets.digital.coop.co.uk/finder/static/fonts/770d9a7e-8842-4376-9319-8f2c8b8e880d.eot?#iefix") format("eot"), url("https://assets.digital.coop.co.uk/finder/static/fonts/687932cb-145b-4690-a21d-ed1243db9e36.woff2") format("woff2"), url("https://assets.digital.coop.co.uk/finder/static/fonts/bc350df4-3100-4ce1-84ce-4a5363dbccfa.woff") format("woff"), url("https://assets.digital.coop.co.uk/finder/static/fonts/bc13ae80-cd05-42b4-b2a9-c123259cb166.ttf") format("truetype"), url("https://assets.digital.coop.co.uk/finder/static/fonts/4862b373-2643-46b1-b0b5-88537c52d15c.svg#4862b373-2643-46b1-b0b5-88537c52d15c") format("svg"); }
 /* ========================================
  * Typography - Co-op front-end foundations
  * ======================================== */
@@ -2289,7 +2375,6 @@ img {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2329,7 +2414,6 @@ img {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2398,7 +2482,9 @@ h3, .coop-h3,
 h4, .coop-h4,
 h5, .coop-h5,
 h6, .coop-h6 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold; }
 p {
   font-size: 1em;
   margin-bottom: 8px; }
@@ -2427,7 +2513,10 @@ p:last-child {
     p:last-child {
       margin-bottom: 32px; } }
 .coop-h-mega {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 2.25em;
   line-height: 1.385;
   margin-bottom: 16px;
@@ -2443,7 +2532,10 @@ p:last-child {
       padding-top: 32px; } }
 h1,
 .coop-h1 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.875em;
   line-height: 1.4;
   margin-bottom: 16px; }
@@ -2457,7 +2549,10 @@ h1,
       margin-bottom: 32px; } }
 h2,
 .coop-h2 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.25em;
   line-height: 1.55;
   margin-bottom: 4px; }
@@ -2471,7 +2566,10 @@ h2,
       margin-bottom: 8px; } }
 h3,
 .coop-h3 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.125em;
   line-height: 1.455;
   padding-top: 4px;
@@ -2490,7 +2588,10 @@ h3,
       margin-bottom: 8px; } }
 h4,
 .coop-h4 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.125em;
   line-height: 1.455;
   padding-top: 4px;
@@ -2509,7 +2610,10 @@ h4,
       margin-bottom: 8px; } }
 h5,
 .coop-h5 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 1.125em;
   line-height: 1.455;
   padding-top: 4px;
@@ -2528,7 +2632,10 @@ h5,
       margin-bottom: 8px; } }
 h6,
 .coop-h6 {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal;
   font-size: 0.8125em;
   line-height: 1.5;
   padding-top: 8px;
@@ -2568,27 +2675,45 @@ hr,
   display: block;
   margin: 2em 0 3em;
   border: 1px solid #C4C4C4;
+  border: 1px solid var(--color-grey-mid);
   border-width: 0 0 1px;
   height: 0;
-  color: #C4C4C4; }
+  color: #C4C4C4;
+  color: var(--color-grey-mid); }
 hr.dashed,
   .coop-hr.dashed {
     border-style: dashed;
-    border-color: #C4C4C4; }
+    border-color: #C4C4C4;
+    border-color: var(--color-grey-mid); }
 .coop-regular {
-  font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-style: normal; }
 .coop-italic,
 .coop-em,
 em {
-  font-family: "AvenirNextLTW01-Italic", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-style: italic; }
 .coop-bold,
 .coop-strong,
 strong {
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-style: normal; }
 .coop-medium {
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-style: normal; }
 .coop-bold-italic {
-  font-family: "AvenirNextLTW01-DemiIta", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-family: bold;
+  font-style: italic; }
 blockquote,
 .coop-blockquote {
   margin-bottom: 16px;
@@ -2610,7 +2735,8 @@ blockquote:before, blockquote:after,
     width: 45px;
     height: 6px;
     margin: 16px 0 16px -0.5em;
-    background: #F3F3F3; }
+    background: #F3F3F3;
+    background: var(--color-grey-light); }
 @media (min-width: 750px) {
     blockquote,
     .coop-blockquote {
@@ -2622,7 +2748,10 @@ blockquote:before, blockquote:after,
 blockquote p,
   .coop-blockquote p {
     margin-bottom: 8px;
-    font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-style: normal;
     font-style: normal;
     text-indent: -.25em; }
 @media (min-width: 750px) {
@@ -2632,7 +2761,10 @@ blockquote p,
 blockquote p.alpha, blockquote p.beta,
     .coop-blockquote p.alpha,
     .coop-blockquote p.beta {
-      font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-style: normal; }
 blockquote cite,
   .coop-blockquote cite {
     font-size: 1em;
@@ -2654,7 +2786,10 @@ del,
 .coop-line-through {
   text-decoration: line-through; }
 address {
-  font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: normal;
+  font-style: normal; }
 .coop-intro-text {
   font-size: 1.25em;
   margin-bottom: 4px; }
@@ -2680,11 +2815,14 @@ dl,
       font-size: 1.25em; } }
 dl dt,
   .coop-definition-list dt {
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold;
     margin-bottom: 0; }
 dl dd,
   .coop-definition-list dd {
-    font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     margin: 0 0 8px; }
 .coop-undecorated-list,
 .coop-list-bare {
@@ -2722,7 +2860,6 @@ dl dd,
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2745,39 +2882,51 @@ dl dd,
  * =================================== */
 a {
   color: #00729A;
+  color: var(--color-link);
   border-bottom: 0.05em solid #00729A;
+  border-bottom: 0.05em solid var(--color-link);
   text-decoration: none; }
 a:hover {
     color: #000102;
+    color: var(--color-link--hover);
     border: 0; }
 a:active, a:focus {
     -webkit-transition: none;
     transition: none;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     outline-offset: 3px; }
 .link-white {
   color: #FFFFFF;
+  color: var(--color-white);
   border-bottom: 0.05em solid #FFFFFF;
+  border-bottom: 0.05em solid var(--color-white);
   text-decoration: none; }
 .link-white:hover {
     color: #FFFFFF;
+    color: var(--color-white);
     border: 0; }
 .link-white:active, .link-white:focus {
     -webkit-transition: none;
     transition: none;
     outline: 2px dotted #FFFFFF;
+    outline: 2px dotted var(--color-white);
     outline-offset: 3px; }
 .link-black {
   color: #000000;
+  color: var(--color-black);
   border-bottom: 0.05em solid #000000;
+  border-bottom: 0.05em solid var(--color-black);
   text-decoration: none; }
 .link-black:hover {
     color: #000000;
+    color: var(--color-black);
     border: 0; }
 .link-black:active, .link-black:focus {
     -webkit-transition: none;
     transition: none;
     outline: 2px dotted #000000;
+    outline: 2px dotted var(--color-black);
     outline-offset: 3px; }
 /* =====================================
  * Buttons - Co-op Front-end Foundations
@@ -2798,7 +2947,6 @@ a:active, a:focus {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2838,7 +2986,6 @@ a:active, a:focus {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2912,7 +3059,6 @@ a:active, a:focus {
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -2956,7 +3102,10 @@ a:active, a:focus {
   display: inline-block;
   padding: 16px 40px;
   color: #00729A;
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-link);
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   text-align: center;
   border: 0;
   border-radius: 7px;
@@ -2971,7 +3120,8 @@ a:active, a:focus {
 .coop-btn:focus {
     -webkit-transition: none;
     transition: none;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     outline-offset: 3px; }
 .coop-btn:active {
     outline: 0; }
@@ -2986,22 +3136,34 @@ a:active, a:focus {
   padding: 16px 32px; }
 .coop-btn {
   color: #FFFFFF;
-  background-color: #374C63; }
+  color: var(--color-white);
+  background-color: #374C63;
+  background-color: var(--color-button-dark); }
 .coop-btn:hover, .coop-btn:focus {
     background-color: #4A6683;
-    color: #FFFFFF; }
+    background-color: var(--color-button-dark--hover);
+    color: #FFFFFF;
+    color: var(--color-white); }
 .coop-btn:active {
-    background-color: #2e3f53;
-    color: #FFFFFF; }
+    background-color: #2E3F53;
+    background-color: var(--color-button-dark--active);
+    color: #FFFFFF;
+    color: var(--color-white); }
 .coop-btn--primary {
   color: #FFFFFF;
-  background-color: #0F8482; }
+  color: var(--color-white);
+  background-color: #0F8482;
+  background-color: var(--color-button-primary); }
 .coop-btn--primary:hover, .coop-btn--primary:focus {
     background-color: #2B9E9C;
-    color: #FFFFFF; }
+    background-color: var(--color-button-primary--hover);
+    color: #FFFFFF;
+    color: var(--color-white); }
 .coop-btn--primary:active {
-    background-color: #0c6d6b;
-    color: #FFFFFF; }
+    background-color: #0C6D6B;
+    background-color: var(--color-button-primary--active);
+    color: #FFFFFF;
+    color: var(--color-white); }
 /*===============================================
 Forms - Co-op Front-end Toolkit
 ===============================================*/
@@ -3021,7 +3183,6 @@ Forms - Co-op Front-end Toolkit
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -3058,7 +3219,6 @@ Forms - Co-op Front-end Toolkit
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -3119,7 +3279,6 @@ Forms - Co-op Front-end Toolkit
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -3180,7 +3339,9 @@ Forms - Co-op Front-end Toolkit
     clear: both; }
 label,
 .coop-form__label {
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   display: block;
   margin: 0 0 8px;
   font-size: 1.125em; }
@@ -3192,7 +3353,9 @@ label,
   display: inline; }
 legend,
 .coop-form__legend {
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
+  font-weight: 500;
   display: block;
   margin: 0 0 16px;
   font-size: 1.5em; }
@@ -3201,12 +3364,14 @@ legend,
     .coop-form__legend {
       font-size: 1.75em; } }
 .coop-form__invalid {
-  border-color: #D63118; }
+  border-color: #D63118;
+  border-color: var(--color-red-mid); }
 .coop-form__error {
   position: relative;
   margin: .5em 0;
   padding-left: 2em;
-  color: #D63118; }
+  color: #D63118;
+  color: var(--color-red-mid); }
 .coop-form__error:before {
     position: absolute;
     left: 0;
@@ -3221,8 +3386,10 @@ legend,
 .coop-label__hint {
   display: block;
   color: #6E6E6E;
+  color: var(--color-grey-dark);
   font-size: 0.75em;
-  font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family); }
 fieldset,
 .coop-form__fieldset {
   border: none;
@@ -3237,9 +3404,12 @@ textarea,
   width: 100%;
   padding: 12px 8px;
   background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid;
   border-color: #6E6E6E;
+  border-color: var(--color-grey-dark);
   color: #282828;
+  color: var(--color-text);
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3249,16 +3419,20 @@ input[type="text"]:focus,
   textarea:focus,
   .coop-form__textarea:focus {
     background: #FFFFFF;
+    background: var(--color-white);
     border-color: #000000;
+    border-color: var(--color-black);
     outline-offset: 3px;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     -webkit-transition: none;
     transition: none; }
 input[type="text"]:hover::-webkit-input-placeholder,
   .coop-form__input:hover::-webkit-input-placeholder,
   textarea:hover::-webkit-input-placeholder,
   .coop-form__textarea:hover::-webkit-input-placeholder {
-    color: #C4C4C4; }
+    color: #C4C4C4;
+    color: var(--color-grey-mid); }
 input[type="text"]:focus::-webkit-input-placeholder,
   .coop-form__input:focus::-webkit-input-placeholder,
   textarea:focus::-webkit-input-placeholder,
@@ -3281,9 +3455,12 @@ select,
   width: 100%;
   padding: 12px 8px;
   background: #FFFFFF;
+  background: var(--color-white);
   border: 1px solid;
   border-color: #6E6E6E;
+  border-color: var(--color-grey-dark);
   color: #282828;
+  color: var(--color-text);
   outline: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -3295,14 +3472,18 @@ select,
 select:focus,
   .coop-form__select:focus {
     background: #FFFFFF;
+    background: var(--color-white);
     border-color: #000000;
+    border-color: var(--color-black);
     outline-offset: 3px;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     -webkit-transition: none;
     transition: none; }
 select:hover::-webkit-input-placeholder,
   .coop-form__select:hover::-webkit-input-placeholder {
-    color: #C4C4C4; }
+    color: #C4C4C4;
+    color: var(--color-grey-mid); }
 select:focus::-webkit-input-placeholder,
   .coop-form__select:focus::-webkit-input-placeholder {
     -webkit-transition: opacity 0.5s 0.5s ease;
@@ -3320,6 +3501,7 @@ input[type="radio"],
   cursor: pointer; }
 .coop-form__indented {
   border-left: 3px solid #00B1E7;
+  border-left: 3px solid var(--color-brand);
   padding: 16px 0 16px 32px;
   margin: 0 0 32px 29.09091px;
   width: calc(100% - 64px - 3px); }
@@ -3351,7 +3533,6 @@ input[type="radio"],
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -3404,7 +3585,6 @@ input[type="radio"],
 /* Spacing */
 /* Type scale */
 /* Border radius */
-/* Font */
 /* Grid settings */
 /* Breakpoints */
 /* Viewport orientation */
@@ -3472,11 +3652,15 @@ table,
       margin-bottom: 32px; } }
 table caption,
   .coop-table caption {
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold;
     text-align: left; }
 table th,
   .coop-table th {
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold; }
 table th,
   table td,
   .coop-table th,
@@ -3486,10 +3670,12 @@ table th,
     vertical-align: top; }
 table thead,
   .coop-table thead {
-    border-bottom: 2px solid #C4C4C4; }
+    border-bottom: 2px solid #C4C4C4;
+    border-bottom: 2px solid var(--color-grey-mid); }
 table thead .coop-table--regular-th,
     .coop-table thead .coop-table--regular-th {
-      font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: var(--font-family); }
 table tbody th,
   .coop-table tbody th {
     position: relative; }
@@ -3501,13 +3687,16 @@ table tbody th:after,
       bottom: -1px;
       height: 1px;
       width: 80%;
-      border-bottom: 1px solid #C4C4C4; }
+      border-bottom: 1px solid #C4C4C4;
+      border-bottom: 1px solid var(--color-grey-mid); }
 table tbody td,
   .coop-table tbody td {
-    border-bottom: 1px solid #C4C4C4; }
+    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid var(--color-grey-mid); }
 table tfoot td,
   .coop-table tfoot td {
-    font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family); }
 table ul,
   .coop-table ul {
     margin-bottom: 0; }
@@ -3535,6 +3724,7 @@ table ul,
   .coop-table-smallscreen--stacked tbody th {
     display: block;
     border-top: 2px solid #C4C4C4;
+    border-top: 2px solid var(--color-grey-mid);
     margin-top: 16px; }
   .coop-table-smallscreen--stacked tbody .coop-table-smallscreen--stacked_hidden {
     display: none; }
@@ -3544,7 +3734,8 @@ table ul,
     .coop-table-smallscreen--stacked tbody td:before {
       content: attr(data-th) "";
       vertical-align: top;
-      font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: var(--font-family);
       font-weight: normal;
       width: 40%;
       display: inline-block; }
@@ -3564,17 +3755,23 @@ table ul,
       .coop-table--unstyled th, .coop-table--unstyled td {
         padding: 16px; } }
 .coop-table--unstyled .coop-table--tr-divider {
-    border-bottom: 1px solid #C4C4C4; }
+    border-bottom: 1px solid #C4C4C4;
+    border-bottom: 1px solid var(--color-grey-mid); }
 .coop-table--unstyled thead th {
-    background: #FFFFFF; }
+    background: #FFFFFF;
+    background: var(--color-white); }
 .coop-table--unstyled tbody th,
   .coop-table--unstyled tbody td {
     background: #FFFFFF;
+    background: var(--color-white);
     border-bottom: 0;
-    font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     font-weight: normal; }
 .coop-table--unstyled .coop-table__bold {
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold; }
 .coop-table__header {
   padding: 16px 0px 0px 0px;
   margin-bottom: 0; }
@@ -3602,6 +3799,7 @@ table ul,
 .coop-c-nav__list {
   position: relative;
   background: #FFFFFF;
+  background: var(--color-white);
   display: none;
   margin: 6px 0 0 0;
   padding-left: 0;
@@ -3639,7 +3837,8 @@ table ul,
       .coop-c-nav__list-item:focus {
         -webkit-transition: none;
         transition: none;
-        outline: 2px dotted #eec300;
+        outline: 2px dotted #EEC300;
+        outline: 2px dotted var(--color-link--focus);
         outline-offset: 3px; }
       .coop-c-nav__list-item:hover .coop-c-nav__level-2, .coop-c-nav__list-item[focus-within] .coop-c-nav__level-2 {
         display: inline-block;
@@ -3671,19 +3870,24 @@ table ul,
   text-decoration: none;
   font-size: 16px;
   border-bottom: 1px solid #fff;
-  color: #282828; }
+  color: #282828;
+  color: var(--color-text); }
 @media (min-width: 960px) {
     .coop-c-nav__list-item-link {
       padding: 13px 0; } }
 .coop-c-nav__list-item-link:hover {
     color: #282828;
-    border-bottom: 1px solid #6E6E6E; }
+    color: var(--color-text);
+    border-bottom: 1px solid #6E6E6E;
+    border-bottom: 1px solid var(--color-grey-dark); }
 @media (min-width: 960px) {
       .coop-c-nav__list-item-link:hover {
-        border-bottom: 2px solid #6E6E6E; } }
+        border-bottom: 2px solid #6E6E6E;
+        border-bottom: 2px solid var(--color-grey-dark); } }
 @media (max-width: 959px) {
     .coop-c-nav__list-item-link {
       background-color: #FFFFFF;
+      background-color: var(--color-white);
       border-bottom: #A5A5A5 1px solid; } }
 @media (min-width: 960px) {
     .coop-c-nav__list-item-link {
@@ -3710,7 +3914,8 @@ table ul,
       .coop-c-nav__list-item-link.active .open-chevron {
         display: none; } }
 .coop-c-nav__list .coop-c-nav__link-item-wrap:hover .coop-c-nav__level-1 {
-  border-bottom: 1px solid #6E6E6E; }
+  border-bottom: 1px solid #6E6E6E;
+  border-bottom: 1px solid var(--color-grey-dark); }
 @media (min-width: 960px) {
     .coop-c-nav__list .coop-c-nav__link-item-wrap:hover .coop-c-nav__level-1 {
       border-width: 2px; } }
@@ -3728,13 +3933,18 @@ table ul,
 .coop-c-nav__level-1 {
   outline: 0; }
 .coop-c-nav__level-1:active {
-    color: #282828; }
+    color: #282828;
+    color: var(--color-text); }
 @media (min-width: 960px) {
     .coop-c-nav__level-1 {
-      font-family: "AvenirNextLTW01-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: var(--font-family);
+      font-weight: normal;
+      font-style: normal;
       padding-left: 10px;
       padding-right: 10px;
-      border-bottom: 2px solid #FFFFFF; } }
+      border-bottom: 2px solid #FFFFFF;
+      border-bottom: 2px solid var(--color-white); } }
 .coop-c-nav__level-2 {
   visibility: hidden;
   margin-bottom: 0;
@@ -3744,7 +3954,8 @@ table ul,
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
   z-index: 100;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #C4C4C4;
+  border-bottom: 1px solid var(--color-grey-mid);
   max-height: 0; }
 .coop-c-nav__level-2::before, .coop-c-nav__level-2::after {
     content: " ";
@@ -3803,7 +4014,8 @@ table ul,
         font-size: 18px; } }
 @media (min-width: 960px) {
     .coop-c-nav__level-2 .coop-c-nav__level-1 {
-      border-bottom: 8px solid #FFFFFF; }
+      border-bottom: 8px solid #FFFFFF;
+      border-bottom: 8px solid var(--color-white); }
     .coop-c-nav__level-2:hover {
       display: block;
       display: -webkit-box;
@@ -3850,6 +4062,7 @@ table ul,
 .coop-c-nav__member {
   background-color: #0F8482;
   color: #FFFFFF;
+  color: var(--color-white);
   border: 0;
   font-size: 16px;
   width: 100%;
@@ -3891,12 +4104,15 @@ table ul,
 .js_nav-toggle.js-is--active .coop-c-nav__list-item-link {
   background: #3B70B1;
   border-color: #3B70B1;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  color: var(--color-white); }
 @media (min-width: 960px) {
   .js_nav-toggle.js-is--active .coop-c-nav__list-item-link {
     background: #FFFFFF;
+    background: var(--color-white);
     border-color: 0;
-    color: #282828; }
+    color: #282828;
+    color: var(--color-text); }
     .js_nav-toggle.js-is--active .coop-c-nav__list-item-link .open-chevron {
       display: none; } }
 .mega-content {
@@ -3920,12 +4136,18 @@ table ul,
         font-size: 18px;
         margin-bottom: 8px; }
       .mega-content .coop-c-nav__link--strong {
-        font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+        font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: var(--font-family);
+        font-weight: bold;
+        font-style: normal; } }
 .mega-content img {
     margin-bottom: 32px; }
 .mega-content .red-text {
     color: #9F2A00;
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-style: normal; }
 .mega-content__feature {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3950,11 +4172,15 @@ table ul,
       background-color: #344E87;
       border-bottom-color: #344E87;
       color: #FFFFFF;
+      color: var(--color-white);
       outline: 0; } }
 @media (min-width: 960px) {
   .level-3-trigger {
     padding-bottom: 0;
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-style: normal;
     border-bottom: 4px solid #f7f7f7; }
     .level-3-trigger:hover {
       border-bottom: 4px solid #326BB7; } }
@@ -3989,11 +4215,16 @@ table ul,
     line-height: 1;
     font-size: 0.875em;
     background: #FFFFFF;
+    background: var(--color-white);
     border: 1px solid #0F8482;
-    color: #0F8482; }
+    border: 1px solid var(--color-button-primary);
+    color: #0F8482;
+    color: var(--color-button-primary); }
 .coop-c-nav-list-secondary .coop-btn--outline:hover {
-      border-color: #0c6d6b;
-      color: #0c6d6b; }
+      border-color: #0C6D6B;
+      border-color: var(--color-button-primary--active);
+      color: #0C6D6B;
+      color: var(--color-button-primary--active); }
 @media (min-width: 960px) {
       .coop-c-nav-list-secondary .coop-btn--outline {
         display: block !important; } }
@@ -4004,13 +4235,18 @@ table ul,
     line-height: 1;
     font-size: 0.875em;
     background: #FFFFFF;
-    border: 1px solid #FFFFFF; }
+    background: var(--color-white);
+    border: 1px solid #FFFFFF;
+    border: 1px solid var(--color-white); }
 .coop-c-nav-list-secondary .coop-btn--primary:hover {
-      border-color: #2B9E9C; }
+      border-color: #2B9E9C;
+      border-color: var(--color-button-primary--hover); }
 @media (min-width: 960px) {
       .coop-c-nav-list-secondary .coop-btn--primary {
         border: 1px solid #0F8482;
-        background: #0F8482; } }
+        border: 1px solid var(--color-button-primary);
+        background: #0F8482;
+        background: var(--color-button-primary); } }
 .coop-c-nav__list .coop-btn--primary {
   position: relative;
   width: 100%;
@@ -4019,13 +4255,17 @@ table ul,
   line-height: 1;
   font-size: 1em;
   background: #FFFFFF;
+  background: var(--color-white);
   border-top: 0;
   border-left: 0;
   border-bottom: 1px solid #0F8482;
+  border-bottom: 1px solid var(--color-button-primary);
   border-right: 0;
   color: #0F8482;
+  color: var(--color-button-primary);
   padding: 24px 16px;
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family); }
 .coop-c-nav__list .coop-btn--primary:after {
     content: '';
     position: absolute;
@@ -4037,7 +4277,8 @@ table ul,
     background-repeat: no-repeat;
     background-size: 10px; }
 .coop-c-nav__list .coop-btn--primary:hover {
-    border-color: #0c6d6b; }
+    border-color: #0C6D6B;
+    border-color: var(--color-button-primary--active); }
 .coop-c-nav__list-item-trigger {
   display: inline-block !important; }
 @media (min-width: 960px) {
@@ -4045,7 +4286,9 @@ table ul,
       display: none !important; } }
 .coop-c-nav__menu-trigger {
   color: #282828;
-  font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   text-decoration: underline;
   font-size: 0.875em;
   border: 0;
@@ -4057,7 +4300,8 @@ table ul,
 .coop-c-nav__menu-trigger:focus {
     -webkit-transition: none;
     transition: none;
-    outline: 2px dotted #eec300;
+    outline: 2px dotted #EEC300;
+    outline: 2px dotted var(--color-link--focus);
     outline-offset: 3px; }
 @media (min-width: 960px) {
     .coop-c-nav__menu-trigger {
@@ -4102,7 +4346,10 @@ table ul,
         .no-js .coop-c-nav .coop-c-nav__list .coop-c-nav__link svg {
           display: none; }
     .no-js .coop-c-nav .coop-c-nav__member {
-      font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: var(--font-family);
+      font-weight: bold;
+      font-style: normal;
       background-color: transparent;
       color: #282828;
       padding-left: 0; } }
@@ -4128,12 +4375,16 @@ table ul,
   .same-column ul .coop-c-nav__item .coop-c-nav__link {
     padding-bottom: 0; }
   .same-column ul .coop-c-nav__item .coop-c-nav__link--strong {
-    font-family: "AvenirNextLTW01-Demi", "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-style: normal; } }
 /* Header */
 .coop-c-header {
   position: relative;
   z-index: 100;
   background: #FFFFFF;
+  background: var(--color-white);
   padding: 16px; }
 @media (min-width: 750px) {
     .coop-c-header {
@@ -4175,7 +4426,9 @@ Skip navigation - Co-op front-end components
     font-size: 1.25em;
     padding: 8px 16px;
     color: #FFFFFF;
+    color: var(--color-white);
     background: #6E6E6E;
+    background: var(--color-grey-dark);
     white-space: nowrap; }
 .coop-c-skip-nav a:focus, .coop-c-skip-nav a:active {
       left: 16px; }
@@ -4194,19 +4447,22 @@ Signposts - Co-op front-end components
     .coop-c-signpost {
       margin-bottom: 32px; } }
 .coop-c-signpost:hover {
-    border-bottom: 5px solid #000102; }
+    border-bottom: 5px solid #000102;
+    border-bottom: 5px solid var(--color-link--hover); }
 .coop-c-signpost:hover .coop-c-signpost__title {
       text-decoration: none; }
 .coop-c-signpost .coop-c-signpost__title {
     margin-bottom: 16px;
     display: inline;
-    font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: var(--font-family);
     text-decoration: underline; }
 @media (min-width: 750px) {
       .coop-c-signpost .coop-c-signpost__title {
         margin-bottom: 32px; } }
 .coop-c-signpost .coop-c-signpost__text {
-    color: #282828; }
+    color: #282828;
+    color: var(--color-text); }
 /* forms */
 /* ================================
 Search - Co-op front-end components
@@ -4217,16 +4473,19 @@ Search - Co-op front-end components
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 15px;
-    border-color: #C4C4C4; }
+    border-color: #C4C4C4;
+    border-color: var(--color-grey-mid); }
 @media (min-width: 750px) {
       .coop-c-search .coop-c-search__input {
         padding: 20px; } }
 .coop-c-search .coop-c-search__input:hover, .coop-c-search .coop-c-search__input:focus {
-      border-color: #6E6E6E; }
+      border-color: #6E6E6E;
+      border-color: var(--color-grey-dark); }
 .coop-c-search .coop-c-search__input:focus {
       -webkit-transition: none;
       transition: none;
-      outline: 2px dotted #eec300;
+      outline: 2px dotted #EEC300;
+      outline: 2px dotted var(--color-link--focus);
       outline-offset: 3px; }
 .coop-c-search .coop-c-search__button {
     position: absolute;
@@ -4242,11 +4501,55 @@ Search - Co-op front-end components
 .coop-c-search .coop-c-search__button:focus {
       -webkit-transition: none;
       transition: none;
-      outline: 2px dotted #eec300;
+      outline: 2px dotted #EEC300;
+      outline: 2px dotted var(--color-link--focus);
       outline-offset: 3px; }
 .coop-c-search .coop-c-search__button svg {
       position: relative;
       top: 4px; }
+.coop-c-checkbox-radio__label {
+  padding: calc(16px + .1em) calc(32px + 1.4em);
+  background: #F3F3F3;
+  background: var(--color-grey-light);
+  border-radius: 5px;
+  font-size: 1.25em;
+  border: 2px solid transparent;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 100%;
+  min-width: 25%;
+  position: relative;
+  -webkit-transition: border-color 0.1s linear;
+  transition: border-color 0.1s linear; }
+@media (min-width: 750px) {
+    .coop-c-checkbox-radio__label {
+      width: auto; } }
+.coop-c-checkbox-radio__label:last-child {
+    margin-bottom: 0; }
+.coop-c-checkbox-radio__label:hover {
+    border: 2px solid #6E6E6E;
+    border: 2px solid var(--color-grey-dark); }
+.coop-c-checkbox-radio__label.coop-js-is--selected {
+    border: 2px solid #00B1E7;
+    border: 2px solid var(--color-brand);
+    background: #FFFFFF;
+    background: var(--color-white); }
+.coop-c-checkbox-radio__label.coop-js-is--selected input[type=radio]:focus, .coop-c-checkbox-radio__label.coop-js-is--selected input[type=checkbox]:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+.coop-c-checkbox-radio__label input[type=radio],
+  .coop-c-checkbox-radio__label input[type=checkbox] {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: calc(21.33333px + 6px);
+    left: 21.33333px; }
+.coop-c-checkbox-radio__label input[type=radio]:focus,
+    .coop-c-checkbox-radio__label input[type=checkbox]:focus {
+      -webkit-box-shadow: 0px 0px 10px #00B1E7;
+              box-shadow: 0px 0px 10px #00B1E7;
+      -webkit-box-shadow: 0px 0px 10px var(--color-brand);
+              box-shadow: 0px 0px 10px var(--color-brand); }
 .coop-c-message {
   padding: 16px;
   margin-bottom: 16px;
@@ -4259,13 +4562,18 @@ Search - Co-op front-end components
       margin-bottom: 32px; } }
 .coop-c-message--error {
   border-color: #D63118;
+  border-color: var(--color-red-mid);
   color: #282828;
-  background: #FFFFFF; }
+  color: var(--color-text);
+  background: #FFFFFF;
+  background: var(--color-white); }
 .coop-c-form-error {
   border-left: 2px solid #D63118;
+  border-left: 2px solid var(--color-red-mid);
   padding-left: 32px; }
 .coop-c-form-error__text {
-  color: #D63118; }
+  color: #D63118;
+  color: var(--color-red-mid); }
 /* Cards */
 /*================================
 Cards - Co-op front-end components
@@ -4278,7 +4586,9 @@ Cards - Co-op front-end components
 .coop-c-card__content {
   padding: 12px;
   color: #282828;
+  color: var(--color-text);
   background: #FFFFFF;
+  background: var(--color-white);
   -webkit-box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.05); }
 .coop-c-card__content > :first-child {
@@ -4304,7 +4614,8 @@ Cards - Co-op front-end components
     .coop-c-card__image + .coop-c-card__content {
       margin: -50px 32px 0 0; } }
 .coop-c-card__title {
-  color: #282828; }
+  color: #282828;
+  color: var(--color-text); }
 .coop-c-card-heading {
   position: absolute;
   top: -20px;
@@ -4313,7 +4624,9 @@ Cards - Co-op front-end components
   display: block;
   padding: 20px 24px;
   background: #FFFFFF;
-  font-family: "AvenirNextLTW01-Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: var(--color-white);
+  font-family: 'Avenir-Next', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   font-size: 1em;
   padding: 8px 12px; }
 @media (min-width: 750px) {
@@ -4329,10 +4642,12 @@ Cards - Co-op front-end components
 .coop-c-card-heading__link {
   display: block;
   color: #282828;
+  color: var(--color-text);
   text-decoration: underline;
   border-bottom: 0; }
 .coop-c-card-heading__link:hover {
     color: #282828;
+    color: var(--color-text);
     text-decoration: none; }
 .coop-c-card__link {
   display: block;
@@ -4343,11 +4658,14 @@ Cards - Co-op front-end components
     text-decoration: none; }
 .coop-c-card__content--background {
   background-color: #FFD308;
+  background-color: var(--color-yellow-mid);
   -webkit-box-shadow: none;
           box-shadow: none; }
 .coop-c-card__content--background a {
     color: #282828;
-    border-color: #282828; }
+    color: var(--color-text);
+    border-color: #282828;
+    border-color: var(--color-text); }
 .ds-wrap--padded {
   margin-top: 16px; }
 @media (min-width: 750px) {
@@ -4478,16 +4796,24 @@ Cards - Co-op front-end components
   width: 200px;
   display: inline;
   color: #282828;
-  border-color: #282828; }
+  color: var(--color-text);
+  border-color: #282828;
+  border-color: var(--color-text); }
 .dm-colour__definition_link-dark:hover {
     color: #282828;
-    border-color: #282828; }
+    color: var(--color-text);
+    border-color: #282828;
+    border-color: var(--color-text); }
 .dm-colour__definition_link-light {
   display: inline;
   color: #FFFFFF;
-  border-color: #FFFFFF; }
+  color: var(--color-white);
+  border-color: #FFFFFF;
+  border-color: var(--color-white); }
 .dm-colour__definition_link-light:hover {
     color: #FFFFFF;
-    border-color: #FFFFFF; }
+    color: var(--color-white);
+    border-color: #FFFFFF;
+    border-color: var(--color-white); }
 .dm-colour__definition--stack {
   margin-top: -8px; }
