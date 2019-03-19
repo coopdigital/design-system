@@ -3,7 +3,7 @@
 WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. The SCSS and HTML exist in separate repositories so they can be included in projects as needed.
 
 - SCSS: Co-op foundations - https://github.com/coopdigital/coop-frontend-foundations
-- HTML: Co-op components - https://github.com/coopdigital/coop-frontend-components
+- HTML: Co-op components - https://github.com/coopdigital/coop-components
 
 ## Installation
 
