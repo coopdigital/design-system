@@ -1,3 +1,5 @@
+# Deprecated
+
 # Design system
 
 WIP: The design system fractal instance is a wrapper for 2 Co-op dependancies. The SCSS and HTML exist in separate repositories so they can be included in projects as needed.
